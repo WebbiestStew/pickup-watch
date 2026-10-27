@@ -1,0 +1,14 @@
+{
+  "name": "pickup-watch-usa",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "engines": {
+    "node": "22.x"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node scripts/test.mjs && node scripts/test-billing.mjs",
+    "dev": "npm run build && node scripts/dev.mjs"
+  }
+}
