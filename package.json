@@ -10,5 +10,11 @@
     "build": "node scripts/build.mjs",
     "test": "node scripts/test.mjs && node scripts/test-billing.mjs",
     "dev": "npm run build && node scripts/dev.mjs"
+  },
+  "dependencies": {
+    "stripe": "^23.0.1"
+  },
+  "devDependencies": {
+    "@stripe/cli": "^1.55.3"
   }
 }

@@ -136,18 +136,18 @@ async function loadPlan() {
   $('free-plan-label').textContent=plan.paid?'Always available':'Current plan';
   $('owner-access').hidden=!plan.ownerEnabled;
   const button=$('upgrade-button');
-  button.disabled=plan.tier==='owner'||(!plan.paid&&!plan.checkoutEnabled);
-  button.textContent=plan.tier==='owner'?'Owner access active · no charge':plan.paid?'Manage subscription':plan.checkoutEnabled?(plan.testMode?'Try test checkout · $2.99/mo':'Get Plus · $2.99/month'):'Checkout coming soon';
+  button.disabled=plan.tier==='owner'||(!plan.paid&&!plan.canManage&&!plan.checkoutEnabled);
+  button.textContent=plan.tier==='owner'?'Owner access active · no charge':plan.canManage?'Manage billing & invoices':plan.checkoutEnabled?(plan.testMode?'Try test checkout · $2.99/mo':'Get Plus · $2.99/month'):'Checkout coming soon';
   $('billing-note').textContent=plan.tier==='owner'?'You have free access to two-minute checks. No subscription is attached.':plan.paid?'Plus is active in this browser. Manage billing or cancel through Stripe.':plan.checkoutEnabled?(plan.testMode?'Stripe test mode. Test payments do not charge real money.':'$2.99 USD billed monthly. Cancel in the billing portal. Payment details are handled by Stripe.'):'Checkout isn’t connected yet. No payments are being accepted.';
   tick();
  }catch{$('billing-feedback').textContent='Plan status could not be verified. Billing controls are unavailable; free checks remain available.';}
 }
 $('upgrade-button').addEventListener('click',async()=>{
- if(plan.tier==='owner'||(!plan.paid&&!plan.checkoutEnabled))return;
+ if(plan.tier==='owner'||(!plan.paid&&!plan.canManage&&!plan.checkoutEnabled))return;
  const button=$('upgrade-button');button.disabled=true;
- $('billing-feedback').textContent=plan.paid?'Opening secure billing management…':'Opening Stripe checkout. You will confirm the subscription there.';
+ $('billing-feedback').textContent=plan.canManage?'Opening secure billing management…':'Opening Stripe checkout. You will confirm the subscription there.';
  try{
-  const response=await fetch('/api/billing?action='+(plan.paid?'portal':'checkout'),{method:'POST'});const data=await response.json();
+  const response=await fetch('/api/billing?action='+(plan.canManage?'portal':'checkout'),{method:'POST'});const data=await response.json();
   if(!response.ok||!data.url)throw new Error(data.error||'Could not open billing.');
   location.assign(data.url);
  }catch(error){$('billing-feedback').textContent=error.message;button.disabled=false;}
@@ -161,3 +161,17 @@ const billingReturn=new URLSearchParams(location.search).get('billing');
 if(billingReturn==='success')$('billing-feedback').textContent='Payment verified. Loading your Plus access…';
 if(billingReturn==='cancelled')$('billing-feedback').textContent='Checkout cancelled. You are still on the free plan.';
 loadPlan();
+
+if(billingReturn==='pending'){
+ const id=new URLSearchParams(location.search).get('session_id');
+ let attempts=0;
+ async function activateAfterWebhook(){
+  if(!id||attempts++>20){$('billing-feedback').textContent='Your payment is still processing. Return to this page later; access activates after Stripe confirms payment.';return;}
+  try{const response=await fetch('/api/billing?action=activate&session_id='+encodeURIComponent(id),{cache:'no-store'});const data=await response.json();
+   if(response.ok&&data.ok){history.replaceState(null,'','/?billing=success');$('billing-feedback').textContent='Payment verified by Stripe. Your Plus access is ready.';await loadPlan();return;}
+   if(response.status!==202){$('billing-feedback').textContent=data.error||'Could not activate access. Please try again later.';return;}
+  }catch{}
+  $('billing-feedback').textContent='Waiting for Stripe to confirm your payment…';setTimeout(activateAfterWebhook,2000);
+ }
+ activateAfterWebhook();
+}

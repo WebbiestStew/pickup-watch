@@ -84,7 +84,7 @@ In Vercel: **Add New → Project → Import that repository → Deploy**. `verce
 - Fresh area results survive page reloads in session storage, avoiding repeated Apple checks.
 - **Share** copies a link containing the selected model, state, and optional ZIP. Shared links prefill the form; visitors press Find my iPhone to check.
 - PNG Open Graph/Twitter preview image and metadata are included. Vercel's production URL is used automatically at build time; set `SITE_URL` to your custom domain if desired.
-- GitHub Actions runs the build and tests on pushes and pull requests. No dependencies or install step required.
+- GitHub Actions runs the build and tests on pushes and pull requests. Run `npm ci` first; the official Stripe SDK and Stripe CLI are locked in package-lock.json.
 
 ## Shared cache for a public audience
 
@@ -92,7 +92,7 @@ The code now supports a shared Upstash Redis database. In your Vercel project, a
 
 With both values configured, an atomic Redis script reuses cached area results and enforces a global 30-second interval between uncached Apple checks across Vercel instances. Rejected Apple requests set a shared cooldown. If configured Redis is unavailable, checks fail closed instead of sending uncontrolled requests to Apple. Existing cached results can still be used in the browser until expiry. Without Redis configured, the app retains the basic per-instance memory cache. Redis integration is covered with mocked REST tests; a real database connection still needs to be verified on your Vercel account.
 
-For local preview: `npm run dev`, then visit http://127.0.0.1:8767. The preview uses the same API module with real Apple requests. Local scripts do not automatically load `.env` files.
+For local preview: `npm run dev`, then visit http://127.0.0.1:8767. The preview loads ignored `.env.local` settings and uses real Apple requests. Tests do not load your local Stripe keys.
 
 ## Plus: $2.99/month, with free owner access
 
@@ -101,26 +101,28 @@ For local preview: `npm run dev`, then visit http://127.0.0.1:8767. The preview 
 - Owner: the Plus interval at no cost, using your private owner code.
 - Apple cooldowns apply to every tier. Faster intervals do not guarantee available stock or a successful purchase.
 
-Checkout is disabled until you configure billing. No Stripe account, product, subscription, or charge was created by this change.
+Checkout is disabled until webhook and durable billing storage are configured. A $2.99/month TEST product/price and test portal have been configured with the supplied test credentials. No Stripe account, subscription, or charge was created.
 
 ### Connect your own Stripe account
 
-1. In Stripe TEST mode, create **Pickup Watch Plus** with a recurring **$2.99 USD / month** price. Copy that price's `price_...` ID.
-2. In Vercel environment variables, set `STRIPE_SECRET_KEY` to your Stripe test secret, `STRIPE_PLUS_PRICE_ID` to that price ID, and `SESSION_SECRET` to a random secret with at least 32 characters. Do not use real secrets in source code or GitHub.
-3. Set `SITE_URL` to your production origin, e.g. `https://your-project.vercel.app` (no path). The existing Vercel production URL variable is used if omitted.
-4. Enable Stripe's customer billing portal, including subscription cancellation, in your Stripe dashboard.
-5. Set **OWNER_ACCESS_KEY** to a DIFFERENT random secret, at least 32 characters. Redeploy. Open **Owner access** below pricing and enter that private code. This grants you 30 days of owner access in that browser, renewable with your code. It does not create a Stripe customer or subscription.
-6. Test checkout in Stripe test mode. The page labels test checkout; test-mode transactions do not charge real money. The automated test suite mocks Stripe and never sends payment requests.
-7. Only when you want to accept real subscriber payments, replace the test secret/price with your own LIVE secret and matching LIVE $2.99 monthly price, then redeploy. No user is subscribed automatically. Visitors must open Stripe checkout and confirm there.
+The test catalog and billing portal are configured. Follow **Required deployment setup** in [STRIPE-INTEGRATION-PLAN.md](STRIPE-INTEGRATION-PLAN.md) to add Vercel's sensitive variables, connect durable Redis billing storage, and register the signed webhook endpoint before testing checkout. Use test mode throughout. Local values are saved only in Git-ignored `.env.local`; do not commit or share that file.
 
-Generate random secrets privately with your password manager or `openssl rand -hex 32`. Use separate values for session signing and owner access. Do not send either secret in chat or commit `.env` files.
+Free owner access does not require a Stripe subscription: enter your private `OWNER_ACCESS_KEY` in the Owner access form. The generated code is in your ignored local settings; do not paste it into chat or source. Set it as a sensitive variable in Vercel for your deployed site.
+
+Rotate the test API secret pasted into chat. Prefer a restricted API key with the minimum permissions for the deployed integration. Use a different random value for `SESSION_SECRET` and `OWNER_ACCESS_KEY`. Run `openssl rand -hex 32` or use a password manager to generate them.
+
+Only switch to separate live keys, product/price, portal and webhook resources after account-level testing, sign-in/recovery, and tax assessment. No one is subscribed automatically; visitors must explicitly confirm a subscription on Stripe.
 
 ### What is enforced
 
-`/api/availability` verifies an HttpOnly signed cookie on the server. Client query parameters and localStorage cannot grant Plus. Subscriber access is checked against the current Stripe subscription on each protected request; canceled/inactive or wrong-price subscriptions lose Plus. Price amount, currency and monthly interval are verified before creating checkout, and activation requires a completed paid checkout tied to the browser's signed checkout nonce. Billing changes stay on Stripe's portal. No webhook is required for this on-request verification model.
+`/api/availability` verifies an HttpOnly signed cookie on the server. Client query parameters and localStorage cannot grant Plus. Subscriber access is checked against durable, webhook-maintained subscription records; canceled/inactive, wrong-price or risk-held subscriptions lose Plus. Price amount, currency and monthly interval are verified before creating checkout, and activation requires a completed paid checkout tied to the browser's signed checkout nonce. Billing changes stay on Stripe's portal. Verified webhooks and durable Redis billing storage are now required before subscriber checkout can be enabled. See STRIPE-INTEGRATION-PLAN.md for setup and the required events.
 
 Free and Plus inventory caches are separate, so a paid visitor does not receive a 15-minute cache entry while being promised two-minute checks. The shared global Apple throttle/cooldowns remain in effect. Configure Redis as described above before a public launch.
 
 ### Current billing limits
 
 Access is attached to the browser that completes checkout, not a full cross-device account. Clearing cookies or using a different device loses access until it is restored manually; implement account-based sign-in/restoration before promoting recurring billing widely. Stripe's emailed receipt/customer portal can still be used to manage or cancel the subscription. The 365-day subscriber cookie also expires; account-based restoration is a future improvement. The owner code remains a free way for you to use the tool. Billing integration has been tested with mocked Stripe responses; real test-mode checkout, portal configuration and taxes still need verification in your own Stripe account before accepting real payments.
+
+## Stripe integration review
+
+See [STRIPE-INTEGRATION-PLAN.md](STRIPE-INTEGRATION-PLAN.md) for the tailored Payments/Billing/Invoicing plan, completed changes, webhook/Redis setup, and remaining account-recovery requirements. Stripe MCP registration is separate from application billing credentials. The official skills fallback is installed under `.agents/skills/`.

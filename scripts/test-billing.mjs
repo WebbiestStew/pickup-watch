@@ -1,6 +1,8 @@
 import assert from 'node:assert/strict';
 import {billing,getAccess,sign,verify} from '../server/billing.js';
 import availability from '../api/availability.js';
+import {stripeWebhook} from '../server/stripe-webhook.js';
+import {stripeClient} from '../server/stripe-client.js';
 const origin='https://app.example.test';
 const request=(action,options={})=>new Request(origin+'/api/billing?action='+action,{...options,headers:{origin,...options.headers}});
 const post=(action,body={},cookie='')=>request(action,{method:'POST',headers:{'content-type':'application/json',cookie},body:JSON.stringify(body)});
@@ -29,14 +31,21 @@ response=await availability.fetch(new Request(origin+'/api/availability?zip=7700
 assert.equal(response.status,200);const fast=await response.json();assert.equal(fast.intervalSeconds,120);assert.equal(fast.nextCheckAt-fast.checkedAt,120000);Date.now=realNow;
 assert.equal(appleCalls,2);
 process.env.STRIPE_SECRET_KEY='sk_test_not_a_real_key';process.env.STRIPE_PLUS_PRICE_ID='price_test';
+process.env.STRIPE_WEBHOOK_SECRET='whsec_mock_only';
+process.env.UPSTASH_REDIS_REST_URL='https://redis.example.test';process.env.UPSTASH_REDIS_REST_TOKEN='mock-only';
+const records=new Map();
 let amount=299,subscriptionStatus='active',nonce;
 const stripeRequests=[];
 globalThis.fetch=async(url,options={})=>{
+ if(String(url)==='https://redis.example.test'){const command=JSON.parse(options.body);if(command[0]==='GET')return Response.json({result:records.get(command[1])||null});if(command[0]==='SET'){records.set(command[1],command[2]);return Response.json({result:'OK'});}throw new Error('Unexpected Redis command');}
  assert(String(url).startsWith('https://api.stripe.com/v1/'));stripeRequests.push(String(url));
  if(String(url).includes('/prices/'))return Response.json({id:'price_test',unit_amount:amount,currency:'usd',active:true,recurring:{interval:'month',interval_count:1}});
- if(String(url).endsWith('/checkout/sessions')){nonce=new URLSearchParams(options.body).get('client_reference_id');return Response.json({url:'https://checkout.stripe.com/c/test'});}
+ if(String(url).endsWith('/checkout/sessions')){const params=new URLSearchParams(options.body);nonce=params.get('client_reference_id');assert.equal(params.get('subscription_data[billing_mode][type]'),'flexible');assert.match(params.get('integration_identifier'),/^pickup_watch_[a-z]{8}$/);assert(!params.has('payment_method_types[0]'));return Response.json({url:'https://checkout.stripe.com/c/test'});}
  if(String(url).includes('/checkout/sessions/'))return Response.json({mode:'subscription',status:'complete',payment_status:'paid',client_reference_id:nonce,customer:'cus_test',subscription:{id:'sub_test',status:subscriptionStatus,items:{data:[{price:{id:'price_test'}}]}}});
  if(String(url).includes('/subscriptions/'))return Response.json({id:'sub_test',status:subscriptionStatus,customer:'cus_test',items:{data:[{price:{id:'price_test'}}]}});
+ if(String(url).includes('/invoice_payments'))return Response.json({data:[{id:'inpay_test',invoice:'in_test'}],has_more:false});
+ if(String(url).includes('/invoices/'))return Response.json({id:'in_test',parent:{type:'subscription_details',subscription_details:{subscription:'sub_test'}}});
+ if(String(url).includes('/invoices?'))return Response.json({data:[{id:'in_test',number:'TEST-001',status:'paid',currency:'usd',amount_paid:299,amount_due:0,hosted_invoice_url:'https://invoice.stripe.com/test',invoice_pdf:'https://invoice.stripe.com/test.pdf'}]});
  if(String(url).endsWith('/billing_portal/sessions'))return Response.json({url:'https://billing.stripe.com/p/test'});
  throw new Error('Unexpected Stripe call');
 };
@@ -45,11 +54,33 @@ const checkout=await billing(post('checkout'));assert.equal(checkout.status,200)
 const pendingCookie=checkout.headers.get('set-cookie').split(';')[0];
 assert((await checkout.json()).url.startsWith('https://checkout.stripe.com/'));
 assert.equal((await billing(new Request(origin+'/api/billing?action=complete&session_id=cs_test_example'))).status,400);
-const complete=await billing(new Request(origin+'/api/billing?action=complete&session_id=cs_test_example',{headers:{cookie:pendingCookie}}));assert.equal(complete.status,303);
+const checkoutReturn=()=>billing(new Request(origin+'/api/billing?action=complete&session_id=cs_test_example',{headers:{cookie:pendingCookie}}));
+const waiting=await checkoutReturn();assert.equal(waiting.status,303);assert(waiting.headers.get('location').includes('billing=pending'));assert.equal(waiting.headers.get('set-cookie'),null);
+async function webhook(type,object,eventId='evt_'+type.replaceAll('.','_')){
+ const payload=JSON.stringify({id:eventId,object:'event',api_version:'2026-09-30.endive',created:Math.floor(Date.now()/1000),livemode:false,type,data:{object}});
+ const signature=stripeClient().webhooks.generateTestHeaderString({payload,secret:process.env.STRIPE_WEBHOOK_SECRET});
+ return stripeWebhook(new Request(origin+'/api/stripe-webhook',{method:'POST',headers:{'stripe-signature':signature},body:payload}));
+}
+const paidSession={id:'cs_test_example',mode:'subscription',payment_status:'paid',subscription:'sub_test'};
+assert.equal((await stripeWebhook(new Request(origin+'/api/stripe-webhook',{method:'POST',headers:{'stripe-signature':'invalid'},body:'{}'}))).status,400);
+assert.equal((await webhook('checkout.session.completed',{...paidSession,payment_status:'unpaid'},'evt_unpaid')).status,200);
+assert(!records.has('pickup:billing:v1:checkout:cs_test_example'));
+assert.equal((await webhook('checkout.session.async_payment_succeeded',paidSession)).status,200);
+const duplicate=await webhook('checkout.session.async_payment_succeeded',paidSession);assert.equal((await duplicate.json()).duplicate,true);
+const complete=await checkoutReturn();assert.equal(complete.status,303);
 const cookie=complete.headers.getSetCookie().find(value=>value.startsWith('pickup_plus=')).split(';')[0];
 assert.equal((await getAccess(new Request(origin,{headers:{cookie}}))).tier,'plus');
 assert.equal((await billing(post('checkout',{},cookie))).status,409);
 assert.equal((await billing(post('portal',{},cookie))).status,200);
-subscriptionStatus='canceled';assert.equal((await getAccess(new Request(origin,{headers:{cookie}}))).paid,false);
-assert.equal((await billing(post('portal',{},cookie))).status,403);
-console.log('Passed billing tests: disabled checkout, signed/expired/forged sessions, CSRF, free owner access, server-enforced 15m/2m intervals, price validation, verified checkout, cancellation, portal, duplicate-payment protection. All Stripe calls mocked; no charge was made.');
+assert.equal((await billing(request('invoices',{headers:{cookie}}))).status,200);
+subscriptionStatus='past_due';await webhook('invoice.payment_failed',{id:'in_test',parent:{subscription_details:{subscription:'sub_test'}},status:'open'});
+assert.equal((await getAccess(new Request(origin,{headers:{cookie}}))).paid,false);
+assert.equal((await billing(post('portal',{},cookie))).status,200,'Past-due customers can still manage billing');
+subscriptionStatus='active';await webhook('invoice.paid',{id:'in_test',parent:{subscription_details:{subscription:'sub_test'}},status:'paid'});
+assert.equal((await getAccess(new Request(origin,{headers:{cookie}}))).paid,true);
+await webhook('charge.refunded',{id:'ch_test',payment_intent:'pi_test',refunded:true});
+assert.equal((await getAccess(new Request(origin,{headers:{cookie}}))).paid,false,'Full refunds place a durable review hold');
+subscriptionStatus='canceled';await webhook('customer.subscription.deleted',{id:'sub_test'});
+assert.equal((await getAccess(new Request(origin,{headers:{cookie}}))).paid,false);
+assert.equal((await billing(post('portal',{},cookie))).status,200,'Canceled customers retain invoice and billing access');
+console.log('Passed billing tests: signed access, owner access, tier intervals, SDK checkout price validation, pending-until-webhook fulfillment, signed webhooks, replay handling, invoice access, payment failure/recovery, refunds, cancellation and portal access. All payments mocked; no charges.');
