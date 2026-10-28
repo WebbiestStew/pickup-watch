@@ -8,16 +8,13 @@ const shared = new URLSearchParams(location.search);
 let model = MODELS.find(m => m.token === (shared.get('model') || preferences.token)) || MODELS.find(m => m.token === '7.6-inch-display-512gb-night-sky-verizon');
 let observations = new Map(), areaCache = new Map();
 try {
-  const saved = JSON.parse(sessionStorage.getItem('pickup-watch-results-v2') || '{}');
+  const saved = JSON.parse(sessionStorage.getItem('pickup-watch-texas-v3') || '{}');
   observations = new Map((saved.observations || []).filter(([, value]) => value.expires > Date.now()));
   areaCache = new Map((saved.areas || []).filter(([, value]) => value.nextCheckAt > Date.now()));
 } catch {}
-let plan = {tier:'free',paid:false,intervalSeconds:900,checkoutEnabled:false};
 let nextCheck = 0, cycleStart = Date.now(), cooldown = false, busy = false, lastZip = '', lastDisplay = '', limit = 12, renderKey = '', lastMode = '';
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-const stateOptions = [...new Map(STORES.map(store => [store.state, store.stateName])).entries()].sort((a,b) => a[1].localeCompare(b[1]));
-for (const [code, name] of stateOptions) { const option = document.createElement('option'); option.value = code; option.textContent = name; $('state').append(option); }
-$('state').value = shared.get('state') || preferences.state || '';
+$('state').value = 'TX';
 $('model-storage').value = model.storage; $('model-color').value = model.color; $('model-carrier').value = carrier(model);
 const initialZip = shared.get('zip') || preferences.zip || '';
 if (/^\d{5}$/.test(initialZip)) $('zip').value = initialZip;
@@ -57,8 +54,8 @@ function render() {
 }
 function applyResults(data, zip) {
   for (const store of data.stores) observations.set(store.id,{availability:store.availability,checkedAt:data.checkedAt,expires:data.nextCheckAt});
-  areaCache.set((plan.paid?'plus:':'free:')+zip.slice(0,3), data);
-  try { sessionStorage.setItem('pickup-watch-results-v2',JSON.stringify({observations:[...observations],areas:[...areaCache]})); } catch {}
+  areaCache.set('texas:'+zip.slice(0,3), data);
+  try { sessionStorage.setItem('pickup-watch-texas-v3',JSON.stringify({observations:[...observations],areas:[...areaCache]})); } catch {}
   nextCheck=data.nextCheckAt; cycleStart=data.checkedAt; cooldown=false; lastZip=zip;
   if ($('state').value && !data.stores.some(store => store.state === $('state').value)) $('state').value='';
   $('filter').value=''; $('store-search').value=''; limit=12;
@@ -68,8 +65,8 @@ function applyResults(data, zip) {
 }
 async function check(zip) {
   if(busy) return;
-  if(!/^\d{5}$/.test(zip)) { $('feedback').textContent='Enter a five-digit US ZIP code.'; $('zip').focus(); return; }
-  const local = areaCache.get((plan.paid?'plus:':'free:')+zip.slice(0,3));
+  if(!/^(73301|73344|73960|7[5-9]\d{3}|885\d{2})$/.test(zip)) { $('feedback').textContent='Enter a five-digit Texas ZIP code.'; $('zip').focus(); return; }
+  const local = areaCache.get('texas:'+zip.slice(0,3));
   if(local && local.nextCheckAt > Date.now()) { applyResults({...local,cached:true},zip); tick(); return; }
   if(cooldown && Date.now()<nextCheck) { $('feedback').textContent='The next retry is scheduled. Giving Apple a pause helps avoid blocked checks.'; return; }
   busy=true; $('check-area').disabled=true; $('check-area').textContent='Checking…'; $('feedback').textContent='Checking nearby Apple Stores…'; $('status').textContent='● Checking'; $('stores').setAttribute('aria-busy','true'); tick();
@@ -115,7 +112,7 @@ function tick() {
   if(mode!==lastMode) {
     $('dial').classList.toggle('is-checking',busy); $('timer-panel').classList.toggle('is-cooldown',cooldown); $('status').classList.toggle('cooldown',cooldown);
     $('timer-label').textContent=cooldown?'Cooling down · retry in':lastZip?'Next area check in':'Your next stock check';
-    $('time-caption').textContent=busy?'Contacting Apple':cooldown?'Giving Apple a moment':lastZip?(plan.paid?'Plus · 2-minute checks':'Free · 15-minute checks'):'Choose your area';
+    $('time-caption').textContent=busy?'Contacting Apple':cooldown?'Giving Apple a moment':lastZip?'Free · 2-minute checks':'Choose your area';
     $('health').textContent=cooldown?'A retry is scheduled. Current stock is unconfirmed.':lastZip?'Area checks continue while this tab is open.':'Search a ZIP code to check nearby stores.';
     lastMode=mode;
   }
@@ -125,53 +122,3 @@ function tick() {
 }
 updateModel(); tick(); setInterval(tick,1000); setInterval(() => {if(!document.hidden)render();},30000);
 document.addEventListener('visibilitychange',() => {if(!document.hidden){render();tick();}});
-
-async function loadPlan() {
- try {
-  const response=await fetch('/api/billing',{cache:'no-store'});if(!response.ok)throw new Error();
-  const incoming=await response.json(),changed=incoming.paid!==plan.paid;
-  plan=incoming;
-  if(changed){areaCache.clear();observations.clear();renderKey='';if(lastZip)nextCheck=Date.now()+1000;lastMode='';render();}
-  $('plan-nav').textContent=plan.tier==='owner'?'Owner · free':plan.paid?'Plus active':'Plus · $2.99';
-  $('free-plan-label').textContent=plan.paid?'Always available':'Current plan';
-  $('owner-access').hidden=!plan.ownerEnabled;
-  const button=$('upgrade-button');
-  button.disabled=plan.tier==='owner'||(!plan.paid&&!plan.canManage&&!plan.checkoutEnabled);
-  button.textContent=plan.tier==='owner'?'Owner access active · no charge':plan.canManage?'Manage billing & invoices':plan.checkoutEnabled?(plan.testMode?'Try test checkout · $2.99/mo':'Get Plus · $2.99/month'):'Checkout coming soon';
-  $('billing-note').textContent=plan.tier==='owner'?'You have free access to two-minute checks. No subscription is attached.':plan.paid?'Plus is active in this browser. Manage billing or cancel through Stripe.':plan.checkoutEnabled?(plan.testMode?'Stripe test mode. Test payments do not charge real money.':'$2.99 USD billed monthly. Cancel in the billing portal. Payment details are handled by Stripe.'):'Checkout isn’t connected yet. No payments are being accepted.';
-  tick();
- }catch{$('billing-feedback').textContent='Plan status could not be verified. Billing controls are unavailable; free checks remain available.';}
-}
-$('upgrade-button').addEventListener('click',async()=>{
- if(plan.tier==='owner'||(!plan.paid&&!plan.canManage&&!plan.checkoutEnabled))return;
- const button=$('upgrade-button');button.disabled=true;
- $('billing-feedback').textContent=plan.canManage?'Opening secure billing management…':'Opening Stripe checkout. You will confirm the subscription there.';
- try{
-  const response=await fetch('/api/billing?action='+(plan.canManage?'portal':'checkout'),{method:'POST'});const data=await response.json();
-  if(!response.ok||!data.url)throw new Error(data.error||'Could not open billing.');
-  location.assign(data.url);
- }catch(error){$('billing-feedback').textContent=error.message;button.disabled=false;}
-});
-$('owner-form').addEventListener('submit',async event=>{
- event.preventDefault();const code=$('owner-code').value;$('owner-code').value='';
- try{const response=await fetch('/api/billing?action=owner',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({code})});const data=await response.json();if(!response.ok)throw new Error(data.error);$('billing-feedback').textContent='Owner access activated. Two-minute checks, no payment needed.';await loadPlan();}
- catch(error){$('billing-feedback').textContent=error.message||'Could not activate owner access.';}
-});
-const billingReturn=new URLSearchParams(location.search).get('billing');
-if(billingReturn==='success')$('billing-feedback').textContent='Payment verified. Loading your Plus access…';
-if(billingReturn==='cancelled')$('billing-feedback').textContent='Checkout cancelled. You are still on the free plan.';
-loadPlan();
-
-if(billingReturn==='pending'){
- const id=new URLSearchParams(location.search).get('session_id');
- let attempts=0;
- async function activateAfterWebhook(){
-  if(!id||attempts++>20){$('billing-feedback').textContent='Your payment is still processing. Return to this page later; access activates after Stripe confirms payment.';return;}
-  try{const response=await fetch('/api/billing?action=activate&session_id='+encodeURIComponent(id),{cache:'no-store'});const data=await response.json();
-   if(response.ok&&data.ok){history.replaceState(null,'','/?billing=success');$('billing-feedback').textContent='Payment verified by Stripe. Your Plus access is ready.';await loadPlan();return;}
-   if(response.status!==202){$('billing-feedback').textContent=data.error||'Could not activate access. Please try again later.';return;}
-  }catch{}
-  $('billing-feedback').textContent='Waiting for Stripe to confirm your payment…';setTimeout(activateAfterWebhook,2000);
- }
- activateAfterWebhook();
-}

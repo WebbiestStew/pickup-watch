@@ -19,14 +19,14 @@ export async function sharedLookup(region) {
   if(!redisSettings()) return null;
   const now=Date.now();
   const script="local hit=redis.call('GET',KEYS[1]); if hit then return {'cached',hit} end; local gate=redis.call('GET',KEYS[2]); if gate then return {'wait',gate} end; redis.call('SET',KEYS[2],ARGV[1],'EX',30); return {'go'}";
-  const reply=await redisCommand(['EVAL',script,2,'pickup:area:v2:'+region,'pickup:gate:v2',String(now+30000)]);
+  const reply=await redisCommand(['EVAL',script,2,'pickup:area:texas-v3:'+region,'pickup:gate:v2',String(now+30000)]);
   if(reply[0]==='cached') return {state:'cached',data:JSON.parse(reply[1])};
   if(reply[0]==='wait') return {state:'wait',until:Number(reply[1])};
   if(reply[0]!=='go') throw new Error('Invalid shared cache response');
   return {state:'go'};
 }
 async function sharedSave(region,data,seconds) {
-  if(redisSettings()) await redisCommand(['SET','pickup:area:v2:'+region,JSON.stringify(data),'EX',seconds]);
+  if(redisSettings()) await redisCommand(['SET','pickup:area:texas-v3:'+region,JSON.stringify(data),'EX',seconds]);
 }
 async function sharedPause(until) {
   if(redisSettings()) await redisCommand(['SET','pickup:gate:v2',String(until),'EX',Math.max(1,Math.ceil((until-Date.now())/1000))]);
@@ -55,15 +55,15 @@ export function parseAvailability(data) {
     }))};
   });
 }
-async function lookup(zip, request, ctx, paid = false) {
-  const cacheSeconds=paid?120:900;
-  const regionKey=(paid?'plus:':'free:')+zip.slice(0,3);
+async function lookup(zip, request, ctx) {
+  const cacheSeconds=120;
+  const regionKey='texas:'+zip.slice(0,3);
   const distributed=await sharedLookup(regionKey);
   if(distributed?.state==='cached') return json({...distributed.data,cached:true});
   if(distributed?.state==='wait') return json({error:'Another stock check is running or a cooldown is active. Please wait for the countdown.',retryAt:distributed.until},429);
   const cache=safeCache();
   // Group nearby ZIPs so changing a postcode cannot trigger a check per visitor.
-  const key=new Request(new URL('/__cache/availability-v2/'+regionKey,request.url));
+  const key=new Request(new URL('/__cache/availability-texas-v3/'+regionKey,request.url));
   const gateKey=new Request(new URL('/__cache/apple-cooldown-v1',request.url));
   const cached=cache ? await cache.match(key) : null;
   if(cached) return json({...await cached.json(),cached:true});
@@ -87,8 +87,8 @@ async function lookup(zip, request, ctx, paid = false) {
         return {error:'Apple is temporarily rejecting availability requests (HTTP '+response.status+'). Stock is unconfirmed.',retryAt:nextAllowedAt};
       }
       const stores=parseAvailability(await response.json());
-      if(!stores.length) throw new Error('No recognized US stores returned');
-      const result={stores,checkedAt:Date.now(),nextCheckAt:Date.now()+cacheSeconds*1000,intervalSeconds:cacheSeconds,tier:paid?'plus':'free',queriedZip:zip,cached:false};
+      if(!stores.length) throw new Error('No recognized Texas stores returned');
+      const result={stores,checkedAt:Date.now(),nextCheckAt:Date.now()+cacheSeconds*1000,intervalSeconds:cacheSeconds,queriedZip:zip,cached:false};
       await sharedSave(regionKey,result,cacheSeconds);
       if(cache) await cache.put(key,new Response(JSON.stringify(result),{headers:{'cache-control':'public, max-age='+cacheSeconds}}));
       return result;
@@ -108,8 +108,8 @@ export default {
     if(request.method!=='GET') return json({error:'Method not allowed'},405);
     if(url.pathname==='/api/availability') {
       const zip=url.searchParams.get('zip')||'';
-      if(!/^\d{5}$/.test(zip)) return json({error:'Enter a five-digit US ZIP code.'},400);
-      try { return await lookup(zip,request,ctx,env?.paid===true); } catch(error) { console.error('Availability handler failed',String(error)); return json({error:'The inventory service could not complete this check. Please try again after a short pause.',retryAt:Date.now()+300000},503); }
+      if(!/^(73301|73344|73960|7[5-9]\d{3}|885\d{2})$/.test(zip)) return json({error:'Enter a five-digit Texas ZIP code.'},400);
+      try { return await lookup(zip,request,ctx); } catch(error) { console.error('Availability handler failed',String(error)); return json({error:'The inventory service could not complete this check. Please try again after a short pause.',retryAt:Date.now()+300000},503); }
     }
     if(url.pathname==='/api/catalog') return json({models:MODELS,stores:STORES,verifiedAt:'2026-10-27'});
     if(url.pathname==='/healthz') return json({ok:true,stores:STORES.length});
