@@ -1,9 +1,221 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Check iPhone Duo pickup availability across Texas. Choose your color, storage, and carrier, then search Apple Stores near a ZIP code."><title>Pickup Watch · Find iPhone Duo across Texas</title><meta name="theme-color" content="#101215"><meta property="og:type" content="website"><meta property="og:title" content="Pickup Watch — Find your iPhone Duo"><meta property="og:description" content="Your iPhone. Your area. Check pickup availability at 17 Apple Stores across Texas."><meta name="twitter:card" content="summary"><meta name="twitter:title" content="Pickup Watch — Find your iPhone Duo"><meta name="twitter:description" content="Find iPhone Duo pickup stock near you. Free, independent, and built for all 17 Texas Apple Stores."><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="__STYLE_URL__"><script type="module" src="__SCRIPT_URL__"></script></head><body><a class="skip-link" href="#area-form">Skip to stock search</a><main>
-<header><a class="wordmark" href="/"><span class="mark">◈</span>Pickup watch <span class="city">Texas</span></a><div class="header-actions"><span class="status" id="status">● Ready to check</span><button type="button" id="share" class="share-button" aria-label="Copy link with your selected iPhone and area">Share ↗</button></div></header>
-<section class="intro"><div><div class="eyebrow">Less refreshing. More finding.</div><h1>Your next iPhone.<br><span>Closer than you think.</span></h1><div class="subtitle" id="model-label"></div><p class="hero-description">Find iPhone Duo pickup stock near you. <br>Every Texas Apple Store. Completely free.</p><div class="hero-chips"><span>17 Texas stores</span><span>No account needed</span><span>Always your purchase</span></div><a id="product" class="product-link" target="_blank" rel="noopener">View selected configuration at Apple ↗</a></div><div class="timer" id="timer-panel"><div class="timer-label"><span class="live-pip"></span><span id="timer-label">Your next stock check</span></div><div class="dial" id="dial"><svg viewBox="0 0 200 200" aria-hidden="true"><circle class="ring-track" cx="100" cy="100" r="88"/><circle class="ring-ticks" cx="100" cy="100" r="95"/><circle id="ring-progress" class="ring-progress" cx="100" cy="100" r="88" pathLength="100" stroke-dasharray="100"/></svg><div class="dial-center"><div id="countdown" role="timer">Ready</div><div class="time-caption" id="time-caption">Choose your area</div></div></div><p id="health">Search a ZIP code to check nearby stores.</p></div></section>
-<section class="configuration"><div class="config-title"><span class="eyebrow">01 / Pick your iPhone</span><span class="note">Your preferences stay on this device</span></div><form id="model-form"><label for="model-storage">Storage<select id="model-storage"><option value="256gb">256GB</option><option value="512gb" selected>512GB</option><option value="1tb">1TB</option><option value="2tb">2TB</option></select></label><label for="model-color">Color<select id="model-color"><option value="nightsky">Night Sky</option><option value="starwhite">Star White</option></select></label><label for="model-carrier">Carrier<select id="model-carrier"><option value="verizon">Verizon</option><option value="att">AT&amp;T</option><option value="t-mobile">T-Mobile</option><option value="unlocked">Connect later</option></select></label><button id="save-model">Use this iPhone <span>↗</span></button></form><p id="selection-feedback">Choose your storage, finish, and carrier. We’ll match the exact hardware at Apple.</p></section>
-<section class="configuration search-panel"><div class="config-title"><span class="eyebrow">02 / Find it near you</span><span class="note">Stock checks only. No reservations.</span></div><form class="searchbar" id="area-form"><label for="zip">Your ZIP code<input id="zip" type="text" inputmode="numeric" autocomplete="postal-code" maxlength="5" pattern="[0-9]{5}" placeholder="Texas ZIP code" required aria-describedby="feedback"></label><button id="check-area">Find my iPhone ↗</button><label for="state">Region<select id="state"><option value="TX">Texas</option></select></label><label for="filter">Show<select id="filter"><option value="">All statuses</option><option value="available">Available</option><option value="unavailable">Unavailable</option><option value="unknown">Unconfirmed</option></select></label></form><p class="note" id="feedback" role="status">Enter a ZIP to check nearby stock, or browse all Texas stores.</p></section>
-<section class="stats"><div class="stat"><strong>17</strong><span>Texas stores supported</span></div><div class="stat"><strong class="green" id="available">0</strong><span>Available in results</span></div><div class="stat"><strong id="unavailable">0</strong><span>Unavailable in results</span></div><div class="stat"><strong class="amber" id="unknown">17</strong><span>Unconfirmed / stale</span></div></section>
-<div class="toolbar"><h2 id="store-heading">Explore stores</h2><div class="store-search-wrap"><input id="store-search" type="search" placeholder="Search city or store…" aria-label="Search stores by city or name"><span class="note" id="results-count"></span></div></div><div class="grid" id="stores"></div><button id="more" class="loadmore">Show more stores ↓</button><p class="empty" id="empty" hidden>No stores match. Try another Texas city or status.</p>
-<div id="toast" class="toast" role="status" hidden>Link copied. Send it to your people.</div><footer><div class="footer-brand">◈ Pickup watch <span>Independent. Made for the search.</span></div><details class="about"><summary>How checks work &amp; privacy</summary><p class="note">Availability comes from Apple’s public pickup service. Results refresh about every two minutes for everyone; the page updates its display every 30 seconds. Automatic area checks continue while this tab is open. Apple errors trigger a cooldown, and older results become unconfirmed. Texas directory verified October 27, 2026.</p><p class="note">We only check availability. Purchases and reservations happen on Apple’s website. Confirm carrier eligibility and final stock there. Independent project; not affiliated with Apple. Your model preference stays in your browser; your searched ZIP is sent to this service and Apple to find nearby stores. We never ask for an Apple account. The checker is completely free, with no account or payment required.</p></details><p class="note footer-short">Independent project. Not affiliated with Apple. Stock changes quickly; Apple confirms final availability.</p></footer>
-<noscript><p class="note">Enable JavaScript to choose your phone and check live store availability.</p></noscript></main></body></html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Check iPhone Duo pickup availability across Texas. Choose your color, storage, and carrier, then search Apple Stores near a ZIP code."
+    />
+    <title>Pickup Watch · Find iPhone Duo across Texas</title>
+    <meta name="theme-color" content="#101215" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Pickup Watch — Find your iPhone Duo" />
+    <meta
+      property="og:description"
+      content="Your iPhone. Your area. Check pickup availability at 17 Apple Stores across Texas."
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Pickup Watch — Find your iPhone Duo" />
+    <meta
+      name="twitter:description"
+      content="Find iPhone Duo pickup stock near you. Free, independent, and built for all 17 Texas Apple Stores."
+    />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="__STYLE_URL__" />
+    <script type="module" src="__SCRIPT_URL__"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#area-form">Skip to stock search</a>
+    <main>
+      <header>
+        <a class="wordmark" href="/"
+          ><span class="mark">◈</span>Pickup watch
+          <span class="city">Texas</span></a
+        >
+        <div class="header-actions">
+          <span class="status" id="status">● Ready to check</span
+          ><button
+            type="button"
+            id="share"
+            class="share-button"
+            aria-label="Copy link with your selected iPhone and area"
+          >
+            Share ↗
+          </button>
+        </div>
+      </header>
+      <section class="intro">
+        <div>
+          <div class="eyebrow">Texas pickup availability</div>
+          <h1>Find your iPhone.<br /><span>Right here in Texas.</span></h1>
+          <div class="subtitle" id="model-label"></div>
+          <p class="hero-description">
+            Check nearby Apple Stores. Free, with automatic two-minute updates.
+          </p>
+          <a id="product" class="product-link" target="_blank" rel="noopener"
+            >View selected configuration at Apple ↗</a
+          >
+        </div>
+        <div class="timer" id="timer-panel">
+          <div class="timer-label">
+            <span class="live-pip"></span
+            ><span id="timer-label">Your next stock check</span>
+          </div>
+          <div class="dial" id="dial">
+            <svg viewBox="0 0 200 200" aria-hidden="true">
+              <circle class="ring-track" cx="100" cy="100" r="88" />
+              <circle class="ring-ticks" cx="100" cy="100" r="95" />
+              <circle
+                id="ring-progress"
+                class="ring-progress"
+                cx="100"
+                cy="100"
+                r="88"
+                pathLength="100"
+                stroke-dasharray="100"
+              />
+            </svg>
+            <div class="dial-center">
+              <div id="countdown" role="timer">Ready</div>
+              <div class="time-caption" id="time-caption">Choose your area</div>
+            </div>
+          </div>
+          <p id="health">Search a ZIP code to check nearby stores.</p>
+        </div>
+      </section>
+      <section class="configuration">
+        <div class="config-title">
+          <span class="eyebrow">Choose your iPhone</span
+          ><span class="note">Your preferences stay on this device</span>
+        </div>
+        <form id="model-form">
+          <label for="model-storage"
+            >Storage<select id="model-storage">
+              <option value="256gb">256GB</option>
+              <option value="512gb" selected>512GB</option>
+              <option value="1tb">1TB</option>
+              <option value="2tb">2TB</option>
+            </select></label
+          ><label for="model-color"
+            >Color<select id="model-color">
+              <option value="nightsky">Night Sky</option>
+              <option value="starwhite">Star White</option>
+            </select></label
+          ><label for="model-carrier"
+            >Carrier<select id="model-carrier">
+              <option value="verizon">Verizon</option>
+              <option value="att">AT&amp;T</option>
+              <option value="t-mobile">T-Mobile</option>
+              <option value="unlocked">Connect later</option>
+            </select></label
+          ><button id="save-model">Use this iPhone <span>↗</span></button>
+        </form>
+        <p id="selection-feedback">
+          Choose your storage, finish, and carrier. We’ll match the exact
+          hardware at Apple.
+        </p>
+      </section>
+      <section class="configuration search-panel">
+        <div class="config-title">
+          <span class="eyebrow">Find it nearby</span
+          ><span class="note">Stock checks only. No reservations.</span>
+        </div>
+        <form class="searchbar" id="area-form">
+          <label for="zip"
+            >Texas ZIP code<input
+              id="zip"
+              type="text"
+              inputmode="numeric"
+              autocomplete="postal-code"
+              maxlength="5"
+              pattern="[0-9]{5}"
+              placeholder="Texas ZIP code"
+              required
+              aria-describedby="feedback" /></label
+          ><button id="check-area">Find my iPhone ↗</button
+          ><label for="filter"
+            >Show<select id="filter">
+              <option value="">All statuses</option>
+              <option value="available">Available</option>
+              <option value="unavailable">Unavailable</option>
+              <option value="unknown">Unconfirmed</option>
+            </select></label
+          >
+        </form>
+        <p class="note" id="feedback" role="status">
+          Enter a ZIP to check nearby stock, or browse all Texas stores.
+        </p>
+      </section>
+      <section class="stats">
+        <div class="stat">
+          <strong>17</strong><span>Texas stores supported</span>
+        </div>
+        <div class="stat">
+          <strong class="green" id="available">0</strong
+          ><span>Available in results</span>
+        </div>
+        <div class="stat">
+          <strong id="unavailable">0</strong><span>Unavailable in results</span>
+        </div>
+        <div class="stat">
+          <strong class="amber" id="unknown">17</strong
+          ><span>Unconfirmed / stale</span>
+        </div>
+      </section>
+      <div class="toolbar">
+        <h2 id="store-heading">Explore stores</h2>
+        <div class="store-search-wrap">
+          <input
+            id="store-search"
+            type="search"
+            placeholder="Search city or store…"
+            aria-label="Search stores by city or name"
+          /><span class="note" id="results-count"></span>
+        </div>
+      </div>
+      <div class="grid" id="stores"></div>
+      <button id="more" class="loadmore">Show more stores ↓</button>
+      <p class="empty" id="empty" hidden>
+        No stores match. Try another Texas city or status.
+      </p>
+      <div id="toast" class="toast" role="status" hidden>
+        Link copied. Send it to your people.
+      </div>
+      <footer>
+        <div class="footer-brand">
+          ◈ Pickup watch <span>Independent. Made for the search.</span>
+        </div>
+        <details class="about">
+          <summary>How checks work &amp; privacy</summary>
+          <p class="note">
+            Availability comes from Apple’s public pickup service. Results
+            refresh about every two minutes for everyone; the page updates its
+            display every 30 seconds. Automatic area checks continue while this
+            tab is open. Apple errors trigger a cooldown, and older results
+            become unconfirmed. Texas directory verified October 27, 2026.
+          </p>
+          <p class="note">
+            We only check availability. Purchases and reservations happen on
+            Apple’s website. Confirm carrier eligibility and final stock there.
+            Independent project; not affiliated with Apple. Your model
+            preference stays in your browser; your searched ZIP is sent to this
+            service and Apple to find nearby stores. We never ask for an Apple
+            account. The checker is completely free, with no account or payment
+            required.
+          </p>
+        </details>
+        <p class="note footer-short">
+          Independent project. Not affiliated with Apple. Stock changes quickly;
+          Apple confirms final availability.
+        </p>
+      </footer>
+      <noscript
+        ><p class="note">
+          Enable JavaScript to choose your phone and check live store
+          availability.
+        </p></noscript
+      >
+    </main>
+  </body>
+</html>
