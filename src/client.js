@@ -292,8 +292,7 @@ $("store-search").addEventListener("input", () => {
     render();
   }, 120);
 });
-$("model-form").addEventListener("submit", (event) => {
-  event.preventDefault();
+function applyModelSelection() {
   model =
     MODELS.find(
       (item) =>
@@ -304,6 +303,11 @@ $("model-form").addEventListener("submit", (event) => {
   updateModel();
   $("selection-feedback").textContent =
     "Watching " + $("model-label").textContent + ". Saved on this device.";
+}
+$("model-form").addEventListener("change", applyModelSelection);
+$("model-form").addEventListener("submit", (event) => {
+  event.preventDefault();
+  applyModelSelection();
 });
 $("stores").addEventListener("click", (event) => {
   const button = event.target.closest("button[data-zip]");
