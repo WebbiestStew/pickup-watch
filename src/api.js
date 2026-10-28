@@ -2,9 +2,10 @@
 // Credentials are read only by the server; never assembled into browser assets.
 const redisSettings = () => {
   const env = typeof process === 'undefined' ? {} : process.env;
-  if (!env.UPSTASH_REDIS_REST_URL && !env.UPSTASH_REDIS_REST_TOKEN) return null;
-  if (!env.UPSTASH_REDIS_REST_URL || !env.UPSTASH_REDIS_REST_TOKEN) throw new Error('Incomplete shared cache configuration');
-  return {url:env.UPSTASH_REDIS_REST_URL,token:env.UPSTASH_REDIS_REST_TOKEN};
+  const url=env.UPSTASH_REDIS_REST_URL||env.KV_REST_API_URL,token=env.UPSTASH_REDIS_REST_TOKEN||env.KV_REST_API_TOKEN;
+  if (!url && !token) return null;
+  if (!url || !token) throw new Error('Incomplete shared cache configuration');
+  return {url,token};
 };
 async function redisCommand(command) {
   const settings=redisSettings();

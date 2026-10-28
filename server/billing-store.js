@@ -1,7 +1,9 @@
-export function billingStoreReady(){return Boolean(process.env.UPSTASH_REDIS_REST_URL&&process.env.UPSTASH_REDIS_REST_TOKEN);}
+function settings(){return {url:process.env.UPSTASH_REDIS_REST_URL||process.env.KV_REST_API_URL,token:process.env.UPSTASH_REDIS_REST_TOKEN||process.env.KV_REST_API_TOKEN};}
+export function billingStoreReady(){const {url,token}=settings();return Boolean(url&&token);}
 async function command(args){
  if(!billingStoreReady())throw new Error('Durable billing storage is required');
- const response=await fetch(process.env.UPSTASH_REDIS_REST_URL,{method:'POST',headers:{Authorization:'Bearer '+process.env.UPSTASH_REDIS_REST_TOKEN,'Content-Type':'application/json'},body:JSON.stringify(args),signal:AbortSignal.timeout(4000)});
+ const {url,token}=settings();
+ const response=await fetch(url,{method:'POST',headers:{Authorization:'Bearer '+token,'Content-Type':'application/json'},body:JSON.stringify(args),signal:AbortSignal.timeout(4000)});
  if(!response.ok)throw new Error('Billing store unavailable');
  const body=await response.json();if(body.error)throw new Error('Billing storage command failed');return body.result;
 }
