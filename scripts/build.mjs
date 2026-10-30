@@ -2,11 +2,16 @@ import fs from "node:fs";
 import crypto from "node:crypto";
 const read = (name) =>
   fs.readFileSync(new URL("../src/" + name, import.meta.url), "utf8");
-const models = JSON.parse(read("models.json")),
+const products = JSON.parse(read("products.json")),
   stores = JSON.parse(read("stores.json"));
 const data =
-  "const MODELS=" +
-  JSON.stringify(models) +
+  "const PRODUCTS=" +
+  JSON.stringify(
+    products.map(({ variants, ...product }) => ({
+      ...product,
+      configurations: variants.length,
+    })),
+  ) +
   ";const STORES=" +
   JSON.stringify(stores) +
   ";\n";
@@ -38,8 +43,9 @@ fs.writeFileSync(new URL(styleUrl.slice(1), publicDir), css);
 fs.writeFileSync(new URL(scriptUrl.slice(1), publicDir), client);
 fs.writeFileSync(
   new URL("../lib/inventory.js", import.meta.url),
-  data +
-    'const PARTS=[...new Set(MODELS.map(m=>m.part))];\nconst PAGE="";\n' +
+  "const STORES=" +
+    JSON.stringify(stores) +
+    ';\nconst DEFAULT_PART="MK1H4LL/A";\nconst PAGE="";\n' +
     read("api.js"),
 );
 console.log(

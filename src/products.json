@@ -1,0 +1,3777 @@
+[
+  {
+    "id": "buy-mac/macbook-pro-proled-xdr",
+    "name": "MacBook Pro with PROLED XDR Display",
+    "category": "Mac",
+    "url": "https://www.apple.com/shop/buy-mac/macbook-pro-proled-xdr",
+    "variants": [
+      {
+        "id": "MJ314LL/A",
+        "part": "MJ314LL/A",
+        "label": "Space Black · M5 Max chip · 18‑core CPU, 32‑core GPU · Standard glass · 16-inch Footnote 1 · MJ314LL/A",
+        "url": "https://www.apple.com/shop/buy-mac/macbook-pro-proled-xdr",
+        "note": "Standard retail configuration. Confirm memory, storage, and keyboard at Apple."
+      },
+      {
+        "id": "MJ2G4LL/A",
+        "part": "MJ2G4LL/A",
+        "label": "Silver · M5 Pro chip · 15‑core CPU, 16‑core GPU · Standard glass · 14-inch Footnote 1 · MJ2G4LL/A",
+        "url": "https://www.apple.com/shop/buy-mac/macbook-pro-proled-xdr",
+        "note": "Standard retail configuration. Confirm memory, storage, and keyboard at Apple."
+      },
+      {
+        "id": "MJ2M4LL/A",
+        "part": "MJ2M4LL/A",
+        "label": "Space Black · M5 Max chip · 18‑core CPU, 32‑core GPU · Standard glass · 14-inch Footnote 1 · MJ2M4LL/A",
+        "url": "https://www.apple.com/shop/buy-mac/macbook-pro-proled-xdr",
+        "note": "Standard retail configuration. Confirm memory, storage, and keyboard at Apple."
+      },
+      {
+        "id": "MJ2K4LL/A",
+        "part": "MJ2K4LL/A",
+        "label": "Space Black · M5 Pro chip · 15‑core CPU, 16‑core GPU · Standard glass · 14-inch Footnote 1 · MJ2K4LL/A",
+        "url": "https://www.apple.com/shop/buy-mac/macbook-pro-proled-xdr",
+        "note": "Standard retail configuration. Confirm memory, storage, and keyboard at Apple."
+      },
+      {
+        "id": "MJ334LL/A",
+        "part": "MJ334LL/A",
+        "label": "Space Black · M5 Max chip · 18‑core CPU, 40‑core GPU · Standard glass · 16-inch Footnote 1 · MJ334LL/A",
+        "url": "https://www.apple.com/shop/buy-mac/macbook-pro-proled-xdr",
+        "note": "Standard retail configuration. Confirm memory, storage, and keyboard at Apple."
+      },
+      {
+        "id": "MJ304LL/A",
+        "part": "MJ304LL/A",
+        "label": "Space Black · M5 Pro chip · 18‑core CPU, 20‑core GPU · Standard glass · 16-inch Footnote 1 · MJ304LL/A",
+        "url": "https://www.apple.com/shop/buy-mac/macbook-pro-proled-xdr",
+        "note": "Standard retail configuration. Confirm memory, storage, and keyboard at Apple."
+      },
+      {
+        "id": "MJ2Y4LL/A",
+        "part": "MJ2Y4LL/A",
+        "label": "Silver · M5 Max chip · 18‑core CPU, 40‑core GPU · Standard glass · 16-inch Footnote 1 · MJ2Y4LL/A",
+        "url": "https://www.apple.com/shop/buy-mac/macbook-pro-proled-xdr",
+        "note": "Standard retail configuration. Confirm memory, storage, and keyboard at Apple."
+      },
+      {
+        "id": "MJ2J4LL/A",
+        "part": "MJ2J4LL/A",
+        "label": "Silver · M5 Max chip · 18‑core CPU, 32‑core GPU · Standard glass · 14-inch Footnote 1 · MJ2J4LL/A",
+        "url": "https://www.apple.com/shop/buy-mac/macbook-pro-proled-xdr",
+        "note": "Standard retail configuration. Confirm memory, storage, and keyboard at Apple."
+      },
+      {
+        "id": "MJ2W4LL/A",
+        "part": "MJ2W4LL/A",
+        "label": "Silver · M5 Pro chip · 18‑core CPU, 20‑core GPU · Standard glass · 16-inch Footnote 1 · MJ2W4LL/A",
+        "url": "https://www.apple.com/shop/buy-mac/macbook-pro-proled-xdr",
+        "note": "Standard retail configuration. Confirm memory, storage, and keyboard at Apple."
+      },
+      {
+        "id": "MJ2X4LL/A",
+        "part": "MJ2X4LL/A",
+        "label": "Silver · M5 Max chip · 18‑core CPU, 32‑core GPU · Standard glass · 16-inch Footnote 1 · MJ2X4LL/A",
+        "url": "https://www.apple.com/shop/buy-mac/macbook-pro-proled-xdr",
+        "note": "Standard retail configuration. Confirm memory, storage, and keyboard at Apple."
+      },
+      {
+        "id": "MJ9X4LL/A",
+        "part": "MJ9X4LL/A",
+        "label": "Space Black · M5 Pro chip · 15‑core CPU, 16‑core GPU · Nano-texture glass · 14-inch Footnote 1 · MJ9X4LL/A",
+        "url": "https://www.apple.com/shop/buy-mac/macbook-pro-proled-xdr",
+        "note": "Standard retail configuration. Confirm memory, storage, and keyboard at Apple."
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "buy-mac/macbook-pro",
+    "name": "MacBook Pro with Liquid Retina XDR",
+    "category": "Mac",
+    "url": "https://www.apple.com/shop/buy-mac/macbook-pro",
+    "variants": [
+      {
+        "id": "MGDQ4LL/A",
+        "part": "MGDQ4LL/A",
+        "label": "Silver · M5 Max chip · 18‑core CPU, 32‑core GPU · Standard display · 14-inch Footnote 1 · MGDQ4LL/A",
+        "url": "https://www.apple.com/shop/buy-mac/macbook-pro",
+        "note": "Standard retail configuration. Confirm memory, storage, and keyboard at Apple."
+      },
+      {
+        "id": "MJ2C4LL/A",
+        "part": "MJ2C4LL/A",
+        "label": "Space Black · M6 chip · m6-12-12 · Nano-texture display · 14-inch Footnote 1 · MJ2C4LL/A",
+        "url": "https://www.apple.com/shop/buy-mac/macbook-pro",
+        "note": "Standard retail configuration. Confirm memory, storage, and keyboard at Apple."
+      },
+      {
+        "id": "MGDR4LL/A",
+        "part": "MGDR4LL/A",
+        "label": "Space Black · M5 Pro chip · 15‑core CPU, 16‑core GPU · Standard display · 14-inch Footnote 1 · MGDR4LL/A",
+        "url": "https://www.apple.com/shop/buy-mac/macbook-pro",
+        "note": "Standard retail configuration. Confirm memory, storage, and keyboard at Apple."
+      },
+      {
+        "id": "MGE44LL/A",
+        "part": "MGE44LL/A",
+        "label": "Silver · M5 Pro chip · 18‑core CPU, 20‑core GPU · Standard display · 16-inch Footnote 1 · MGE44LL/A",
+        "url": "https://www.apple.com/shop/buy-mac/macbook-pro",
+        "note": "Standard retail configuration. Confirm memory, storage, and keyboard at Apple."
+      },
+      {
+        "id": "MHWW4LL/A",
+        "part": "MHWW4LL/A",
+        "label": "Silver · M6 chip · m6-12-12 · Standard display · 14-inch Footnote 1 · MHWW4LL/A",
+        "url": "https://www.apple.com/shop/buy-mac/macbook-pro",
+        "note": "Standard retail configuration. Confirm memory, storage, and keyboard at Apple."
+      },
+      {
+        "id": "MGED4LL/A",
+        "part": "MGED4LL/A",
+        "label": "Space Black · M5 Max chip · 18‑core CPU, 32‑core GPU · Standard display · 16-inch Footnote 1 · MGED4LL/A",
+        "url": "https://www.apple.com/shop/buy-mac/macbook-pro",
+        "note": "Standard retail configuration. Confirm memory, storage, and keyboard at Apple."
+      },
+      {
+        "id": "MGDN4LL/A",
+        "part": "MGDN4LL/A",
+        "label": "Silver · M5 Pro chip · 15‑core CPU, 16‑core GPU · Standard display · 14-inch Footnote 1 · MGDN4LL/A",
+        "url": "https://www.apple.com/shop/buy-mac/macbook-pro",
+        "note": "Standard retail configuration. Confirm memory, storage, and keyboard at Apple."
+      },
+      {
+        "id": "MGE74LL/A",
+        "part": "MGE74LL/A",
+        "label": "Silver · M5 Max chip · 18‑core CPU, 32‑core GPU · Standard display · 16-inch Footnote 1 · MGE74LL/A",
+        "url": "https://www.apple.com/shop/buy-mac/macbook-pro",
+        "note": "Standard retail configuration. Confirm memory, storage, and keyboard at Apple."
+      },
+      {
+        "id": "MHWT4LL/A",
+        "part": "MHWT4LL/A",
+        "label": "Space Black · M6 chip · m6-12-12 · Standard display · 14-inch Footnote 1 · MHWT4LL/A",
+        "url": "https://www.apple.com/shop/buy-mac/macbook-pro",
+        "note": "Standard retail configuration. Confirm memory, storage, and keyboard at Apple."
+      },
+      {
+        "id": "MGEA4LL/A",
+        "part": "MGEA4LL/A",
+        "label": "Space Black · M5 Pro chip · 18‑core CPU, 20‑core GPU · Standard display · 16-inch Footnote 1 · MGEA4LL/A",
+        "url": "https://www.apple.com/shop/buy-mac/macbook-pro",
+        "note": "Standard retail configuration. Confirm memory, storage, and keyboard at Apple."
+      },
+      {
+        "id": "MGDU4LL/A",
+        "part": "MGDU4LL/A",
+        "label": "Space Black · M5 Max chip · 18‑core CPU, 32‑core GPU · Standard display · 14-inch Footnote 1 · MGDU4LL/A",
+        "url": "https://www.apple.com/shop/buy-mac/macbook-pro",
+        "note": "Standard retail configuration. Confirm memory, storage, and keyboard at Apple."
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "buy-mac/imac",
+    "name": "iMac",
+    "category": "Mac",
+    "url": "https://www.apple.com/shop/buy-mac/imac",
+    "variants": [
+      {
+        "id": "MH1P4LL/A",
+        "part": "MH1P4LL/A",
+        "label": "Pink · M6 chip with four Thunderbolt ports · MH1P4LL/A",
+        "url": "https://www.apple.com/shop/buy-mac/imac",
+        "note": "Standard retail configuration. Confirm memory, storage, and keyboard at Apple."
+      },
+      {
+        "id": "MH1W4LL/A",
+        "part": "MH1W4LL/A",
+        "label": "Purple · M6 chip with four Thunderbolt ports · MH1W4LL/A",
+        "url": "https://www.apple.com/shop/buy-mac/imac",
+        "note": "Standard retail configuration. Confirm memory, storage, and keyboard at Apple."
+      },
+      {
+        "id": "MH0A4LL/A",
+        "part": "MH0A4LL/A",
+        "label": "Pink · M6 chip with two Thunderbolt ports · MH0A4LL/A",
+        "url": "https://www.apple.com/shop/buy-mac/imac",
+        "note": "Standard retail configuration. Confirm memory, storage, and keyboard at Apple."
+      },
+      {
+        "id": "MH084LL/A",
+        "part": "MH084LL/A",
+        "label": "Green · M6 chip with two Thunderbolt ports · MH084LL/A",
+        "url": "https://www.apple.com/shop/buy-mac/imac",
+        "note": "Standard retail configuration. Confirm memory, storage, and keyboard at Apple."
+      },
+      {
+        "id": "MH1H4LL/A",
+        "part": "MH1H4LL/A",
+        "label": "Blue · M6 chip with four Thunderbolt ports · MH1H4LL/A",
+        "url": "https://www.apple.com/shop/buy-mac/imac",
+        "note": "Standard retail configuration. Confirm memory, storage, and keyboard at Apple."
+      },
+      {
+        "id": "MH1D4LL/A",
+        "part": "MH1D4LL/A",
+        "label": "Green · M6 chip with four Thunderbolt ports · MH1D4LL/A",
+        "url": "https://www.apple.com/shop/buy-mac/imac",
+        "note": "Standard retail configuration. Confirm memory, storage, and keyboard at Apple."
+      },
+      {
+        "id": "MH064LL/A",
+        "part": "MH064LL/A",
+        "label": "Silver · M6 chip with two Thunderbolt ports · MH064LL/A",
+        "url": "https://www.apple.com/shop/buy-mac/imac",
+        "note": "Standard retail configuration. Confirm memory, storage, and keyboard at Apple."
+      },
+      {
+        "id": "MH174LL/A",
+        "part": "MH174LL/A",
+        "label": "Yellow · M6 chip with four Thunderbolt ports · MH174LL/A",
+        "url": "https://www.apple.com/shop/buy-mac/imac",
+        "note": "Standard retail configuration. Confirm memory, storage, and keyboard at Apple."
+      },
+      {
+        "id": "MH114LL/A",
+        "part": "MH114LL/A",
+        "label": "Silver · M6 chip with four Thunderbolt ports · MH114LL/A",
+        "url": "https://www.apple.com/shop/buy-mac/imac",
+        "note": "Standard retail configuration. Confirm memory, storage, and keyboard at Apple."
+      },
+      {
+        "id": "MH094LL/A",
+        "part": "MH094LL/A",
+        "label": "Blue · M6 chip with two Thunderbolt ports · MH094LL/A",
+        "url": "https://www.apple.com/shop/buy-mac/imac",
+        "note": "Standard retail configuration. Confirm memory, storage, and keyboard at Apple."
+      },
+      {
+        "id": "MH214LL/A",
+        "part": "MH214LL/A",
+        "label": "Orange · M6 chip with four Thunderbolt ports · MH214LL/A",
+        "url": "https://www.apple.com/shop/buy-mac/imac",
+        "note": "Standard retail configuration. Confirm memory, storage, and keyboard at Apple."
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "buy-ipad/ipad-mini",
+    "name": "iPad mini",
+    "category": "iPad",
+    "url": "https://www.apple.com/shop/buy-ipad/ipad-mini",
+    "variants": [
+      {
+        "id": "ML2T4LL/A",
+        "part": "ML2T4LL/A",
+        "label": "256GB · Nano-texture glass · Wi-Fi · Starlight · ML2T4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-mini",
+        "note": ""
+      },
+      {
+        "id": "MJ6Y4LL/A",
+        "part": "MJ6Y4LL/A",
+        "label": "512GB · Nano-texture glass · Wi-Fi · Starlight · MJ6Y4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-mini",
+        "note": ""
+      },
+      {
+        "id": "MJ6X4LL/A",
+        "part": "MJ6X4LL/A",
+        "label": "512GB · Nano-texture glass · Wi-Fi · Midnight · MJ6X4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-mini",
+        "note": ""
+      },
+      {
+        "id": "ML2Q4LL/A",
+        "part": "ML2Q4LL/A",
+        "label": "256GB · Nano-texture glass · Wi-Fi · Midnight · ML2Q4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-mini",
+        "note": ""
+      },
+      {
+        "id": "MJ6F4LL/A",
+        "part": "MJ6F4LL/A",
+        "label": "128GB · Standard glass · Wi-Fi · Midnight · MJ6F4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-mini",
+        "note": ""
+      },
+      {
+        "id": "MJ6Q4LL/A",
+        "part": "MJ6Q4LL/A",
+        "label": "256GB · Standard glass · Wi-Fi · Midnight · MJ6Q4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-mini",
+        "note": ""
+      },
+      {
+        "id": "MJ6V4LL/A",
+        "part": "MJ6V4LL/A",
+        "label": "512GB · Standard glass · Wi-Fi · Midnight · MJ6V4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-mini",
+        "note": ""
+      },
+      {
+        "id": "MJ6J4LL/A",
+        "part": "MJ6J4LL/A",
+        "label": "128GB · Standard glass · Wi-Fi · Starlight · MJ6J4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-mini",
+        "note": ""
+      },
+      {
+        "id": "MJ6R4LL/A",
+        "part": "MJ6R4LL/A",
+        "label": "256GB · Standard glass · Wi-Fi · Starlight · MJ6R4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-mini",
+        "note": ""
+      },
+      {
+        "id": "MJ6W4LL/A",
+        "part": "MJ6W4LL/A",
+        "label": "512GB · Standard glass · Wi-Fi · Starlight · MJ6W4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-mini",
+        "note": ""
+      },
+      {
+        "id": "ML2W4LL/A",
+        "part": "ML2W4LL/A",
+        "label": "256GB · Nano-texture glass · Wi-Fi + Cellular · Midnight · ML2W4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-mini/256gb-midnight-wifi-cellular-nano-texture-glass-att",
+        "note": ""
+      },
+      {
+        "id": "MJ6M4LL/A",
+        "part": "MJ6M4LL/A",
+        "label": "512GB · Nano-texture glass · Wi-Fi + Cellular · Midnight · MJ6M4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-mini/512gb-midnight-wifi-cellular-nano-texture-glass-att",
+        "note": ""
+      },
+      {
+        "id": "ML2X4LL/A",
+        "part": "ML2X4LL/A",
+        "label": "256GB · Nano-texture glass · Wi-Fi + Cellular · Starlight · ML2X4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-mini/256gb-starlight-wifi-cellular-nano-texture-glass-att",
+        "note": ""
+      },
+      {
+        "id": "MJ6P4LL/A",
+        "part": "MJ6P4LL/A",
+        "label": "512GB · Nano-texture glass · Wi-Fi + Cellular · Starlight · MJ6P4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-mini/512gb-starlight-wifi-cellular-nano-texture-glass-att",
+        "note": ""
+      },
+      {
+        "id": "MJ674LL/A",
+        "part": "MJ674LL/A",
+        "label": "128GB · Standard glass · Wi-Fi + Cellular · Midnight · MJ674LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-mini/128gb-midnight-wifi-cellular-standard-glass-att",
+        "note": ""
+      },
+      {
+        "id": "MJ6C4LL/A",
+        "part": "MJ6C4LL/A",
+        "label": "256GB · Standard glass · Wi-Fi + Cellular · Midnight · MJ6C4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-mini/256gb-midnight-wifi-cellular-standard-glass-att",
+        "note": ""
+      },
+      {
+        "id": "MJ6H4LL/A",
+        "part": "MJ6H4LL/A",
+        "label": "512GB · Standard glass · Wi-Fi + Cellular · Midnight · MJ6H4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-mini/512gb-midnight-wifi-cellular-standard-glass-att",
+        "note": ""
+      },
+      {
+        "id": "MJ684LL/A",
+        "part": "MJ684LL/A",
+        "label": "128GB · Standard glass · Wi-Fi + Cellular · Starlight · MJ684LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-mini/128gb-starlight-wifi-cellular-standard-glass-att",
+        "note": ""
+      },
+      {
+        "id": "MJ6D4LL/A",
+        "part": "MJ6D4LL/A",
+        "label": "256GB · Standard glass · Wi-Fi + Cellular · Starlight · MJ6D4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-mini/256gb-starlight-wifi-cellular-standard-glass-att",
+        "note": ""
+      },
+      {
+        "id": "MJ6K4LL/A",
+        "part": "MJ6K4LL/A",
+        "label": "512GB · Standard glass · Wi-Fi + Cellular · Starlight · MJ6K4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-mini/512gb-starlight-wifi-cellular-standard-glass-att",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "buy-iphone/iphone-duo",
+    "name": "iPhone Duo",
+    "category": "iPhone",
+    "url": "https://www.apple.com/shop/buy-iphone/iphone-duo",
+    "variants": [
+      {
+        "id": "MK1F4LL/A",
+        "part": "MK1F4LL/A",
+        "label": "256GB Footnote 1 · Night Sky · MK1F4LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-duo/7.6-inch-display-256gb-night-sky-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      },
+      {
+        "id": "MK1H4LL/A",
+        "part": "MK1H4LL/A",
+        "label": "512GB Footnote 1 · Night Sky · MK1H4LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-duo/7.6-inch-display-512gb-night-sky-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      },
+      {
+        "id": "MK1G4LL/A",
+        "part": "MK1G4LL/A",
+        "label": "512GB Footnote 1 · Star White · MK1G4LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-duo/7.6-inch-display-512gb-star-white-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      },
+      {
+        "id": "MK1E4LL/A",
+        "part": "MK1E4LL/A",
+        "label": "256GB Footnote 1 · Star White · MK1E4LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-duo/7.6-inch-display-256gb-star-white-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      },
+      {
+        "id": "MK1L4LL/A",
+        "part": "MK1L4LL/A",
+        "label": "1TB Footnote 1 · Night Sky · MK1L4LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-duo/7.6-inch-display-1tb-night-sky-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      },
+      {
+        "id": "MK1Q4LL/A",
+        "part": "MK1Q4LL/A",
+        "label": "2TB Footnote 1 · Star White · MK1Q4LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-duo/7.6-inch-display-2tb-star-white-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      },
+      {
+        "id": "MK1J4LL/A",
+        "part": "MK1J4LL/A",
+        "label": "1TB Footnote 1 · Star White · MK1J4LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-duo/7.6-inch-display-1tb-star-white-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      },
+      {
+        "id": "MK1R4LL/A",
+        "part": "MK1R4LL/A",
+        "label": "2TB Footnote 1 · Night Sky · MK1R4LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-duo/7.6-inch-display-2tb-night-sky-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "buy-iphone/iphone-18-pro",
+    "name": "iPhone 18 Pro and iPhone 18 Pro Max",
+    "category": "iPhone",
+    "url": "https://www.apple.com/shop/buy-iphone/iphone-18-pro",
+    "variants": [
+      {
+        "id": "MJWE4LL/A",
+        "part": "MJWE4LL/A",
+        "label": "1TB Footnote 1 · iPhone 18 Pro Max 6.9-inch display Footnote 2 · Silver · MJWE4LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-18-pro/6.9-inch-display-1tb-silver-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      },
+      {
+        "id": "MJWD4LL/A",
+        "part": "MJWD4LL/A",
+        "label": "1TB Footnote 1 · iPhone 18 Pro Max 6.9-inch display Footnote 2 · Black · MJWD4LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-18-pro/6.9-inch-display-1tb-black-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      },
+      {
+        "id": "MJWC4LL/A",
+        "part": "MJWC4LL/A",
+        "label": "512GB Footnote 1 · iPhone 18 Pro Max 6.9-inch display Footnote 2 · Glacier · MJWC4LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-18-pro/6.9-inch-display-512gb-glacier-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      },
+      {
+        "id": "MJWH4LL/A",
+        "part": "MJWH4LL/A",
+        "label": "2TB Footnote 1 · iPhone 18 Pro Max 6.9-inch display Footnote 2 · Black · MJWH4LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-18-pro/6.9-inch-display-2tb-black-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      },
+      {
+        "id": "MJWG4LL/A",
+        "part": "MJWG4LL/A",
+        "label": "1TB Footnote 1 · iPhone 18 Pro Max 6.9-inch display Footnote 2 · Glacier · MJWG4LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-18-pro/6.9-inch-display-1tb-glacier-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      },
+      {
+        "id": "MJWF4LL/A",
+        "part": "MJWF4LL/A",
+        "label": "1TB Footnote 1 · iPhone 18 Pro Max 6.9-inch display Footnote 2 · Burgundy · MJWF4LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-18-pro/6.9-inch-display-1tb-burgundy-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      },
+      {
+        "id": "MJWL4LL/A",
+        "part": "MJWL4LL/A",
+        "label": "2TB Footnote 1 · iPhone 18 Pro Max 6.9-inch display Footnote 2 · Glacier · MJWL4LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-18-pro/6.9-inch-display-2tb-glacier-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      },
+      {
+        "id": "MJWK4LL/A",
+        "part": "MJWK4LL/A",
+        "label": "2TB Footnote 1 · iPhone 18 Pro Max 6.9-inch display Footnote 2 · Burgundy · MJWK4LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-18-pro/6.9-inch-display-2tb-burgundy-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      },
+      {
+        "id": "MJWJ4LL/A",
+        "part": "MJWJ4LL/A",
+        "label": "2TB Footnote 1 · iPhone 18 Pro Max 6.9-inch display Footnote 2 · Silver · MJWJ4LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-18-pro/6.9-inch-display-2tb-silver-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      },
+      {
+        "id": "MJW54LL/A",
+        "part": "MJW54LL/A",
+        "label": "256GB Footnote 1 · iPhone 18 Pro Max 6.9-inch display Footnote 2 · Silver · MJW54LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-18-pro/6.9-inch-display-256gb-silver-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      },
+      {
+        "id": "MJW44LL/A",
+        "part": "MJW44LL/A",
+        "label": "256GB Footnote 1 · iPhone 18 Pro Max 6.9-inch display Footnote 2 · Black · MJW44LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-18-pro/6.9-inch-display-256gb-black-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      },
+      {
+        "id": "MJW94LL/A",
+        "part": "MJW94LL/A",
+        "label": "512GB Footnote 1 · iPhone 18 Pro Max 6.9-inch display Footnote 2 · Silver · MJW94LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-18-pro/6.9-inch-display-512gb-silver-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      },
+      {
+        "id": "MJW84LL/A",
+        "part": "MJW84LL/A",
+        "label": "512GB Footnote 1 · iPhone 18 Pro Max 6.9-inch display Footnote 2 · Black · MJW84LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-18-pro/6.9-inch-display-512gb-black-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      },
+      {
+        "id": "MJW74LL/A",
+        "part": "MJW74LL/A",
+        "label": "256GB Footnote 1 · iPhone 18 Pro Max 6.9-inch display Footnote 2 · Glacier · MJW74LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-18-pro/6.9-inch-display-256gb-glacier-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      },
+      {
+        "id": "MJW64LL/A",
+        "part": "MJW64LL/A",
+        "label": "256GB Footnote 1 · iPhone 18 Pro Max 6.9-inch display Footnote 2 · Burgundy · MJW64LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-18-pro/6.9-inch-display-256gb-burgundy-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      },
+      {
+        "id": "MJWA4LL/A",
+        "part": "MJWA4LL/A",
+        "label": "512GB Footnote 1 · iPhone 18 Pro Max 6.9-inch display Footnote 2 · Burgundy · MJWA4LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-18-pro/6.9-inch-display-512gb-burgundy-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      },
+      {
+        "id": "MJQ84LL/A",
+        "part": "MJQ84LL/A",
+        "label": "512GB Footnote 1 · iPhone 18 Pro 6.3-inch display Footnote 2 · Silver · MJQ84LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-18-pro/6.3-inch-display-512gb-silver-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      },
+      {
+        "id": "MJQ94LL/A",
+        "part": "MJQ94LL/A",
+        "label": "512GB Footnote 1 · iPhone 18 Pro 6.3-inch display Footnote 2 · Burgundy · MJQ94LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-18-pro/6.3-inch-display-512gb-burgundy-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      },
+      {
+        "id": "MJQ64LL/A",
+        "part": "MJQ64LL/A",
+        "label": "256GB Footnote 1 · iPhone 18 Pro 6.3-inch display Footnote 2 · Glacier · MJQ64LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-18-pro/6.3-inch-display-256gb-glacier-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      },
+      {
+        "id": "MJQ74LL/A",
+        "part": "MJQ74LL/A",
+        "label": "512GB Footnote 1 · iPhone 18 Pro 6.3-inch display Footnote 2 · Black · MJQ74LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-18-pro/6.3-inch-display-512gb-black-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      },
+      {
+        "id": "MJQA4LL/A",
+        "part": "MJQA4LL/A",
+        "label": "512GB Footnote 1 · iPhone 18 Pro 6.3-inch display Footnote 2 · Glacier · MJQA4LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-18-pro/6.3-inch-display-512gb-glacier-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      },
+      {
+        "id": "MJQD4LL/A",
+        "part": "MJQD4LL/A",
+        "label": "1TB Footnote 1 · iPhone 18 Pro 6.3-inch display Footnote 2 · Silver · MJQD4LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-18-pro/6.3-inch-display-1tb-silver-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      },
+      {
+        "id": "MJQE4LL/A",
+        "part": "MJQE4LL/A",
+        "label": "1TB Footnote 1 · iPhone 18 Pro 6.3-inch display Footnote 2 · Burgundy · MJQE4LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-18-pro/6.3-inch-display-1tb-burgundy-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      },
+      {
+        "id": "MJQC4LL/A",
+        "part": "MJQC4LL/A",
+        "label": "1TB Footnote 1 · iPhone 18 Pro 6.3-inch display Footnote 2 · Black · MJQC4LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-18-pro/6.3-inch-display-1tb-black-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      },
+      {
+        "id": "MJQH4LL/A",
+        "part": "MJQH4LL/A",
+        "label": "2TB Footnote 1 · iPhone 18 Pro 6.3-inch display Footnote 2 · Silver · MJQH4LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-18-pro/6.3-inch-display-2tb-silver-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      },
+      {
+        "id": "MJQJ4LL/A",
+        "part": "MJQJ4LL/A",
+        "label": "2TB Footnote 1 · iPhone 18 Pro 6.3-inch display Footnote 2 · Burgundy · MJQJ4LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-18-pro/6.3-inch-display-2tb-burgundy-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      },
+      {
+        "id": "MJQF4LL/A",
+        "part": "MJQF4LL/A",
+        "label": "1TB Footnote 1 · iPhone 18 Pro 6.3-inch display Footnote 2 · Glacier · MJQF4LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-18-pro/6.3-inch-display-1tb-glacier-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      },
+      {
+        "id": "MJQG4LL/A",
+        "part": "MJQG4LL/A",
+        "label": "2TB Footnote 1 · iPhone 18 Pro 6.3-inch display Footnote 2 · Black · MJQG4LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-18-pro/6.3-inch-display-2tb-black-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      },
+      {
+        "id": "MJQK4LL/A",
+        "part": "MJQK4LL/A",
+        "label": "2TB Footnote 1 · iPhone 18 Pro 6.3-inch display Footnote 2 · Glacier · MJQK4LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-18-pro/6.3-inch-display-2tb-glacier-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      },
+      {
+        "id": "MJQ44LL/A",
+        "part": "MJQ44LL/A",
+        "label": "256GB Footnote 1 · iPhone 18 Pro 6.3-inch display Footnote 2 · Silver · MJQ44LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-18-pro/6.3-inch-display-256gb-silver-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      },
+      {
+        "id": "MJQ54LL/A",
+        "part": "MJQ54LL/A",
+        "label": "256GB Footnote 1 · iPhone 18 Pro 6.3-inch display Footnote 2 · Burgundy · MJQ54LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-18-pro/6.3-inch-display-256gb-burgundy-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      },
+      {
+        "id": "MJQ34LL/A",
+        "part": "MJQ34LL/A",
+        "label": "256GB Footnote 1 · iPhone 18 Pro 6.3-inch display Footnote 2 · Black · MJQ34LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-18-pro/6.3-inch-display-256gb-black-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "buy-home/apple-homeview",
+    "name": "Apple HomeView",
+    "category": "Home & TV",
+    "url": "https://www.apple.com/shop/buy-home/apple-homeview",
+    "variants": [
+      {
+        "id": "MDH44LL/A",
+        "part": "MDH44LL/A",
+        "label": "Apple HomeView‍ Footnote 4 · Rose Pink · MDH44LL/A",
+        "url": "https://www.apple.com/shop/buy-home/apple-homeview/apple-homeview-rose-pink",
+        "note": ""
+      },
+      {
+        "id": "MDH24LL/A",
+        "part": "MDH24LL/A",
+        "label": "Apple HomeView‍ Footnote 4 · Space Gray · MDH24LL/A",
+        "url": "https://www.apple.com/shop/buy-home/apple-homeview/apple-homeview-space-gray",
+        "note": ""
+      },
+      {
+        "id": "MDH14LL/A",
+        "part": "MDH14LL/A",
+        "label": "Apple HomeView‍ Footnote 4 · Silver · MDH14LL/A",
+        "url": "https://www.apple.com/shop/buy-home/apple-homeview/apple-homeview-silver",
+        "note": ""
+      },
+      {
+        "id": "MDH34LL/A",
+        "part": "MDH34LL/A",
+        "label": "Apple HomeView‍ Footnote 4 · Starlight · MDH34LL/A",
+        "url": "https://www.apple.com/shop/buy-home/apple-homeview/apple-homeview-starlight",
+        "note": ""
+      },
+      {
+        "id": "MDV64LL/A",
+        "part": "MDV64LL/A",
+        "label": "Apple HomeView (Wall Mounted) Footnote 5 · Silver · MDV64LL/A",
+        "url": "https://www.apple.com/shop/buy-home/apple-homeview/apple-homeview-wall-mounted-silver",
+        "note": ""
+      },
+      {
+        "id": "MDV74LL/A",
+        "part": "MDV74LL/A",
+        "label": "Apple HomeView (Wall Mounted) Footnote 5 · Space Gray · MDV74LL/A",
+        "url": "https://www.apple.com/shop/buy-home/apple-homeview/apple-homeview-wall-mounted-space-gray",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "buy-watch/apple-watch",
+    "name": "Apple Watch Series 12",
+    "category": "Apple Watch",
+    "url": "https://www.apple.com/shop/buy-watch/apple-watch",
+    "variants": [
+      {
+        "id": "MJFN4LS/A",
+        "part": "MJFN4LS/A",
+        "label": "42mm · aluminum · space gray · GPS · MJFN4LS/A",
+        "url": "https://www.apple.com/shop/buy-watch/apple-watch",
+        "note": "Watch case stock; choose a compatible band and fit at Apple."
+      },
+      {
+        "id": "MJJH4LS/A",
+        "part": "MJJH4LS/A",
+        "label": "46mm · aluminum · space gray · GPS + Cellular · MJJH4LS/A",
+        "url": "https://www.apple.com/shop/buy-watch/apple-watch",
+        "note": "Watch case stock; choose a compatible band and fit at Apple."
+      },
+      {
+        "id": "MJJM4LS/A",
+        "part": "MJJM4LS/A",
+        "label": "42mm · titanium · natural · GPS + Cellular · MJJM4LS/A",
+        "url": "https://www.apple.com/shop/buy-watch/apple-watch",
+        "note": "Watch case stock; choose a compatible band and fit at Apple."
+      },
+      {
+        "id": "MJJJ4LS/A",
+        "part": "MJJJ4LS/A",
+        "label": "46mm · aluminum · black · GPS + Cellular · MJJJ4LS/A",
+        "url": "https://www.apple.com/shop/buy-watch/apple-watch",
+        "note": "Watch case stock; choose a compatible band and fit at Apple."
+      },
+      {
+        "id": "MJJW4LS/A",
+        "part": "MJJW4LS/A",
+        "label": "46mm · ceramic · nightblue · GPS + Cellular · MJJW4LS/A",
+        "url": "https://www.apple.com/shop/buy-watch/apple-watch",
+        "note": "Watch case stock; choose a compatible band and fit at Apple."
+      },
+      {
+        "id": "MJJL4LS/A",
+        "part": "MJJL4LS/A",
+        "label": "46mm · aluminum · darkbronze · GPS + Cellular · MJJL4LS/A",
+        "url": "https://www.apple.com/shop/buy-watch/apple-watch",
+        "note": "Watch case stock; choose a compatible band and fit at Apple."
+      },
+      {
+        "id": "MJFU4LS/A",
+        "part": "MJFU4LS/A",
+        "label": "46mm · aluminum · black · GPS · MJFU4LS/A",
+        "url": "https://www.apple.com/shop/buy-watch/apple-watch",
+        "note": "Watch case stock; choose a compatible band and fit at Apple."
+      },
+      {
+        "id": "MJFW4LS/A",
+        "part": "MJFW4LS/A",
+        "label": "46mm · aluminum · darkbronze · GPS · MJFW4LS/A",
+        "url": "https://www.apple.com/shop/buy-watch/apple-watch",
+        "note": "Watch case stock; choose a compatible band and fit at Apple."
+      },
+      {
+        "id": "MJJV4LS/A",
+        "part": "MJJV4LS/A",
+        "label": "46mm · ceramic · pearlwhite · GPS + Cellular · MJJV4LS/A",
+        "url": "https://www.apple.com/shop/buy-watch/apple-watch",
+        "note": "Watch case stock; choose a compatible band and fit at Apple."
+      },
+      {
+        "id": "MJJK4LS/A",
+        "part": "MJJK4LS/A",
+        "label": "46mm · aluminum · lightgold · GPS + Cellular · MJJK4LS/A",
+        "url": "https://www.apple.com/shop/buy-watch/apple-watch",
+        "note": "Watch case stock; choose a compatible band and fit at Apple."
+      },
+      {
+        "id": "MJJN4LS/A",
+        "part": "MJJN4LS/A",
+        "label": "42mm · titanium · radiantgold · GPS + Cellular · MJJN4LS/A",
+        "url": "https://www.apple.com/shop/buy-watch/apple-watch",
+        "note": "Watch case stock; choose a compatible band and fit at Apple."
+      },
+      {
+        "id": "MJJQ4LS/A",
+        "part": "MJJQ4LS/A",
+        "label": "46mm · titanium · radiantgold · GPS + Cellular · MJJQ4LS/A",
+        "url": "https://www.apple.com/shop/buy-watch/apple-watch",
+        "note": "Watch case stock; choose a compatible band and fit at Apple."
+      },
+      {
+        "id": "MJJP4LS/A",
+        "part": "MJJP4LS/A",
+        "label": "46mm · titanium · natural · GPS + Cellular · MJJP4LS/A",
+        "url": "https://www.apple.com/shop/buy-watch/apple-watch",
+        "note": "Watch case stock; choose a compatible band and fit at Apple."
+      },
+      {
+        "id": "MJFT4LS/A",
+        "part": "MJFT4LS/A",
+        "label": "46mm · aluminum · space gray · GPS · MJFT4LS/A",
+        "url": "https://www.apple.com/shop/buy-watch/apple-watch",
+        "note": "Watch case stock; choose a compatible band and fit at Apple."
+      },
+      {
+        "id": "MJJE4LS/A",
+        "part": "MJJE4LS/A",
+        "label": "42mm · aluminum · black · GPS + Cellular · MJJE4LS/A",
+        "url": "https://www.apple.com/shop/buy-watch/apple-watch",
+        "note": "Watch case stock; choose a compatible band and fit at Apple."
+      },
+      {
+        "id": "MJJD4LS/A",
+        "part": "MJJD4LS/A",
+        "label": "42mm · aluminum · space gray · GPS + Cellular · MJJD4LS/A",
+        "url": "https://www.apple.com/shop/buy-watch/apple-watch",
+        "note": "Watch case stock; choose a compatible band and fit at Apple."
+      },
+      {
+        "id": "MJFR4LS/A",
+        "part": "MJFR4LS/A",
+        "label": "42mm · aluminum · darkbronze · GPS · MJFR4LS/A",
+        "url": "https://www.apple.com/shop/buy-watch/apple-watch",
+        "note": "Watch case stock; choose a compatible band and fit at Apple."
+      },
+      {
+        "id": "MJJU4LS/A",
+        "part": "MJJU4LS/A",
+        "label": "42mm · ceramic · nightblue · GPS + Cellular · MJJU4LS/A",
+        "url": "https://www.apple.com/shop/buy-watch/apple-watch",
+        "note": "Watch case stock; choose a compatible band and fit at Apple."
+      },
+      {
+        "id": "MJFP4LS/A",
+        "part": "MJFP4LS/A",
+        "label": "42mm · aluminum · black · GPS · MJFP4LS/A",
+        "url": "https://www.apple.com/shop/buy-watch/apple-watch",
+        "note": "Watch case stock; choose a compatible band and fit at Apple."
+      },
+      {
+        "id": "MJJT4LS/A",
+        "part": "MJJT4LS/A",
+        "label": "42mm · ceramic · pearlwhite · GPS + Cellular · MJJT4LS/A",
+        "url": "https://www.apple.com/shop/buy-watch/apple-watch",
+        "note": "Watch case stock; choose a compatible band and fit at Apple."
+      },
+      {
+        "id": "MJJF4LS/A",
+        "part": "MJJF4LS/A",
+        "label": "42mm · aluminum · lightgold · GPS + Cellular · MJJF4LS/A",
+        "url": "https://www.apple.com/shop/buy-watch/apple-watch",
+        "note": "Watch case stock; choose a compatible band and fit at Apple."
+      },
+      {
+        "id": "MJJG4LS/A",
+        "part": "MJJG4LS/A",
+        "label": "42mm · aluminum · darkbronze · GPS + Cellular · MJJG4LS/A",
+        "url": "https://www.apple.com/shop/buy-watch/apple-watch",
+        "note": "Watch case stock; choose a compatible band and fit at Apple."
+      },
+      {
+        "id": "MJFV4LS/A",
+        "part": "MJFV4LS/A",
+        "label": "46mm · aluminum · lightgold · GPS · MJFV4LS/A",
+        "url": "https://www.apple.com/shop/buy-watch/apple-watch",
+        "note": "Watch case stock; choose a compatible band and fit at Apple."
+      },
+      {
+        "id": "MJFQ4LS/A",
+        "part": "MJFQ4LS/A",
+        "label": "42mm · aluminum · lightgold · GPS · MJFQ4LS/A",
+        "url": "https://www.apple.com/shop/buy-watch/apple-watch",
+        "note": "Watch case stock; choose a compatible band and fit at Apple."
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "buy-watch/apple-watch-ultra",
+    "name": "Apple Watch Ultra 4",
+    "category": "Apple Watch",
+    "url": "https://www.apple.com/shop/buy-watch/apple-watch-ultra",
+    "variants": [
+      {
+        "id": "MJCR4LS/A",
+        "part": "MJCR4LS/A",
+        "label": "49MM · natural · MJCR4LS/A",
+        "url": "https://www.apple.com/shop/buy-watch/apple-watch-ultra",
+        "note": "Watch case stock; choose a compatible band and fit at Apple."
+      },
+      {
+        "id": "MJCT4LS/A",
+        "part": "MJCT4LS/A",
+        "label": "49MM · black · MJCT4LS/A",
+        "url": "https://www.apple.com/shop/buy-watch/apple-watch-ultra",
+        "note": "Watch case stock; choose a compatible band and fit at Apple."
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "buy-airpods/airpods-5",
+    "name": "AirPods 5",
+    "category": "AirPods",
+    "url": "https://www.apple.com/shop/buy-airpods/airpods-5",
+    "variants": [
+      {
+        "id": "MKFW4LL/A",
+        "part": "MKFW4LL/A",
+        "label": "AirPods 5 · MKFW4LL/A",
+        "url": "https://www.apple.com/shop/buy-airpods/airpods-5/without-wireless-charging-case",
+        "note": ""
+      },
+      {
+        "id": "MKFT4LL/A",
+        "part": "MKFT4LL/A",
+        "label": "AirPods 5 with Wireless Charging Case · MKFT4LL/A",
+        "url": "https://www.apple.com/shop/buy-airpods/airpods-5/with-wireless-charging-case",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "buy-mac/mac-mini",
+    "name": "Mac mini",
+    "category": "Mac",
+    "url": "https://www.apple.com/shop/buy-mac/mac-mini",
+    "variants": [
+      {
+        "id": "MHQN4LL/A",
+        "part": "MHQN4LL/A",
+        "label": "M5 Pro chip · 15‑core CPU, 16‑core GPU · MHQN4LL/A",
+        "url": "https://www.apple.com/shop/buy-mac/mac-mini",
+        "note": "Standard retail configuration. Confirm memory, storage, and keyboard at Apple."
+      },
+      {
+        "id": "MHQK4LL/A",
+        "part": "MHQK4LL/A",
+        "label": "M6 chip · m6-12-12 · MHQK4LL/A",
+        "url": "https://www.apple.com/shop/buy-mac/mac-mini",
+        "note": "Standard retail configuration. Confirm memory, storage, and keyboard at Apple."
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "buy-mac/mac-studio",
+    "name": "Mac Studio",
+    "category": "Mac",
+    "url": "https://www.apple.com/shop/buy-mac/mac-studio",
+    "variants": [
+      {
+        "id": "MHL74LL/A",
+        "part": "MHL74LL/A",
+        "label": "M5 Ultra chip · 30-core CPU, 64‑core GPU · MHL74LL/A",
+        "url": "https://www.apple.com/shop/buy-mac/mac-studio",
+        "note": "Standard retail configuration. Confirm memory, storage, and keyboard at Apple."
+      },
+      {
+        "id": "MHL64LL/A",
+        "part": "MHL64LL/A",
+        "label": "M5 Max chip · 18-core CPU, 32‑core GPU · MHL64LL/A",
+        "url": "https://www.apple.com/shop/buy-mac/mac-studio",
+        "note": "Standard retail configuration. Confirm memory, storage, and keyboard at Apple."
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "buy-iphone/iphone-17",
+    "name": "iPhone 17",
+    "category": "iPhone",
+    "url": "https://www.apple.com/shop/buy-iphone/iphone-17",
+    "variants": [
+      {
+        "id": "MG484LL/A",
+        "part": "MG484LL/A",
+        "label": "256GB Footnote 1 · Mist Blue · MG484LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-17/6.3-inch-display-256gb-mist-blue-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      },
+      {
+        "id": "MG4H4LL/A",
+        "part": "MG4H4LL/A",
+        "label": "512GB Footnote 1 · Mist Blue · MG4H4LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-17/6.3-inch-display-512gb-mist-blue-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      },
+      {
+        "id": "MG494LL/A",
+        "part": "MG494LL/A",
+        "label": "256GB Footnote 1 · Lavender · MG494LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-17/6.3-inch-display-256gb-lavender-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      },
+      {
+        "id": "MG464LL/A",
+        "part": "MG464LL/A",
+        "label": "256GB Footnote 1 · Black · MG464LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-17/6.3-inch-display-256gb-black-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      },
+      {
+        "id": "MG4F4LL/A",
+        "part": "MG4F4LL/A",
+        "label": "512GB Footnote 1 · White · MG4F4LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-17/6.3-inch-display-512gb-white-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      },
+      {
+        "id": "MG474LL/A",
+        "part": "MG474LL/A",
+        "label": "256GB Footnote 1 · White · MG474LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-17/6.3-inch-display-256gb-white-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      },
+      {
+        "id": "MG4J4LL/A",
+        "part": "MG4J4LL/A",
+        "label": "512GB Footnote 1 · Lavender · MG4J4LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-17/6.3-inch-display-512gb-lavender-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      },
+      {
+        "id": "MG4Q4LL/A",
+        "part": "MG4Q4LL/A",
+        "label": "512GB Footnote 1 · Sage · MG4Q4LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-17/6.3-inch-display-512gb-sage-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      },
+      {
+        "id": "MG4A4LL/A",
+        "part": "MG4A4LL/A",
+        "label": "256GB Footnote 1 · Sage · MG4A4LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-17/6.3-inch-display-256gb-sage-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      },
+      {
+        "id": "MG4E4LL/A",
+        "part": "MG4E4LL/A",
+        "label": "512GB Footnote 1 · Black · MG4E4LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-17/6.3-inch-display-512gb-black-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "buy-ipad/ipad-pro",
+    "name": "iPad Pro",
+    "category": "iPad",
+    "url": "https://www.apple.com/shop/buy-ipad/ipad-pro",
+    "variants": [
+      {
+        "id": "MDWU4LL/A",
+        "part": "MDWU4LL/A",
+        "label": "2TB storage Footnote 2 · 11-inch model · Standard glass · Wi-Fi · Space Black · MDWU4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro",
+        "note": ""
+      },
+      {
+        "id": "MDWK4LL/A",
+        "part": "MDWK4LL/A",
+        "label": "256GB storage Footnote 2 · 11-inch model · Standard glass · Wi-Fi · Space Black · MDWK4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro",
+        "note": ""
+      },
+      {
+        "id": "MDWM4LL/A",
+        "part": "MDWM4LL/A",
+        "label": "512GB storage Footnote 2 · 11-inch model · Standard glass · Wi-Fi · Space Black · MDWM4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro",
+        "note": ""
+      },
+      {
+        "id": "MDWP4LL/A",
+        "part": "MDWP4LL/A",
+        "label": "1TB storage Footnote 2 · 11-inch model · Standard glass · Wi-Fi · Space Black · MDWP4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro",
+        "note": ""
+      },
+      {
+        "id": "MDWV4LL/A",
+        "part": "MDWV4LL/A",
+        "label": "2TB storage Footnote 2 · 11-inch model · Standard glass · Wi-Fi · Silver · MDWV4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro",
+        "note": ""
+      },
+      {
+        "id": "MDWN4LL/A",
+        "part": "MDWN4LL/A",
+        "label": "512GB storage Footnote 2 · 11-inch model · Standard glass · Wi-Fi · Silver · MDWN4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro",
+        "note": ""
+      },
+      {
+        "id": "MDWL4LL/A",
+        "part": "MDWL4LL/A",
+        "label": "256GB storage Footnote 2 · 11-inch model · Standard glass · Wi-Fi · Silver · MDWL4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro",
+        "note": ""
+      },
+      {
+        "id": "MDWQ4LL/A",
+        "part": "MDWQ4LL/A",
+        "label": "1TB storage Footnote 2 · 11-inch model · Standard glass · Wi-Fi · Silver · MDWQ4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro",
+        "note": ""
+      },
+      {
+        "id": "MDWX4LL/A",
+        "part": "MDWX4LL/A",
+        "label": "2TB storage Footnote 2 · 11-inch model · Nano-texture glass · Wi-Fi · Silver · MDWX4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro",
+        "note": ""
+      },
+      {
+        "id": "MDWT4LL/A",
+        "part": "MDWT4LL/A",
+        "label": "1TB storage Footnote 2 · 11-inch model · Nano-texture glass · Wi-Fi · Silver · MDWT4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro",
+        "note": ""
+      },
+      {
+        "id": "MDWW4LL/A",
+        "part": "MDWW4LL/A",
+        "label": "2TB storage Footnote 2 · 11-inch model · Nano-texture glass · Wi-Fi · Space Black · MDWW4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro",
+        "note": ""
+      },
+      {
+        "id": "MDWR4LL/A",
+        "part": "MDWR4LL/A",
+        "label": "1TB storage Footnote 2 · 11-inch model · Nano-texture glass · Wi-Fi · Space Black · MDWR4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro",
+        "note": ""
+      },
+      {
+        "id": "ME2X4LL/A",
+        "part": "ME2X4LL/A",
+        "label": "1TB storage Footnote 2 · 11-inch model · Nano-texture glass · Wi-Fi + Cellular · Silver · ME2X4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/11-inch-display-1tb-silver-wifi-cellular-nano-texture-glass-att",
+        "note": ""
+      },
+      {
+        "id": "ME6D4LL/A",
+        "part": "ME6D4LL/A",
+        "label": "2TB storage Footnote 2 · 11-inch model · Nano-texture glass · Wi-Fi + Cellular · Silver · ME6D4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/11-inch-display-2tb-silver-wifi-cellular-nano-texture-glass-att",
+        "note": ""
+      },
+      {
+        "id": "ME2W4LL/A",
+        "part": "ME2W4LL/A",
+        "label": "1TB storage Footnote 2 · 11-inch model · Nano-texture glass · Wi-Fi + Cellular · Space Black · ME2W4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/11-inch-display-1tb-space-black-wifi-cellular-nano-texture-glass-att",
+        "note": ""
+      },
+      {
+        "id": "ME6C4LL/A",
+        "part": "ME6C4LL/A",
+        "label": "2TB storage Footnote 2 · 11-inch model · Nano-texture glass · Wi-Fi + Cellular · Space Black · ME6C4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/11-inch-display-2tb-space-black-wifi-cellular-nano-texture-glass-att",
+        "note": ""
+      },
+      {
+        "id": "ME2N4LL/A",
+        "part": "ME2N4LL/A",
+        "label": "256GB storage Footnote 2 · 11-inch model · Standard glass · Wi-Fi + Cellular · Space Black · ME2N4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/11-inch-display-256gb-space-black-wifi-cellular-standard-glass-att",
+        "note": ""
+      },
+      {
+        "id": "ME2Q4LL/A",
+        "part": "ME2Q4LL/A",
+        "label": "512GB storage Footnote 2 · 11-inch model · Standard glass · Wi-Fi + Cellular · Space Black · ME2Q4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/11-inch-display-512gb-space-black-wifi-cellular-standard-glass-att",
+        "note": ""
+      },
+      {
+        "id": "ME2U4LL/A",
+        "part": "ME2U4LL/A",
+        "label": "1TB storage Footnote 2 · 11-inch model · Standard glass · Wi-Fi + Cellular · Space Black · ME2U4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/11-inch-display-1tb-space-black-wifi-cellular-standard-glass-att",
+        "note": ""
+      },
+      {
+        "id": "ME2Y4LL/A",
+        "part": "ME2Y4LL/A",
+        "label": "2TB storage Footnote 2 · 11-inch model · Standard glass · Wi-Fi + Cellular · Space Black · ME2Y4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/11-inch-display-2tb-space-black-wifi-cellular-standard-glass-att",
+        "note": ""
+      },
+      {
+        "id": "ME2P4LL/A",
+        "part": "ME2P4LL/A",
+        "label": "256GB storage Footnote 2 · 11-inch model · Standard glass · Wi-Fi + Cellular · Silver · ME2P4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/11-inch-display-256gb-silver-wifi-cellular-standard-glass-att",
+        "note": ""
+      },
+      {
+        "id": "ME2T4LL/A",
+        "part": "ME2T4LL/A",
+        "label": "512GB storage Footnote 2 · 11-inch model · Standard glass · Wi-Fi + Cellular · Silver · ME2T4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/11-inch-display-512gb-silver-wifi-cellular-standard-glass-att",
+        "note": ""
+      },
+      {
+        "id": "ME2V4LL/A",
+        "part": "ME2V4LL/A",
+        "label": "1TB storage Footnote 2 · 11-inch model · Standard glass · Wi-Fi + Cellular · Silver · ME2V4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/11-inch-display-1tb-silver-wifi-cellular-standard-glass-att",
+        "note": ""
+      },
+      {
+        "id": "ME6A4LL/A",
+        "part": "ME6A4LL/A",
+        "label": "2TB storage Footnote 2 · 11-inch model · Standard glass · Wi-Fi + Cellular · Silver · ME6A4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/11-inch-display-2tb-silver-wifi-cellular-standard-glass-att",
+        "note": ""
+      },
+      {
+        "id": "MDYR4LL/A",
+        "part": "MDYR4LL/A",
+        "label": "1TB storage Footnote 2 · 13-inch model · Nano-texture glass · Wi-Fi · Silver · MDYR4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro",
+        "note": ""
+      },
+      {
+        "id": "MDYW4LL/A",
+        "part": "MDYW4LL/A",
+        "label": "2TB storage Footnote 2 · 13-inch model · Nano-texture glass · Wi-Fi · Silver · MDYW4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro",
+        "note": ""
+      },
+      {
+        "id": "MDYQ4LL/A",
+        "part": "MDYQ4LL/A",
+        "label": "1TB storage Footnote 2 · 13-inch model · Nano-texture glass · Wi-Fi · Space Black · MDYQ4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro",
+        "note": ""
+      },
+      {
+        "id": "MDYV4LL/A",
+        "part": "MDYV4LL/A",
+        "label": "2TB storage Footnote 2 · 13-inch model · Nano-texture glass · Wi-Fi · Space Black · MDYV4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro",
+        "note": ""
+      },
+      {
+        "id": "MDYK4LL/A",
+        "part": "MDYK4LL/A",
+        "label": "256GB storage Footnote 2 · 13-inch model · Standard glass · Wi-Fi · Silver · MDYK4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro",
+        "note": ""
+      },
+      {
+        "id": "MDYM4LL/A",
+        "part": "MDYM4LL/A",
+        "label": "512GB storage Footnote 2 · 13-inch model · Standard glass · Wi-Fi · Silver · MDYM4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro",
+        "note": ""
+      },
+      {
+        "id": "MDYP4LL/A",
+        "part": "MDYP4LL/A",
+        "label": "1TB storage Footnote 2 · 13-inch model · Standard glass · Wi-Fi · Silver · MDYP4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro",
+        "note": ""
+      },
+      {
+        "id": "MDYU4LL/A",
+        "part": "MDYU4LL/A",
+        "label": "2TB storage Footnote 2 · 13-inch model · Standard glass · Wi-Fi · Silver · MDYU4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro",
+        "note": ""
+      },
+      {
+        "id": "MDYJ4LL/A",
+        "part": "MDYJ4LL/A",
+        "label": "256GB storage Footnote 2 · 13-inch model · Standard glass · Wi-Fi · Space Black · MDYJ4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro",
+        "note": ""
+      },
+      {
+        "id": "MDYN4LL/A",
+        "part": "MDYN4LL/A",
+        "label": "1TB storage Footnote 2 · 13-inch model · Standard glass · Wi-Fi · Space Black · MDYN4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro",
+        "note": ""
+      },
+      {
+        "id": "MDYL4LL/A",
+        "part": "MDYL4LL/A",
+        "label": "512GB storage Footnote 2 · 13-inch model · Standard glass · Wi-Fi · Space Black · MDYL4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro",
+        "note": ""
+      },
+      {
+        "id": "MDYT4LL/A",
+        "part": "MDYT4LL/A",
+        "label": "2TB storage Footnote 2 · 13-inch model · Standard glass · Wi-Fi · Space Black · MDYT4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro",
+        "note": ""
+      },
+      {
+        "id": "ME8G4LL/A",
+        "part": "ME8G4LL/A",
+        "label": "1TB storage Footnote 2 · 13-inch model · Nano-texture glass · Wi-Fi + Cellular · Space Black · ME8G4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/13-inch-display-1tb-space-black-wifi-cellular-nano-texture-glass-att",
+        "note": ""
+      },
+      {
+        "id": "ME8M4LL/A",
+        "part": "ME8M4LL/A",
+        "label": "2TB storage Footnote 2 · 13-inch model · Nano-texture glass · Wi-Fi + Cellular · Space Black · ME8M4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/13-inch-display-2tb-space-black-wifi-cellular-nano-texture-glass-att",
+        "note": ""
+      },
+      {
+        "id": "ME8H4LL/A",
+        "part": "ME8H4LL/A",
+        "label": "1TB storage Footnote 2 · 13-inch model · Nano-texture glass · Wi-Fi + Cellular · Silver · ME8H4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/13-inch-display-1tb-silver-wifi-cellular-nano-texture-glass-att",
+        "note": ""
+      },
+      {
+        "id": "ME8N4LL/A",
+        "part": "ME8N4LL/A",
+        "label": "2TB storage Footnote 2 · 13-inch model · Nano-texture glass · Wi-Fi + Cellular · Silver · ME8N4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/13-inch-display-2tb-silver-wifi-cellular-nano-texture-glass-att",
+        "note": ""
+      },
+      {
+        "id": "ME7Y4LL/A",
+        "part": "ME7Y4LL/A",
+        "label": "512GB storage Footnote 2 · 13-inch model · Standard glass · Wi-Fi + Cellular · Space Black · ME7Y4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/13-inch-display-512gb-space-black-wifi-cellular-standard-glass-att",
+        "note": ""
+      },
+      {
+        "id": "ME7W4LL/A",
+        "part": "ME7W4LL/A",
+        "label": "256GB storage Footnote 2 · 13-inch model · Standard glass · Wi-Fi + Cellular · Space Black · ME7W4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/13-inch-display-256gb-space-black-wifi-cellular-standard-glass-att",
+        "note": ""
+      },
+      {
+        "id": "ME8D4LL/A",
+        "part": "ME8D4LL/A",
+        "label": "1TB storage Footnote 2 · 13-inch model · Standard glass · Wi-Fi + Cellular · Space Black · ME8D4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/13-inch-display-1tb-space-black-wifi-cellular-standard-glass-att",
+        "note": ""
+      },
+      {
+        "id": "ME8J4LL/A",
+        "part": "ME8J4LL/A",
+        "label": "2TB storage Footnote 2 · 13-inch model · Standard glass · Wi-Fi + Cellular · Space Black · ME8J4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/13-inch-display-2tb-space-black-wifi-cellular-standard-glass-att",
+        "note": ""
+      },
+      {
+        "id": "ME7X4LL/A",
+        "part": "ME7X4LL/A",
+        "label": "256GB storage Footnote 2 · 13-inch model · Standard glass · Wi-Fi + Cellular · Silver · ME7X4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/13-inch-display-256gb-silver-wifi-cellular-standard-glass-att",
+        "note": ""
+      },
+      {
+        "id": "ME8C4LL/A",
+        "part": "ME8C4LL/A",
+        "label": "512GB storage Footnote 2 · 13-inch model · Standard glass · Wi-Fi + Cellular · Silver · ME8C4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/13-inch-display-512gb-silver-wifi-cellular-standard-glass-att",
+        "note": ""
+      },
+      {
+        "id": "ME8F4LL/A",
+        "part": "ME8F4LL/A",
+        "label": "1TB storage Footnote 2 · 13-inch model · Standard glass · Wi-Fi + Cellular · Silver · ME8F4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/13-inch-display-1tb-silver-wifi-cellular-standard-glass-att",
+        "note": ""
+      },
+      {
+        "id": "ME8K4LL/A",
+        "part": "ME8K4LL/A",
+        "label": "2TB storage Footnote 2 · 13-inch model · Standard glass · Wi-Fi + Cellular · Silver · ME8K4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-pro/13-inch-display-2tb-silver-wifi-cellular-standard-glass-att",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "buy-mac/macbook-neo",
+    "name": "MacBook Neo",
+    "category": "Mac",
+    "url": "https://www.apple.com/shop/buy-mac/macbook-neo",
+    "variants": [
+      {
+        "id": "MHFG4LL/A",
+        "part": "MHFG4LL/A",
+        "label": "Indigo · 512GB Magic Keyboard with Touch ID · 6-5 · MHFG4LL/A",
+        "url": "https://www.apple.com/shop/buy-mac/macbook-neo",
+        "note": "Standard retail configuration. Confirm memory, storage, and keyboard at Apple."
+      },
+      {
+        "id": "MHFC4LL/A",
+        "part": "MHFC4LL/A",
+        "label": "Silver · 512GB Magic Keyboard with Touch ID · 6-5 · MHFC4LL/A",
+        "url": "https://www.apple.com/shop/buy-mac/macbook-neo",
+        "note": "Standard retail configuration. Confirm memory, storage, and keyboard at Apple."
+      },
+      {
+        "id": "MHFH4LL/A",
+        "part": "MHFH4LL/A",
+        "label": "Blush · 256GB Magic Keyboard · 6-5 · MHFH4LL/A",
+        "url": "https://www.apple.com/shop/buy-mac/macbook-neo",
+        "note": "Standard retail configuration. Confirm memory, storage, and keyboard at Apple."
+      },
+      {
+        "id": "MHFJ4LL/A",
+        "part": "MHFJ4LL/A",
+        "label": "Blush · 512GB Magic Keyboard with Touch ID · 6-5 · MHFJ4LL/A",
+        "url": "https://www.apple.com/shop/buy-mac/macbook-neo",
+        "note": "Standard retail configuration. Confirm memory, storage, and keyboard at Apple."
+      },
+      {
+        "id": "MHFE4LL/A",
+        "part": "MHFE4LL/A",
+        "label": "Citrus · 512GB Magic Keyboard with Touch ID · 6-5 · MHFE4LL/A",
+        "url": "https://www.apple.com/shop/buy-mac/macbook-neo",
+        "note": "Standard retail configuration. Confirm memory, storage, and keyboard at Apple."
+      },
+      {
+        "id": "MHFD4LL/A",
+        "part": "MHFD4LL/A",
+        "label": "Citrus · 256GB Magic Keyboard · 6-5 · MHFD4LL/A",
+        "url": "https://www.apple.com/shop/buy-mac/macbook-neo",
+        "note": "Standard retail configuration. Confirm memory, storage, and keyboard at Apple."
+      },
+      {
+        "id": "MHFA4LL/A",
+        "part": "MHFA4LL/A",
+        "label": "Silver · 256GB Magic Keyboard · 6-5 · MHFA4LL/A",
+        "url": "https://www.apple.com/shop/buy-mac/macbook-neo",
+        "note": "Standard retail configuration. Confirm memory, storage, and keyboard at Apple."
+      },
+      {
+        "id": "MHFF4LL/A",
+        "part": "MHFF4LL/A",
+        "label": "Indigo · 256GB Magic Keyboard · 6-5 · MHFF4LL/A",
+        "url": "https://www.apple.com/shop/buy-mac/macbook-neo",
+        "note": "Standard retail configuration. Confirm memory, storage, and keyboard at Apple."
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "buy-ipad/ipad-air",
+    "name": "iPad Air",
+    "category": "iPad",
+    "url": "https://www.apple.com/shop/buy-ipad/ipad-air",
+    "variants": [
+      {
+        "id": "MH3A4LL/A",
+        "part": "MH3A4LL/A",
+        "label": "512GB Footnote 2 · 11-inch model · Wi-Fi · Space Gray · MH3A4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-air",
+        "note": ""
+      },
+      {
+        "id": "MH3G4LL/A",
+        "part": "MH3G4LL/A",
+        "label": "1TB Footnote 2 · 11-inch model · Wi-Fi · Space Gray · MH3G4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-air",
+        "note": ""
+      },
+      {
+        "id": "MH304LL/A",
+        "part": "MH304LL/A",
+        "label": "128GB Footnote 2 · 11-inch model · Wi-Fi · Space Gray · MH304LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-air",
+        "note": ""
+      },
+      {
+        "id": "MH354LL/A",
+        "part": "MH354LL/A",
+        "label": "256GB Footnote 2 · 11-inch model · Wi-Fi · Space Gray · MH354LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-air",
+        "note": ""
+      },
+      {
+        "id": "MH3D4LL/A",
+        "part": "MH3D4LL/A",
+        "label": "512GB Footnote 2 · 11-inch model · Wi-Fi · Starlight · MH3D4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-air",
+        "note": ""
+      },
+      {
+        "id": "MH3J4LL/A",
+        "part": "MH3J4LL/A",
+        "label": "1TB Footnote 2 · 11-inch model · Wi-Fi · Starlight · MH3J4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-air",
+        "note": ""
+      },
+      {
+        "id": "MH334LL/A",
+        "part": "MH334LL/A",
+        "label": "128GB Footnote 2 · 11-inch model · Wi-Fi · Starlight · MH334LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-air",
+        "note": ""
+      },
+      {
+        "id": "MH374LL/A",
+        "part": "MH374LL/A",
+        "label": "256GB Footnote 2 · 11-inch model · Wi-Fi · Starlight · MH374LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-air",
+        "note": ""
+      },
+      {
+        "id": "MH3E4LL/A",
+        "part": "MH3E4LL/A",
+        "label": "512GB Footnote 2 · 11-inch model · Wi-Fi · Purple · MH3E4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-air",
+        "note": ""
+      },
+      {
+        "id": "MH3K4LL/A",
+        "part": "MH3K4LL/A",
+        "label": "1TB Footnote 2 · 11-inch model · Wi-Fi · Purple · MH3K4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-air",
+        "note": ""
+      },
+      {
+        "id": "MH344LL/A",
+        "part": "MH344LL/A",
+        "label": "128GB Footnote 2 · 11-inch model · Wi-Fi · Purple · MH344LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-air",
+        "note": ""
+      },
+      {
+        "id": "MH394LL/A",
+        "part": "MH394LL/A",
+        "label": "256GB Footnote 2 · 11-inch model · Wi-Fi · Purple · MH394LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-air",
+        "note": ""
+      },
+      {
+        "id": "MH3C4LL/A",
+        "part": "MH3C4LL/A",
+        "label": "512GB Footnote 2 · 11-inch model · Wi-Fi · Blue · MH3C4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-air",
+        "note": ""
+      },
+      {
+        "id": "MH3H4LL/A",
+        "part": "MH3H4LL/A",
+        "label": "1TB Footnote 2 · 11-inch model · Wi-Fi · Blue · MH3H4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-air",
+        "note": ""
+      },
+      {
+        "id": "MH314LL/A",
+        "part": "MH314LL/A",
+        "label": "128GB Footnote 2 · 11-inch model · Wi-Fi · Blue · MH314LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-air",
+        "note": ""
+      },
+      {
+        "id": "MH364LL/A",
+        "part": "MH364LL/A",
+        "label": "256GB Footnote 2 · 11-inch model · Wi-Fi · Blue · MH364LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-air",
+        "note": ""
+      },
+      {
+        "id": "MH7J4LL/A",
+        "part": "MH7J4LL/A",
+        "label": "512GB Footnote 2 · 11-inch model · Wi-Fi + Cellular · Blue · MH7J4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-air/11-inch-display-512gb-blue-wifi-cellular-att",
+        "note": ""
+      },
+      {
+        "id": "MH7N4LL/A",
+        "part": "MH7N4LL/A",
+        "label": "1TB Footnote 2 · 11-inch model · Wi-Fi + Cellular · Blue · MH7N4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-air/11-inch-display-1tb-blue-wifi-cellular-att",
+        "note": ""
+      },
+      {
+        "id": "MH794LL/A",
+        "part": "MH794LL/A",
+        "label": "128GB Footnote 2 · 11-inch model · Wi-Fi + Cellular · Blue · MH794LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-air/11-inch-display-128gb-blue-wifi-cellular-att",
+        "note": ""
+      },
+      {
+        "id": "MH7E4LL/A",
+        "part": "MH7E4LL/A",
+        "label": "256GB Footnote 2 · 11-inch model · Wi-Fi + Cellular · Blue · MH7E4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-air/11-inch-display-256gb-blue-wifi-cellular-att",
+        "note": ""
+      },
+      {
+        "id": "MH7M4LL/A",
+        "part": "MH7M4LL/A",
+        "label": "1TB Footnote 2 · 11-inch model · Wi-Fi + Cellular · Space Gray · MH7M4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-air/11-inch-display-1tb-space-gray-wifi-cellular-att",
+        "note": ""
+      },
+      {
+        "id": "MH784LL/A",
+        "part": "MH784LL/A",
+        "label": "128GB Footnote 2 · 11-inch model · Wi-Fi + Cellular · Space Gray · MH784LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-air/11-inch-display-128gb-space-gray-wifi-cellular-att",
+        "note": ""
+      },
+      {
+        "id": "MH7D4LL/A",
+        "part": "MH7D4LL/A",
+        "label": "256GB Footnote 2 · 11-inch model · Wi-Fi + Cellular · Space Gray · MH7D4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-air/11-inch-display-256gb-space-gray-wifi-cellular-att",
+        "note": ""
+      },
+      {
+        "id": "MH7H4LL/A",
+        "part": "MH7H4LL/A",
+        "label": "512GB Footnote 2 · 11-inch model · Wi-Fi + Cellular · Space Gray · MH7H4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-air/11-inch-display-512gb-space-gray-wifi-cellular-att",
+        "note": ""
+      },
+      {
+        "id": "MH7K4LL/A",
+        "part": "MH7K4LL/A",
+        "label": "512GB Footnote 2 · 11-inch model · Wi-Fi + Cellular · Starlight · MH7K4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-air/11-inch-display-512gb-starlight-wifi-cellular-att",
+        "note": ""
+      },
+      {
+        "id": "MH7P4LL/A",
+        "part": "MH7P4LL/A",
+        "label": "1TB Footnote 2 · 11-inch model · Wi-Fi + Cellular · Starlight · MH7P4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-air/11-inch-display-1tb-starlight-wifi-cellular-att",
+        "note": ""
+      },
+      {
+        "id": "MH7A4LL/A",
+        "part": "MH7A4LL/A",
+        "label": "128GB Footnote 2 · 11-inch model · Wi-Fi + Cellular · Starlight · MH7A4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-air/11-inch-display-128gb-starlight-wifi-cellular-att",
+        "note": ""
+      },
+      {
+        "id": "MH7F4LL/A",
+        "part": "MH7F4LL/A",
+        "label": "256GB Footnote 2 · 11-inch model · Wi-Fi + Cellular · Starlight · MH7F4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-air/11-inch-display-256gb-starlight-wifi-cellular-att",
+        "note": ""
+      },
+      {
+        "id": "MH7L4LL/A",
+        "part": "MH7L4LL/A",
+        "label": "512GB Footnote 2 · 11-inch model · Wi-Fi + Cellular · Purple · MH7L4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-air/11-inch-display-512gb-purple-wifi-cellular-att",
+        "note": ""
+      },
+      {
+        "id": "MH7Q4LL/A",
+        "part": "MH7Q4LL/A",
+        "label": "1TB Footnote 2 · 11-inch model · Wi-Fi + Cellular · Purple · MH7Q4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-air/11-inch-display-1tb-purple-wifi-cellular-att",
+        "note": ""
+      },
+      {
+        "id": "MH7C4LL/A",
+        "part": "MH7C4LL/A",
+        "label": "128GB Footnote 2 · 11-inch model · Wi-Fi + Cellular · Purple · MH7C4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-air/11-inch-display-128gb-purple-wifi-cellular-att",
+        "note": ""
+      },
+      {
+        "id": "MH7G4LL/A",
+        "part": "MH7G4LL/A",
+        "label": "256GB Footnote 2 · 11-inch model · Wi-Fi + Cellular · Purple · MH7G4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-air/11-inch-display-256gb-purple-wifi-cellular-att",
+        "note": ""
+      },
+      {
+        "id": "MH614LL/A",
+        "part": "MH614LL/A",
+        "label": "512GB Footnote 2 · 13-inch model · Wi-Fi · Starlight · MH614LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-air",
+        "note": ""
+      },
+      {
+        "id": "MH5Q4LL/A",
+        "part": "MH5Q4LL/A",
+        "label": "128GB Footnote 2 · 13-inch model · Wi-Fi · Starlight · MH5Q4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-air",
+        "note": ""
+      },
+      {
+        "id": "MH654LL/A",
+        "part": "MH654LL/A",
+        "label": "1TB Footnote 2 · 13-inch model · Wi-Fi · Starlight · MH654LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-air",
+        "note": ""
+      },
+      {
+        "id": "MH5W4LL/A",
+        "part": "MH5W4LL/A",
+        "label": "256GB Footnote 2 · 13-inch model · Wi-Fi · Starlight · MH5W4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-air",
+        "note": ""
+      },
+      {
+        "id": "MH5N4LL/A",
+        "part": "MH5N4LL/A",
+        "label": "128GB Footnote 2 · 13-inch model · Wi-Fi · Space Gray · MH5N4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-air",
+        "note": ""
+      },
+      {
+        "id": "MH5U4LL/A",
+        "part": "MH5U4LL/A",
+        "label": "256GB Footnote 2 · 13-inch model · Wi-Fi · Space Gray · MH5U4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-air",
+        "note": ""
+      },
+      {
+        "id": "MH634LL/A",
+        "part": "MH634LL/A",
+        "label": "1TB Footnote 2 · 13-inch model · Wi-Fi · Space Gray · MH634LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-air",
+        "note": ""
+      },
+      {
+        "id": "MH5Y4LL/A",
+        "part": "MH5Y4LL/A",
+        "label": "512GB Footnote 2 · 13-inch model · Wi-Fi · Space Gray · MH5Y4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-air",
+        "note": ""
+      },
+      {
+        "id": "MHDK4LL/A",
+        "part": "MHDK4LL/A",
+        "label": "1TB Footnote 2 · 13-inch model · Wi-Fi · Purple · MHDK4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-air",
+        "note": ""
+      },
+      {
+        "id": "MH624LL/A",
+        "part": "MH624LL/A",
+        "label": "512GB Footnote 2 · 13-inch model · Wi-Fi · Purple · MH624LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-air",
+        "note": ""
+      },
+      {
+        "id": "MH5T4LL/A",
+        "part": "MH5T4LL/A",
+        "label": "128GB Footnote 2 · 13-inch model · Wi-Fi · Purple · MH5T4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-air",
+        "note": ""
+      },
+      {
+        "id": "MH5X4LL/A",
+        "part": "MH5X4LL/A",
+        "label": "256GB Footnote 2 · 13-inch model · Wi-Fi · Purple · MH5X4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-air",
+        "note": ""
+      },
+      {
+        "id": "MH5P4LL/A",
+        "part": "MH5P4LL/A",
+        "label": "128GB Footnote 2 · 13-inch model · Wi-Fi · Blue · MH5P4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-air",
+        "note": ""
+      },
+      {
+        "id": "MH604LL/A",
+        "part": "MH604LL/A",
+        "label": "512GB Footnote 2 · 13-inch model · Wi-Fi · Blue · MH604LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-air",
+        "note": ""
+      },
+      {
+        "id": "MH644LL/A",
+        "part": "MH644LL/A",
+        "label": "1TB Footnote 2 · 13-inch model · Wi-Fi · Blue · MH644LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-air",
+        "note": ""
+      },
+      {
+        "id": "MH5V4LL/A",
+        "part": "MH5V4LL/A",
+        "label": "256GB Footnote 2 · 13-inch model · Wi-Fi · Blue · MH5V4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-air",
+        "note": ""
+      },
+      {
+        "id": "MH9N4LL/A",
+        "part": "MH9N4LL/A",
+        "label": "512GB Footnote 2 · 13-inch model · Wi-Fi + Cellular · Blue · MH9N4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-air/13-inch-display-512gb-blue-wifi-cellular-att",
+        "note": ""
+      },
+      {
+        "id": "MH9T4LL/A",
+        "part": "MH9T4LL/A",
+        "label": "1TB Footnote 2 · 13-inch model · Wi-Fi + Cellular · Blue · MH9T4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-air/13-inch-display-1tb-blue-wifi-cellular-att",
+        "note": ""
+      },
+      {
+        "id": "MH9E4LL/A",
+        "part": "MH9E4LL/A",
+        "label": "128GB Footnote 2 · 13-inch model · Wi-Fi + Cellular · Blue · MH9E4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-air/13-inch-display-128gb-blue-wifi-cellular-att",
+        "note": ""
+      },
+      {
+        "id": "MH9J4LL/A",
+        "part": "MH9J4LL/A",
+        "label": "256GB Footnote 2 · 13-inch model · Wi-Fi + Cellular · Blue · MH9J4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-air/13-inch-display-256gb-blue-wifi-cellular-att",
+        "note": ""
+      },
+      {
+        "id": "MH9Q4LL/A",
+        "part": "MH9Q4LL/A",
+        "label": "512GB Footnote 2 · 13-inch model · Wi-Fi + Cellular · Purple · MH9Q4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-air/13-inch-display-512gb-purple-wifi-cellular-att",
+        "note": ""
+      },
+      {
+        "id": "MH9V4LL/A",
+        "part": "MH9V4LL/A",
+        "label": "1TB Footnote 2 · 13-inch model · Wi-Fi + Cellular · Purple · MH9V4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-air/13-inch-display-1tb-purple-wifi-cellular-att",
+        "note": ""
+      },
+      {
+        "id": "MH9G4LL/A",
+        "part": "MH9G4LL/A",
+        "label": "128GB Footnote 2 · 13-inch model · Wi-Fi + Cellular · Purple · MH9G4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-air/13-inch-display-128gb-purple-wifi-cellular-att",
+        "note": ""
+      },
+      {
+        "id": "MH9L4LL/A",
+        "part": "MH9L4LL/A",
+        "label": "256GB Footnote 2 · 13-inch model · Wi-Fi + Cellular · Purple · MH9L4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-air/13-inch-display-256gb-purple-wifi-cellular-att",
+        "note": ""
+      },
+      {
+        "id": "MH9P4LL/A",
+        "part": "MH9P4LL/A",
+        "label": "512GB Footnote 2 · 13-inch model · Wi-Fi + Cellular · Starlight · MH9P4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-air/13-inch-display-512gb-starlight-wifi-cellular-att",
+        "note": ""
+      },
+      {
+        "id": "MH9U4LL/A",
+        "part": "MH9U4LL/A",
+        "label": "1TB Footnote 2 · 13-inch model · Wi-Fi + Cellular · Starlight · MH9U4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-air/13-inch-display-1tb-starlight-wifi-cellular-att",
+        "note": ""
+      },
+      {
+        "id": "MH9F4LL/A",
+        "part": "MH9F4LL/A",
+        "label": "128GB Footnote 2 · 13-inch model · Wi-Fi + Cellular · Starlight · MH9F4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-air/13-inch-display-128gb-starlight-wifi-cellular-att",
+        "note": ""
+      },
+      {
+        "id": "MH9K4LL/A",
+        "part": "MH9K4LL/A",
+        "label": "256GB Footnote 2 · 13-inch model · Wi-Fi + Cellular · Starlight · MH9K4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-air/13-inch-display-256gb-starlight-wifi-cellular-att",
+        "note": ""
+      },
+      {
+        "id": "MH9M4LL/A",
+        "part": "MH9M4LL/A",
+        "label": "512GB Footnote 2 · 13-inch model · Wi-Fi + Cellular · Space Gray · MH9M4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-air/13-inch-display-512gb-space-gray-wifi-cellular-att",
+        "note": ""
+      },
+      {
+        "id": "MH9R4LL/A",
+        "part": "MH9R4LL/A",
+        "label": "1TB Footnote 2 · 13-inch model · Wi-Fi + Cellular · Space Gray · MH9R4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-air/13-inch-display-1tb-space-gray-wifi-cellular-att",
+        "note": ""
+      },
+      {
+        "id": "MH9D4LL/A",
+        "part": "MH9D4LL/A",
+        "label": "128GB Footnote 2 · 13-inch model · Wi-Fi + Cellular · Space Gray · MH9D4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-air/13-inch-display-128gb-space-gray-wifi-cellular-att",
+        "note": ""
+      },
+      {
+        "id": "MH9H4LL/A",
+        "part": "MH9H4LL/A",
+        "label": "256GB Footnote 2 · 13-inch model · Wi-Fi + Cellular · Space Gray · MH9H4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad-air/13-inch-display-256gb-space-gray-wifi-cellular-att",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "buy-mac/macbook-air",
+    "name": "MacBook Air",
+    "category": "Mac",
+    "url": "https://www.apple.com/shop/buy-mac/macbook-air",
+    "variants": [
+      {
+        "id": "MDV94LL/A",
+        "part": "MDV94LL/A",
+        "label": "Silver · 10‑core CPU, 10‑core GPU, 16‑core Neural Engine · 15-inch Footnote 1 · MDV94LL/A",
+        "url": "https://www.apple.com/shop/buy-mac/macbook-air",
+        "note": "Standard retail configuration. Confirm memory, storage, and keyboard at Apple."
+      },
+      {
+        "id": "MDVH4LL/A",
+        "part": "MDVH4LL/A",
+        "label": "Midnight · 10‑core CPU, 10‑core GPU, 16‑core Neural Engine · 15-inch Footnote 1 · MDVH4LL/A",
+        "url": "https://www.apple.com/shop/buy-mac/macbook-air",
+        "note": "Standard retail configuration. Confirm memory, storage, and keyboard at Apple."
+      },
+      {
+        "id": "MDVQ4LL/A",
+        "part": "MDVQ4LL/A",
+        "label": "Sky Blue · 10‑core CPU, 10‑core GPU, 16‑core Neural Engine · 15-inch Footnote 1 · MDVQ4LL/A",
+        "url": "https://www.apple.com/shop/buy-mac/macbook-air",
+        "note": "Standard retail configuration. Confirm memory, storage, and keyboard at Apple."
+      },
+      {
+        "id": "MDVD4LL/A",
+        "part": "MDVD4LL/A",
+        "label": "Starlight · 10‑core CPU, 10‑core GPU, 16‑core Neural Engine · 15-inch Footnote 1 · MDVD4LL/A",
+        "url": "https://www.apple.com/shop/buy-mac/macbook-air",
+        "note": "Standard retail configuration. Confirm memory, storage, and keyboard at Apple."
+      },
+      {
+        "id": "MDHH4LL/A",
+        "part": "MDHH4LL/A",
+        "label": "Sky Blue · 10‑core CPU, 8‑core GPU, 16‑core Neural Engine · 13-inch Footnote 1 · MDHH4LL/A",
+        "url": "https://www.apple.com/shop/buy-mac/macbook-air",
+        "note": "Standard retail configuration. Confirm memory, storage, and keyboard at Apple."
+      },
+      {
+        "id": "MDHE4LL/A",
+        "part": "MDHE4LL/A",
+        "label": "Midnight · 10‑core CPU, 8‑core GPU, 16‑core Neural Engine · 13-inch Footnote 1 · MDHE4LL/A",
+        "url": "https://www.apple.com/shop/buy-mac/macbook-air",
+        "note": "Standard retail configuration. Confirm memory, storage, and keyboard at Apple."
+      },
+      {
+        "id": "MDH74LL/A",
+        "part": "MDH74LL/A",
+        "label": "Silver · 10‑core CPU, 8‑core GPU, 16‑core Neural Engine · 13-inch Footnote 1 · MDH74LL/A",
+        "url": "https://www.apple.com/shop/buy-mac/macbook-air",
+        "note": "Standard retail configuration. Confirm memory, storage, and keyboard at Apple."
+      },
+      {
+        "id": "MDHA4LL/A",
+        "part": "MDHA4LL/A",
+        "label": "Starlight · 10‑core CPU, 8‑core GPU, 16‑core Neural Engine · 13-inch Footnote 1 · MDHA4LL/A",
+        "url": "https://www.apple.com/shop/buy-mac/macbook-air",
+        "note": "Standard retail configuration. Confirm memory, storage, and keyboard at Apple."
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "buy-iphone/iphone-air",
+    "name": "iPhone Air",
+    "category": "iPhone",
+    "url": "https://www.apple.com/shop/buy-iphone/iphone-air",
+    "variants": [
+      {
+        "id": "MG1Q4LL/A",
+        "part": "MG1Q4LL/A",
+        "label": "1TB Footnote 1 · Sky Blue · MG1Q4LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-air/6.5-inch-display-1tb-sky-blue-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      },
+      {
+        "id": "MG1A4LL/A",
+        "part": "MG1A4LL/A",
+        "label": "256GB Footnote 1 · Light Gold · MG1A4LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-air/6.5-inch-display-256gb-light-gold-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      },
+      {
+        "id": "MG1G4LL/A",
+        "part": "MG1G4LL/A",
+        "label": "512GB Footnote 1 · Cloud White · MG1G4LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-air/6.5-inch-display-512gb-cloud-white-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      },
+      {
+        "id": "MG1D4LL/A",
+        "part": "MG1D4LL/A",
+        "label": "256GB Footnote 1 · Sky Blue · MG1D4LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-air/6.5-inch-display-256gb-sky-blue-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      },
+      {
+        "id": "MG1E4LL/A",
+        "part": "MG1E4LL/A",
+        "label": "512GB Footnote 1 · Space Black · MG1E4LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-air/6.5-inch-display-512gb-space-black-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      },
+      {
+        "id": "MG1J4LL/A",
+        "part": "MG1J4LL/A",
+        "label": "512GB Footnote 1 · Sky Blue · MG1J4LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-air/6.5-inch-display-512gb-sky-blue-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      },
+      {
+        "id": "MG1L4LL/A",
+        "part": "MG1L4LL/A",
+        "label": "1TB Footnote 1 · Space Black · MG1L4LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-air/6.5-inch-display-1tb-space-black-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      },
+      {
+        "id": "MG184LL/A",
+        "part": "MG184LL/A",
+        "label": "256GB Footnote 1 · Space Black · MG184LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-air/6.5-inch-display-256gb-space-black-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      },
+      {
+        "id": "MG1H4LL/A",
+        "part": "MG1H4LL/A",
+        "label": "512GB Footnote 1 · Light Gold · MG1H4LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-air/6.5-inch-display-512gb-light-gold-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      },
+      {
+        "id": "MG194LL/A",
+        "part": "MG194LL/A",
+        "label": "256GB Footnote 1 · Cloud White · MG194LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-air/6.5-inch-display-256gb-cloud-white-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      },
+      {
+        "id": "MG1P4LL/A",
+        "part": "MG1P4LL/A",
+        "label": "1TB Footnote 1 · Light Gold · MG1P4LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-air/6.5-inch-display-1tb-light-gold-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      },
+      {
+        "id": "MG1N4LL/A",
+        "part": "MG1N4LL/A",
+        "label": "1TB Footnote 1 · Cloud White · MG1N4LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-air/6.5-inch-display-1tb-cloud-white-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "buy-iphone/iphone-17e",
+    "name": "iPhone 17e",
+    "category": "iPhone",
+    "url": "https://www.apple.com/shop/buy-iphone/iphone-17e",
+    "variants": [
+      {
+        "id": "MHRQ4LL/A",
+        "part": "MHRQ4LL/A",
+        "label": "256GB Footnote 1 · Soft Pink · MHRQ4LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-17e/6.1-inch-display-256gb-soft-pink-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      },
+      {
+        "id": "MHRR4LL/A",
+        "part": "MHRR4LL/A",
+        "label": "512GB Footnote 1 · Black · MHRR4LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-17e/6.1-inch-display-512gb-black-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      },
+      {
+        "id": "MHRP4LL/A",
+        "part": "MHRP4LL/A",
+        "label": "256GB Footnote 1 · White · MHRP4LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-17e/6.1-inch-display-256gb-white-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      },
+      {
+        "id": "MHRU4LL/A",
+        "part": "MHRU4LL/A",
+        "label": "512GB Footnote 1 · Soft Pink · MHRU4LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-17e/6.1-inch-display-512gb-soft-pink-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      },
+      {
+        "id": "MHRN4LL/A",
+        "part": "MHRN4LL/A",
+        "label": "256GB Footnote 1 · Black · MHRN4LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-17e/6.1-inch-display-256gb-black-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      },
+      {
+        "id": "MHRT4LL/A",
+        "part": "MHRT4LL/A",
+        "label": "512GB Footnote 1 · White · MHRT4LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-17e/6.1-inch-display-512gb-white-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "buy-iphone/iphone-16",
+    "name": "iPhone 16",
+    "category": "iPhone",
+    "url": "https://www.apple.com/shop/buy-iphone/iphone-16",
+    "variants": [
+      {
+        "id": "MYAR3LL/A",
+        "part": "MYAR3LL/A",
+        "label": "iPhone 16 6.1-inch display Footnote 1 · Pink · MYAR3LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-16/6.1-inch-display-128gb-pink-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      },
+      {
+        "id": "MYAQ3LL/A",
+        "part": "MYAQ3LL/A",
+        "label": "iPhone 16 6.1-inch display Footnote 1 · White · MYAQ3LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-16/6.1-inch-display-128gb-white-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      },
+      {
+        "id": "MYAP3LL/A",
+        "part": "MYAP3LL/A",
+        "label": "iPhone 16 6.1-inch display Footnote 1 · Black · MYAP3LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-16/6.1-inch-display-128gb-black-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      },
+      {
+        "id": "MYAT3LL/A",
+        "part": "MYAT3LL/A",
+        "label": "iPhone 16 6.1-inch display Footnote 1 · Ultramarine · MYAT3LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-16/6.1-inch-display-128gb-ultramarine-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      },
+      {
+        "id": "MYAW3LL/A",
+        "part": "MYAW3LL/A",
+        "label": "iPhone 16 6.1-inch display Footnote 1 · Teal · MYAW3LL/A",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-16/6.1-inch-display-128gb-teal-att",
+        "note": "Hardware stock only. Choose your carrier and confirm eligibility at Apple."
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "buy-ipad/ipad",
+    "name": "iPad",
+    "category": "iPad",
+    "url": "https://www.apple.com/shop/buy-ipad/ipad",
+    "variants": [
+      {
+        "id": "MD4A4LL/A",
+        "part": "MD4A4LL/A",
+        "label": "128GB Footnote 2 · Wi-Fi · Blue · MD4A4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad",
+        "note": ""
+      },
+      {
+        "id": "MD4H4LL/A",
+        "part": "MD4H4LL/A",
+        "label": "256GB Footnote 2 · Wi-Fi · Blue · MD4H4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad",
+        "note": ""
+      },
+      {
+        "id": "MD4Y4LL/A",
+        "part": "MD4Y4LL/A",
+        "label": "512GB Footnote 2 · Wi-Fi · Blue · MD4Y4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad",
+        "note": ""
+      },
+      {
+        "id": "MD3Y4LL/A",
+        "part": "MD3Y4LL/A",
+        "label": "128GB Footnote 2 · Wi-Fi · Silver · MD3Y4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad",
+        "note": ""
+      },
+      {
+        "id": "MD4G4LL/A",
+        "part": "MD4G4LL/A",
+        "label": "256GB Footnote 2 · Wi-Fi · Silver · MD4G4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad",
+        "note": ""
+      },
+      {
+        "id": "MD4Q4LL/A",
+        "part": "MD4Q4LL/A",
+        "label": "512GB Footnote 2 · Wi-Fi · Silver · MD4Q4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad",
+        "note": ""
+      },
+      {
+        "id": "MD4E4LL/A",
+        "part": "MD4E4LL/A",
+        "label": "128GB Footnote 2 · Wi-Fi · Pink · MD4E4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad",
+        "note": ""
+      },
+      {
+        "id": "MD4P4LL/A",
+        "part": "MD4P4LL/A",
+        "label": "256GB Footnote 2 · Wi-Fi · Pink · MD4P4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad",
+        "note": ""
+      },
+      {
+        "id": "MD5C4LL/A",
+        "part": "MD5C4LL/A",
+        "label": "512GB Footnote 2 · Wi-Fi · Pink · MD5C4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad",
+        "note": ""
+      },
+      {
+        "id": "MD4D4LL/A",
+        "part": "MD4D4LL/A",
+        "label": "128GB Footnote 2 · Wi-Fi · Yellow · MD4D4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad",
+        "note": ""
+      },
+      {
+        "id": "MD4J4LL/A",
+        "part": "MD4J4LL/A",
+        "label": "256GB Footnote 2 · Wi-Fi · Yellow · MD4J4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad",
+        "note": ""
+      },
+      {
+        "id": "MD5A4LL/A",
+        "part": "MD5A4LL/A",
+        "label": "512GB Footnote 2 · Wi-Fi · Yellow · MD5A4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad",
+        "note": ""
+      },
+      {
+        "id": "MD7H4LL/A",
+        "part": "MD7H4LL/A",
+        "label": "128GB Footnote 2 · Wi-Fi + Cellular · Yellow · MD7H4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad/128gb-yellow-wifi-cellular-att",
+        "note": ""
+      },
+      {
+        "id": "MD7M4LL/A",
+        "part": "MD7M4LL/A",
+        "label": "256GB Footnote 2 · Wi-Fi + Cellular · Yellow · MD7M4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad/256gb-yellow-wifi-cellular-att",
+        "note": ""
+      },
+      {
+        "id": "MD7R4LL/A",
+        "part": "MD7R4LL/A",
+        "label": "512GB Footnote 2 · Wi-Fi + Cellular · Yellow · MD7R4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad/512gb-yellow-wifi-cellular-att",
+        "note": ""
+      },
+      {
+        "id": "MD7G4LL/A",
+        "part": "MD7G4LL/A",
+        "label": "128GB Footnote 2 · Wi-Fi + Cellular · Blue · MD7G4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad/128gb-blue-wifi-cellular-att",
+        "note": ""
+      },
+      {
+        "id": "MD7L4LL/A",
+        "part": "MD7L4LL/A",
+        "label": "256GB Footnote 2 · Wi-Fi + Cellular · Blue · MD7L4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad/256gb-blue-wifi-cellular-att",
+        "note": ""
+      },
+      {
+        "id": "MD7Q4LL/A",
+        "part": "MD7Q4LL/A",
+        "label": "512GB Footnote 2 · Wi-Fi + Cellular · Blue · MD7Q4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad/512gb-blue-wifi-cellular-att",
+        "note": ""
+      },
+      {
+        "id": "MD7J4LL/A",
+        "part": "MD7J4LL/A",
+        "label": "128GB Footnote 2 · Wi-Fi + Cellular · Pink · MD7J4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad/128gb-pink-wifi-cellular-att",
+        "note": ""
+      },
+      {
+        "id": "MD7N4LL/A",
+        "part": "MD7N4LL/A",
+        "label": "256GB Footnote 2 · Wi-Fi + Cellular · Pink · MD7N4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad/256gb-pink-wifi-cellular-att",
+        "note": ""
+      },
+      {
+        "id": "MD7T4LL/A",
+        "part": "MD7T4LL/A",
+        "label": "512GB Footnote 2 · Wi-Fi + Cellular · Pink · MD7T4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad/512gb-pink-wifi-cellular-att",
+        "note": ""
+      },
+      {
+        "id": "MD7F4LL/A",
+        "part": "MD7F4LL/A",
+        "label": "128GB Footnote 2 · Wi-Fi + Cellular · Silver · MD7F4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad/128gb-silver-wifi-cellular-att",
+        "note": ""
+      },
+      {
+        "id": "MD7K4LL/A",
+        "part": "MD7K4LL/A",
+        "label": "256GB Footnote 2 · Wi-Fi + Cellular · Silver · MD7K4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad/256gb-silver-wifi-cellular-att",
+        "note": ""
+      },
+      {
+        "id": "MD7P4LL/A",
+        "part": "MD7P4LL/A",
+        "label": "512GB Footnote 2 · Wi-Fi + Cellular · Silver · MD7P4LL/A",
+        "url": "https://www.apple.com/shop/buy-ipad/ipad/512gb-silver-wifi-cellular-att",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "buy-mac/studio-display",
+    "name": "Studio Display",
+    "category": "Displays",
+    "url": "https://www.apple.com/shop/buy-mac/studio-display",
+    "variants": [
+      {
+        "id": "MFEX4LL/A",
+        "part": "MFEX4LL/A",
+        "label": "Standard glass · Tilt-adjustable stand · MFEX4LL/A",
+        "url": "https://www.apple.com/shop/buy-mac/studio-display/standard-glass-tilt-adjustable-stand",
+        "note": ""
+      },
+      {
+        "id": "MFEW4LL/A",
+        "part": "MFEW4LL/A",
+        "label": "Standard glass · Tilt- and height-adjustable stand · MFEW4LL/A",
+        "url": "https://www.apple.com/shop/buy-mac/studio-display/standard-glass-tilt-and-height-adjustable-stand",
+        "note": ""
+      },
+      {
+        "id": "MFEY4LL/A",
+        "part": "MFEY4LL/A",
+        "label": "Standard glass · VESA mount adapter · MFEY4LL/A",
+        "url": "https://www.apple.com/shop/buy-mac/studio-display/standard-glass-vesa-mount-adapter",
+        "note": ""
+      },
+      {
+        "id": "MFF14LL/A",
+        "part": "MFF14LL/A",
+        "label": "Nano-texture glass · Tilt-adjustable stand · MFF14LL/A",
+        "url": "https://www.apple.com/shop/buy-mac/studio-display/nano-texture-glass-tilt-adjustable-stand",
+        "note": ""
+      },
+      {
+        "id": "MFF04LL/A",
+        "part": "MFF04LL/A",
+        "label": "Nano-texture glass · Tilt- and height-adjustable stand · MFF04LL/A",
+        "url": "https://www.apple.com/shop/buy-mac/studio-display/nano-texture-glass-tilt-and-height-adjustable-stand",
+        "note": ""
+      },
+      {
+        "id": "MFF24LL/A",
+        "part": "MFF24LL/A",
+        "label": "Nano-texture glass · VESA mount adapter · MFF24LL/A",
+        "url": "https://www.apple.com/shop/buy-mac/studio-display/nano-texture-glass-vesa-mount-adapter",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "buy-mac/studio-display-xdr",
+    "name": "Studio Display XDR",
+    "category": "Displays",
+    "url": "https://www.apple.com/shop/buy-mac/studio-display-xdr",
+    "variants": [
+      {
+        "id": "MFEL4LL/A",
+        "part": "MFEL4LL/A",
+        "label": "Tilt- and height-adjustable stand · Standard glass · MFEL4LL/A",
+        "url": "https://www.apple.com/shop/buy-mac/studio-display-xdr/standard-glass-tilt-and-height-adjustable-stand",
+        "note": ""
+      },
+      {
+        "id": "MFEN4LL/A",
+        "part": "MFEN4LL/A",
+        "label": "VESA mount adapter · Standard glass · MFEN4LL/A",
+        "url": "https://www.apple.com/shop/buy-mac/studio-display-xdr/standard-glass-vesa-mount-adapter",
+        "note": ""
+      },
+      {
+        "id": "MFEP4LL/A",
+        "part": "MFEP4LL/A",
+        "label": "Tilt- and height-adjustable stand · Nano-texture glass · MFEP4LL/A",
+        "url": "https://www.apple.com/shop/buy-mac/studio-display-xdr/nano-texture-glass-tilt-and-height-adjustable-stand",
+        "note": ""
+      },
+      {
+        "id": "MFEQ4LL/A",
+        "part": "MFEQ4LL/A",
+        "label": "VESA mount adapter · Nano-texture glass · MFEQ4LL/A",
+        "url": "https://www.apple.com/shop/buy-mac/studio-display-xdr/nano-texture-glass-vesa-mount-adapter",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "buy-watch/apple-watch-se",
+    "name": "Apple Watch SE 3",
+    "category": "Apple Watch",
+    "url": "https://www.apple.com/shop/buy-watch/apple-watch-se",
+    "variants": [
+      {
+        "id": "MEHX4LW/A",
+        "part": "MEHX4LW/A",
+        "label": "40mm · aluminum · midnight · GPS · MEHX4LW/A",
+        "url": "https://www.apple.com/shop/buy-watch/apple-watch-se",
+        "note": "Watch case stock; choose a compatible band and fit at Apple."
+      },
+      {
+        "id": "MEQ24LW/A",
+        "part": "MEQ24LW/A",
+        "label": "40mm · aluminum · midnight · GPS + Cellular · MEQ24LW/A",
+        "url": "https://www.apple.com/shop/buy-watch/apple-watch-se",
+        "note": "Watch case stock; choose a compatible band and fit at Apple."
+      },
+      {
+        "id": "MEQ44LW/A",
+        "part": "MEQ44LW/A",
+        "label": "44mm · aluminum · midnight · GPS + Cellular · MEQ44LW/A",
+        "url": "https://www.apple.com/shop/buy-watch/apple-watch-se",
+        "note": "Watch case stock; choose a compatible band and fit at Apple."
+      },
+      {
+        "id": "MEQ14LW/A",
+        "part": "MEQ14LW/A",
+        "label": "40mm · aluminum · starlight · GPS + Cellular · MEQ14LW/A",
+        "url": "https://www.apple.com/shop/buy-watch/apple-watch-se",
+        "note": "Watch case stock; choose a compatible band and fit at Apple."
+      },
+      {
+        "id": "MEP34LW/A",
+        "part": "MEP34LW/A",
+        "label": "44mm · aluminum · midnight · GPS · MEP34LW/A",
+        "url": "https://www.apple.com/shop/buy-watch/apple-watch-se",
+        "note": "Watch case stock; choose a compatible band and fit at Apple."
+      },
+      {
+        "id": "MEHV4LW/A",
+        "part": "MEHV4LW/A",
+        "label": "40mm · aluminum · starlight · GPS · MEHV4LW/A",
+        "url": "https://www.apple.com/shop/buy-watch/apple-watch-se",
+        "note": "Watch case stock; choose a compatible band and fit at Apple."
+      },
+      {
+        "id": "MEP04LW/A",
+        "part": "MEP04LW/A",
+        "label": "44mm · aluminum · starlight · GPS · MEP04LW/A",
+        "url": "https://www.apple.com/shop/buy-watch/apple-watch-se",
+        "note": "Watch case stock; choose a compatible band and fit at Apple."
+      },
+      {
+        "id": "MEQ34LW/A",
+        "part": "MEQ34LW/A",
+        "label": "44mm · aluminum · starlight · GPS + Cellular · MEQ34LW/A",
+        "url": "https://www.apple.com/shop/buy-watch/apple-watch-se",
+        "note": "Watch case stock; choose a compatible band and fit at Apple."
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "buy-watch/apple-watch-hermes",
+    "name": "Apple Watch Hermès Series 12",
+    "category": "Apple Watch",
+    "url": "https://www.apple.com/shop/buy-watch/apple-watch-hermes",
+    "variants": [
+      {
+        "id": "MJJX4LS/A",
+        "part": "MJJX4LS/A",
+        "label": "42mm · titanium · radiantgold · MJJX4LS/A",
+        "url": "https://www.apple.com/shop/buy-watch/apple-watch-hermes",
+        "note": "Watch case stock; choose a compatible band and fit at Apple."
+      },
+      {
+        "id": "MJJY4LS/A",
+        "part": "MJJY4LS/A",
+        "label": "42mm · titanium · silver · MJJY4LS/A",
+        "url": "https://www.apple.com/shop/buy-watch/apple-watch-hermes",
+        "note": "Watch case stock; choose a compatible band and fit at Apple."
+      },
+      {
+        "id": "MJK14LS/A",
+        "part": "MJK14LS/A",
+        "label": "46mm · titanium · silver · MJK14LS/A",
+        "url": "https://www.apple.com/shop/buy-watch/apple-watch-hermes",
+        "note": "Watch case stock; choose a compatible band and fit at Apple."
+      },
+      {
+        "id": "MJK04LS/A",
+        "part": "MJK04LS/A",
+        "label": "46mm · titanium · radiantgold · MJK04LS/A",
+        "url": "https://www.apple.com/shop/buy-watch/apple-watch-hermes",
+        "note": "Watch case stock; choose a compatible band and fit at Apple."
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "buy-watch/apple-watch-hermes-ultra",
+    "name": "Apple Watch Hermès Ultra 4",
+    "category": "Apple Watch",
+    "url": "https://www.apple.com/shop/buy-watch/apple-watch-hermes-ultra",
+    "variants": [
+      {
+        "id": "MJCY4LS/A",
+        "part": "MJCY4LS/A",
+        "label": "49MM · natural · MJCY4LS/A",
+        "url": "https://www.apple.com/shop/buy-watch/apple-watch-hermes-ultra",
+        "note": "Watch case stock; choose a compatible band and fit at Apple."
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "buy-homepod/homepod-mini",
+    "name": "HomePod mini 2",
+    "category": "Home & TV",
+    "url": "https://www.apple.com/shop/buy-homepod/homepod-mini",
+    "variants": [
+      {
+        "id": "MGHK4AM/A",
+        "part": "MGHK4AM/A",
+        "label": "White · MGHK4AM/A",
+        "url": "https://www.apple.com/shop/buy-homepod/homepod-mini/white",
+        "note": ""
+      },
+      {
+        "id": "MGKR4AM/A",
+        "part": "MGKR4AM/A",
+        "label": "Pink · MGKR4AM/A",
+        "url": "https://www.apple.com/shop/buy-homepod/homepod-mini/pink",
+        "note": ""
+      },
+      {
+        "id": "MGHM4AM/A",
+        "part": "MGHM4AM/A",
+        "label": "Blue · MGHM4AM/A",
+        "url": "https://www.apple.com/shop/buy-homepod/homepod-mini/blue",
+        "note": ""
+      },
+      {
+        "id": "MGHL4AM/A",
+        "part": "MGHL4AM/A",
+        "label": "Green · MGHL4AM/A",
+        "url": "https://www.apple.com/shop/buy-homepod/homepod-mini/green",
+        "note": ""
+      },
+      {
+        "id": "MGHJ4AM/A",
+        "part": "MGHJ4AM/A",
+        "label": "Midnight · MGHJ4AM/A",
+        "url": "https://www.apple.com/shop/buy-homepod/homepod-mini/midnight",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "buy-tv/apple-tv-4k",
+    "name": "Apple TV 4K",
+    "category": "Home & TV",
+    "url": "https://www.apple.com/shop/buy-tv/apple-tv-4k",
+    "variants": [
+      {
+        "id": "MLFF4LL/A",
+        "part": "MLFF4LL/A",
+        "label": "Standard configuration · MLFF4LL/A",
+        "url": "https://www.apple.com/shop/buy-tv/apple-tv-4k",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "product/mkr74zm/a/iphone-duo-folio-with-kickstand-navy-blue",
+    "name": "iPhone Duo Folio with Kickstand – Navy Blue",
+    "category": "Accessories",
+    "url": "https://www.apple.com/shop/product/mkr74zm/a/iphone-duo-folio-with-kickstand-navy-blue",
+    "variants": [
+      {
+        "id": "MKR74ZM/A",
+        "part": "MKR74ZM/A",
+        "label": "iPhone Duo Folio with Kickstand – Navy Blue · MKR74ZM/A",
+        "url": "https://www.apple.com/shop/product/mkr74zm/a/iphone-duo-folio-with-kickstand-navy-blue",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "buy-airtag/airtag/4-pack",
+    "name": "AirTag 4 pack",
+    "category": "AirTag",
+    "url": "https://www.apple.com/shop/buy-airtag/airtag/4-pack",
+    "variants": [
+      {
+        "id": "MFE94LL/A",
+        "part": "MFE94LL/A",
+        "label": "1 pack · MFE94LL/A",
+        "url": "https://www.apple.com/shop/buy-airtag/airtag/4-pack/1-pack",
+        "note": ""
+      },
+      {
+        "id": "MFEA4LL/A",
+        "part": "MFEA4LL/A",
+        "label": "4 pack · MFEA4LL/A",
+        "url": "https://www.apple.com/shop/buy-airtag/airtag/4-pack/4-pack",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "product/mxk53am/a/magic-mouse-usb%E2%80%91c-white-multi-touch-surface",
+    "name": "Magic Mouse (USB‑C) - White Multi-Touch Surface",
+    "category": "Accessories",
+    "url": "https://www.apple.com/shop/product/mxk53am/a/magic-mouse-usb%E2%80%91c-white-multi-touch-surface",
+    "variants": [
+      {
+        "id": "MXK53AM/A",
+        "part": "MXK53AM/A",
+        "label": "Magic Mouse (USB‑C) - White Multi-Touch Surface · MXK53AM/A",
+        "url": "https://www.apple.com/shop/product/mxk53am/a/magic-mouse-usb%E2%80%91c-white-multi-touch-surface",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "buy-airpods/airpods-pro-3",
+    "name": "AirPods Pro 3",
+    "category": "AirPods",
+    "url": "https://www.apple.com/shop/buy-airpods/airpods-pro-3",
+    "variants": [
+      {
+        "id": "MFHP4LL/A",
+        "part": "MFHP4LL/A",
+        "label": "Standard configuration · MFHP4LL/A",
+        "url": "https://www.apple.com/shop/buy-airpods/airpods-pro-3",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "buy-airpods/airpods-max-2",
+    "name": "AirPods Max 2",
+    "category": "AirPods",
+    "url": "https://www.apple.com/shop/buy-airpods/airpods-max-2",
+    "variants": [
+      {
+        "id": "MHWM4AM/A",
+        "part": "MHWM4AM/A",
+        "label": "Blue · MHWM4AM/A",
+        "url": "https://www.apple.com/shop/buy-airpods/airpods-max-2/blue",
+        "note": ""
+      },
+      {
+        "id": "MHWP4AM/A",
+        "part": "MHWP4AM/A",
+        "label": "Purple · MHWP4AM/A",
+        "url": "https://www.apple.com/shop/buy-airpods/airpods-max-2/purple",
+        "note": ""
+      },
+      {
+        "id": "MHWK4AM/A",
+        "part": "MHWK4AM/A",
+        "label": "Midnight · MHWK4AM/A",
+        "url": "https://www.apple.com/shop/buy-airpods/airpods-max-2/midnight",
+        "note": ""
+      },
+      {
+        "id": "MHWL4AM/A",
+        "part": "MHWL4AM/A",
+        "label": "Starlight · MHWL4AM/A",
+        "url": "https://www.apple.com/shop/buy-airpods/airpods-max-2/starlight",
+        "note": ""
+      },
+      {
+        "id": "MHWN4AM/A",
+        "part": "MHWN4AM/A",
+        "label": "Orange · MHWN4AM/A",
+        "url": "https://www.apple.com/shop/buy-airpods/airpods-max-2/orange",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "buy-homepod/homepod",
+    "name": "HomePod (2nd generation)",
+    "category": "Home & TV",
+    "url": "https://www.apple.com/shop/buy-homepod/homepod",
+    "variants": [
+      {
+        "id": "MDEW4LL/A",
+        "part": "MDEW4LL/A",
+        "label": "Midnight · MDEW4LL/A",
+        "url": "https://www.apple.com/shop/buy-homepod/homepod/midnight",
+        "note": ""
+      },
+      {
+        "id": "MDEY4LL/A",
+        "part": "MDEY4LL/A",
+        "label": "White · MDEY4LL/A",
+        "url": "https://www.apple.com/shop/buy-homepod/homepod/white",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "buy-vision/apple-vision-pro",
+    "name": "Apple Vision Pro",
+    "category": "Apple Vision Pro",
+    "url": "https://www.apple.com/shop/buy-vision/apple-vision-pro",
+    "variants": [
+      {
+        "id": "MFHE4AM/A",
+        "part": "MFHE4AM/A",
+        "label": "256GBFootnote2 · MFHE4AM/A",
+        "url": "https://www.apple.com/shop/buy-vision/apple-vision-pro",
+        "note": ""
+      },
+      {
+        "id": "MFHG4AM/A",
+        "part": "MFHG4AM/A",
+        "label": "1TBFootnote2 · MFHG4AM/A",
+        "url": "https://www.apple.com/shop/buy-vision/apple-vision-pro",
+        "note": ""
+      },
+      {
+        "id": "MFHF4AM/A",
+        "part": "MFHF4AM/A",
+        "label": "512GBFootnote2 · MFHF4AM/A",
+        "url": "https://www.apple.com/shop/buy-vision/apple-vision-pro",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "buy-airtag/airtag",
+    "name": "AirTag",
+    "category": "AirTag",
+    "url": "https://www.apple.com/shop/buy-airtag/airtag",
+    "variants": [
+      {
+        "id": "MFE94LL/A",
+        "part": "MFE94LL/A",
+        "label": "1 pack · MFE94LL/A",
+        "url": "https://www.apple.com/shop/buy-airtag/airtag/1-pack",
+        "note": ""
+      },
+      {
+        "id": "MFEA4LL/A",
+        "part": "MFEA4LL/A",
+        "label": "4 pack · MFEA4LL/A",
+        "url": "https://www.apple.com/shop/buy-airtag/airtag/4-pack",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "product/mkr64zm/a/iphone-duo-folio-with-kickstand-taupe",
+    "name": "iPhone Duo Folio with Kickstand – Taupe",
+    "category": "Accessories",
+    "url": "https://www.apple.com/shop/product/mkr64zm/a/iphone-duo-folio-with-kickstand-taupe",
+    "variants": [
+      {
+        "id": "MKR64ZM/A",
+        "part": "MKR64ZM/A",
+        "label": "iPhone Duo Folio with Kickstand – Taupe · MKR64ZM/A",
+        "url": "https://www.apple.com/shop/product/mkr64zm/a/iphone-duo-folio-with-kickstand-taupe",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "product/mkr84zm/a/iphone-duo-case-navy-blue",
+    "name": "iPhone Duo Case – Navy Blue",
+    "category": "Accessories",
+    "url": "https://www.apple.com/shop/product/mkr84zm/a/iphone-duo-case-navy-blue",
+    "variants": [
+      {
+        "id": "MKR84ZM/A",
+        "part": "MKR84ZM/A",
+        "label": "iPhone Duo Case – Navy Blue · MKR84ZM/A",
+        "url": "https://www.apple.com/shop/product/mkr84zm/a/iphone-duo-case-navy-blue",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "product/mkdm4zm/a/iphone-18-pro-max-techwoven-case-with-magsafe-burgundy",
+    "name": "iPhone 18 Pro Max TechWoven Case with MagSafe – Burgundy",
+    "category": "Accessories",
+    "url": "https://www.apple.com/shop/product/mkdm4zm/a/iphone-18-pro-max-techwoven-case-with-magsafe-burgundy",
+    "variants": [
+      {
+        "id": "MKDM4ZM/A",
+        "part": "MKDM4ZM/A",
+        "label": "iPhone 18 Pro Max TechWoven Case with MagSafe – Burgundy · MKDM4ZM/A",
+        "url": "https://www.apple.com/shop/product/mkdm4zm/a/iphone-18-pro-max-techwoven-case-with-magsafe-burgundy",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "product/mkd54zm/a/iphone-18-pro-techwoven-case-with-magsafe-chambray-blue",
+    "name": "iPhone 18 Pro TechWoven Case with MagSafe – Chambray Blue",
+    "category": "Accessories",
+    "url": "https://www.apple.com/shop/product/mkd54zm/a/iphone-18-pro-techwoven-case-with-magsafe-chambray-blue",
+    "variants": [
+      {
+        "id": "MKD54ZM/A",
+        "part": "MKD54ZM/A",
+        "label": "iPhone 18 Pro TechWoven Case with MagSafe – Chambray Blue · MKD54ZM/A",
+        "url": "https://www.apple.com/shop/product/mkd54zm/a/iphone-18-pro-techwoven-case-with-magsafe-chambray-blue",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "product/mk904zm/a/iphone-18-pro-max-silicone-case-with-magsafe-magenta",
+    "name": "iPhone 18 Pro Max Silicone Case with MagSafe – Magenta",
+    "category": "Accessories",
+    "url": "https://www.apple.com/shop/product/mk904zm/a/iphone-18-pro-max-silicone-case-with-magsafe-magenta",
+    "variants": [
+      {
+        "id": "MK904ZM/A",
+        "part": "MK904ZM/A",
+        "label": "iPhone 18 Pro Max Silicone Case with MagSafe – Magenta · MK904ZM/A",
+        "url": "https://www.apple.com/shop/product/mk904zm/a/iphone-18-pro-max-silicone-case-with-magsafe-magenta",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "product/mk8w4zm/a/iphone-18-pro-silicone-case-with-magsafe-crisp-blue",
+    "name": "iPhone 18 Pro Silicone Case with MagSafe – Crisp Blue",
+    "category": "Accessories",
+    "url": "https://www.apple.com/shop/product/mk8w4zm/a/iphone-18-pro-silicone-case-with-magsafe-crisp-blue",
+    "variants": [
+      {
+        "id": "MK8W4ZM/A",
+        "part": "MK8W4ZM/A",
+        "label": "iPhone 18 Pro Silicone Case with MagSafe – Crisp Blue · MK8W4ZM/A",
+        "url": "https://www.apple.com/shop/product/mk8w4zm/a/iphone-18-pro-silicone-case-with-magsafe-crisp-blue",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "product/mkdv4zm/a/iphone-18-pro-max-clear-case-with-magsafe",
+    "name": "iPhone 18 Pro Max Clear Case with MagSafe",
+    "category": "Accessories",
+    "url": "https://www.apple.com/shop/product/mkdv4zm/a/iphone-18-pro-max-clear-case-with-magsafe",
+    "variants": [
+      {
+        "id": "MKDV4ZM/A",
+        "part": "MKDV4ZM/A",
+        "label": "iPhone 18 Pro Max Clear Case with MagSafe · MKDV4ZM/A",
+        "url": "https://www.apple.com/shop/product/mkdv4zm/a/iphone-18-pro-max-clear-case-with-magsafe",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "product/mkf74ll/a/wrist-strap-burgundy",
+    "name": "Wrist Strap – Burgundy",
+    "category": "Accessories",
+    "url": "https://www.apple.com/shop/product/mkf74ll/a/wrist-strap-burgundy",
+    "variants": [
+      {
+        "id": "MKF74LL/A",
+        "part": "MKF74LL/A",
+        "label": "Wrist Strap – Burgundy · MKF74LL/A",
+        "url": "https://www.apple.com/shop/product/mkf74ll/a/wrist-strap-burgundy",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "product/mk984ll/a/crossbody-strap-crisp-blue",
+    "name": "Crossbody Strap – Crisp Blue",
+    "category": "Accessories",
+    "url": "https://www.apple.com/shop/product/mk984ll/a/crossbody-strap-crisp-blue",
+    "variants": [
+      {
+        "id": "MK984LL/A",
+        "part": "MK984LL/A",
+        "label": "Crossbody Strap – Crisp Blue · MK984LL/A",
+        "url": "https://www.apple.com/shop/product/mk984ll/a/crossbody-strap-crisp-blue",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "product/mk9g4zm/a/iphone-finewoven-wallet-with-magsafe-magenta",
+    "name": "iPhone FineWoven Wallet with MagSafe – Magenta",
+    "category": "Accessories",
+    "url": "https://www.apple.com/shop/product/mk9g4zm/a/iphone-finewoven-wallet-with-magsafe-magenta",
+    "variants": [
+      {
+        "id": "MK9G4ZM/A",
+        "part": "MK9G4ZM/A",
+        "label": "iPhone FineWoven Wallet with MagSafe – Magenta · MK9G4ZM/A",
+        "url": "https://www.apple.com/shop/product/mk9g4zm/a/iphone-finewoven-wallet-with-magsafe-magenta",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "product/myqy3am/a/earpods-usb-c",
+    "name": "EarPods (USB-C)",
+    "category": "Accessories",
+    "url": "https://www.apple.com/shop/product/myqy3am/a/earpods-usb-c",
+    "variants": [
+      {
+        "id": "MYQY3AM/A",
+        "part": "MYQY3AM/A",
+        "label": "EarPods (USB-C) · MYQY3AM/A",
+        "url": "https://www.apple.com/shop/product/myqy3am/a/earpods-usb-c",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "product/mlfc4am/a/siri-remote",
+    "name": "Siri Remote",
+    "category": "Accessories",
+    "url": "https://www.apple.com/shop/product/mlfc4am/a/siri-remote",
+    "variants": [
+      {
+        "id": "MLFC4AM/A",
+        "part": "MLFC4AM/A",
+        "label": "Siri Remote · MLFC4AM/A",
+        "url": "https://www.apple.com/shop/product/mlfc4am/a/siri-remote",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "product/mhvt4zm/a/iphone-17-silicone-case-with-magsafe-electric-lavender",
+    "name": "iPhone 17 Silicone Case with MagSafe – Electric Lavender",
+    "category": "Accessories",
+    "url": "https://www.apple.com/shop/product/mhvt4zm/a/iphone-17-silicone-case-with-magsafe-electric-lavender",
+    "variants": [
+      {
+        "id": "MHVT4ZM/A",
+        "part": "MHVT4ZM/A",
+        "label": "iPhone 17 Silicone Case with MagSafe – Electric Lavender · MHVT4ZM/A",
+        "url": "https://www.apple.com/shop/product/mhvt4zm/a/iphone-17-silicone-case-with-magsafe-electric-lavender",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "product/mgf24ll/a/iphone-17-clear-case-with-magsafe",
+    "name": "iPhone 17 Clear Case with MagSafe",
+    "category": "Accessories",
+    "url": "https://www.apple.com/shop/product/mgf24ll/a/iphone-17-clear-case-with-magsafe",
+    "variants": [
+      {
+        "id": "MGF24LL/A",
+        "part": "MGF24LL/A",
+        "label": "iPhone 17 Clear Case with MagSafe · MGF24LL/A",
+        "url": "https://www.apple.com/shop/product/mgf24ll/a/iphone-17-clear-case-with-magsafe",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "product/hs9u2zm/a/logitech-muse",
+    "name": "Logitech Muse",
+    "category": "Accessories",
+    "url": "https://www.apple.com/shop/product/hs9u2zm/a/logitech-muse",
+    "variants": [
+      {
+        "id": "HS9U2ZM/A",
+        "part": "HS9U2ZM/A",
+        "label": "Logitech Muse · HS9U2ZM/A",
+        "url": "https://www.apple.com/shop/product/hs9u2zm/a/logitech-muse",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "product/hs8h2zm/a/playstation-vr2-sense-controller-charging-station",
+    "name": "PlayStation VR2 Sense Controller & Charging Station",
+    "category": "Accessories",
+    "url": "https://www.apple.com/shop/product/hs8h2zm/a/playstation-vr2-sense-controller-charging-station",
+    "variants": [
+      {
+        "id": "HS8H2ZM/A",
+        "part": "HS8H2ZM/A",
+        "label": "PlayStation VR2 Sense Controller & Charging Station · HS8H2ZM/A",
+        "url": "https://www.apple.com/shop/product/hs8h2zm/a/playstation-vr2-sense-controller-charging-station",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "product/mw493am/a/60w-usb-c-charge-cable-1-m",
+    "name": "60W USB-C Charge Cable (1 m)",
+    "category": "Accessories",
+    "url": "https://www.apple.com/shop/product/mw493am/a/60w-usb-c-charge-cable-1-m",
+    "variants": [
+      {
+        "id": "MW493AM/A",
+        "part": "MW493AM/A",
+        "label": "60W USB-C Charge Cable (1 m) · MW493AM/A",
+        "url": "https://www.apple.com/shop/product/mw493am/a/60w-usb-c-charge-cable-1-m",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "product/myqt3am/a/240w-usb-c-charge-cable-2-m",
+    "name": "240W USB-C Charge Cable (2 m)",
+    "category": "Accessories",
+    "url": "https://www.apple.com/shop/product/myqt3am/a/240w-usb-c-charge-cable-2-m",
+    "variants": [
+      {
+        "id": "MYQT3AM/A",
+        "part": "MYQT3AM/A",
+        "label": "240W USB-C Charge Cable (2 m) · MYQT3AM/A",
+        "url": "https://www.apple.com/shop/product/myqt3am/a/240w-usb-c-charge-cable-2-m",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "product/mgd74ll/a/magsafe-charger-1-m",
+    "name": "MagSafe Charger (1 m)",
+    "category": "Accessories",
+    "url": "https://www.apple.com/shop/product/mgd74ll/a/magsafe-charger-1-m",
+    "variants": [
+      {
+        "id": "MGD74LL/A",
+        "part": "MGD74LL/A",
+        "label": "MagSafe Charger (1 m) · MGD74LL/A",
+        "url": "https://www.apple.com/shop/product/mgd74ll/a/magsafe-charger-1-m",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "product/mgdm4ll/a/magsafe-charger-2-m",
+    "name": "MagSafe Charger (2 m)",
+    "category": "Accessories",
+    "url": "https://www.apple.com/shop/product/mgdm4ll/a/magsafe-charger-2-m",
+    "variants": [
+      {
+        "id": "MGDM4LL/A",
+        "part": "MGDM4LL/A",
+        "label": "MagSafe Charger (2 m) · MGDM4LL/A",
+        "url": "https://www.apple.com/shop/product/mgdm4ll/a/magsafe-charger-2-m",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "product/ml434am/a/apple-watch-magnetic-fast-charger-to-usb-c-cable-1-m",
+    "name": "Apple Watch Magnetic Fast Charger to USB-C Cable (1 m)",
+    "category": "Accessories",
+    "url": "https://www.apple.com/shop/product/ml434am/a/apple-watch-magnetic-fast-charger-to-usb-c-cable-1-m",
+    "variants": [
+      {
+        "id": "ML434AM/A",
+        "part": "ML434AM/A",
+        "label": "Apple Watch Magnetic Fast Charger to USB-C Cable (1 m) · ML434AM/A",
+        "url": "https://www.apple.com/shop/product/ml434am/a/apple-watch-magnetic-fast-charger-to-usb-c-cable-1-m",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "product/mw613am/a/usb-c-to-magsafe-3-cable-2-m-silver",
+    "name": "USB-C to MagSafe 3 Cable (2 m) - Silver",
+    "category": "Accessories",
+    "url": "https://www.apple.com/shop/product/mw613am/a/usb-c-to-magsafe-3-cable-2-m-silver",
+    "variants": [
+      {
+        "id": "MW613AM/A",
+        "part": "MW613AM/A",
+        "label": "USB-C to MagSafe 3 Cable (2 m) - Silver · MW613AM/A",
+        "url": "https://www.apple.com/shop/product/mw613am/a/usb-c-to-magsafe-3-cable-2-m-silver",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "product/mgkn4am/a/40w-dynamic-power-adapter-with-60w-max",
+    "name": "40W Dynamic Power Adapter with 60W Max",
+    "category": "Accessories",
+    "url": "https://www.apple.com/shop/product/mgkn4am/a/40w-dynamic-power-adapter-with-60w-max",
+    "variants": [
+      {
+        "id": "MGKN4AM/A",
+        "part": "MGKN4AM/A",
+        "label": "40W Dynamic Power Adapter with 60W Max · MGKN4AM/A",
+        "url": "https://www.apple.com/shop/product/mgkn4am/a/40w-dynamic-power-adapter-with-60w-max",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "product/mw2h3am/a/35w-dual-usb-c-port-compact-power-adapter",
+    "name": "35W Dual USB-C Port Compact Power Adapter",
+    "category": "Accessories",
+    "url": "https://www.apple.com/shop/product/mw2h3am/a/35w-dual-usb-c-port-compact-power-adapter",
+    "variants": [
+      {
+        "id": "MW2H3AM/A",
+        "part": "MW2H3AM/A",
+        "label": "35W Dual USB-C Port Compact Power Adapter · MW2H3AM/A",
+        "url": "https://www.apple.com/shop/product/mw2h3am/a/35w-dual-usb-c-port-compact-power-adapter",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "product/mwvv3am/a/20w-usb-c-power-adapter",
+    "name": "20W USB-C Power Adapter",
+    "category": "Accessories",
+    "url": "https://www.apple.com/shop/product/mwvv3am/a/20w-usb-c-power-adapter",
+    "variants": [
+      {
+        "id": "MWVV3AM/A",
+        "part": "MWVV3AM/A",
+        "label": "20W USB-C Power Adapter · MWVV3AM/A",
+        "url": "https://www.apple.com/shop/product/mwvv3am/a/20w-usb-c-power-adapter",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "product/mkfp4am/a/70w-power-adapter",
+    "name": "70W Power Adapter",
+    "category": "Accessories",
+    "url": "https://www.apple.com/shop/product/mkfp4am/a/70w-power-adapter",
+    "variants": [
+      {
+        "id": "MKFP4AM/A",
+        "part": "MKFP4AM/A",
+        "label": "70W Power Adapter · MKFP4AM/A",
+        "url": "https://www.apple.com/shop/product/mkfp4am/a/70w-power-adapter",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "product/mw2l3am/a/96w-power-adapter",
+    "name": "96W Power Adapter",
+    "category": "Accessories",
+    "url": "https://www.apple.com/shop/product/mw2l3am/a/96w-power-adapter",
+    "variants": [
+      {
+        "id": "MW2L3AM/A",
+        "part": "MW2L3AM/A",
+        "label": "96W Power Adapter · MW2L3AM/A",
+        "url": "https://www.apple.com/shop/product/mw2l3am/a/96w-power-adapter",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "product/mkfq4am/a/140w-power-adapter",
+    "name": "140W Power Adapter",
+    "category": "Accessories",
+    "url": "https://www.apple.com/shop/product/mkfq4am/a/140w-power-adapter",
+    "variants": [
+      {
+        "id": "MKFQ4AM/A",
+        "part": "MKFQ4AM/A",
+        "label": "140W Power Adapter · MKFQ4AM/A",
+        "url": "https://www.apple.com/shop/product/mkfq4am/a/140w-power-adapter",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "product/mlfr4g/a/world-travel-adapter-kit",
+    "name": "World Travel Adapter Kit",
+    "category": "Accessories",
+    "url": "https://www.apple.com/shop/product/mlfr4g/a/world-travel-adapter-kit",
+    "variants": [
+      {
+        "id": "MLFR4G/A",
+        "part": "MLFR4G/A",
+        "label": "World Travel Adapter Kit · MLFR4G/A",
+        "url": "https://www.apple.com/shop/product/mlfr4g/a/world-travel-adapter-kit",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "product/mkfr4ll/a/power-adapter-extension-cable-ac-connector-2",
+    "name": "Power Adapter Extension Cable (AC Connector 2)",
+    "category": "Accessories",
+    "url": "https://www.apple.com/shop/product/mkfr4ll/a/power-adapter-extension-cable-ac-connector-2",
+    "variants": [
+      {
+        "id": "MKFR4LL/A",
+        "part": "MKFR4LL/A",
+        "label": "Power Adapter Extension Cable (AC Connector 2) · MKFR4LL/A",
+        "url": "https://www.apple.com/shop/product/mkfr4ll/a/power-adapter-extension-cable-ac-connector-2",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "product/mdw94am/a/thunderbolt-5-usb%E2%80%91c-pro-cable-1-m",
+    "name": "Thunderbolt 5 (USB‑C) Pro Cable (1 m)",
+    "category": "Accessories",
+    "url": "https://www.apple.com/shop/product/mdw94am/a/thunderbolt-5-usb%E2%80%91c-pro-cable-1-m",
+    "variants": [
+      {
+        "id": "MDW94AM/A",
+        "part": "MDW94AM/A",
+        "label": "Thunderbolt 5 (USB‑C) Pro Cable (1 m) · MDW94AM/A",
+        "url": "https://www.apple.com/shop/product/mdw94am/a/thunderbolt-5-usb%E2%80%91c-pro-cable-1-m",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "product/mw5j3am/a/thunderbolt-4-usb%E2%80%91c-pro-cable-18-m",
+    "name": "Thunderbolt 4 (USB‑C) Pro Cable (1.8 m)",
+    "category": "Accessories",
+    "url": "https://www.apple.com/shop/product/mw5j3am/a/thunderbolt-4-usb%E2%80%91c-pro-cable-18-m",
+    "variants": [
+      {
+        "id": "MW5J3AM/A",
+        "part": "MW5J3AM/A",
+        "label": "Thunderbolt 4 (USB‑C) Pro Cable (1.8 m) · MW5J3AM/A",
+        "url": "https://www.apple.com/shop/product/mw5j3am/a/thunderbolt-4-usb%E2%80%91c-pro-cable-18-m",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "product/mw5h3am/a/thunderbolt-4-usb%E2%80%91c-pro-cable-3-m",
+    "name": "Thunderbolt 4 (USB‑C) Pro Cable (3 m)",
+    "category": "Accessories",
+    "url": "https://www.apple.com/shop/product/mw5h3am/a/thunderbolt-4-usb%E2%80%91c-pro-cable-3-m",
+    "variants": [
+      {
+        "id": "MW5H3AM/A",
+        "part": "MW5H3AM/A",
+        "label": "Thunderbolt 4 (USB‑C) Pro Cable (3 m) · MW5H3AM/A",
+        "url": "https://www.apple.com/shop/product/mw5h3am/a/thunderbolt-4-usb%E2%80%91c-pro-cable-3-m",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "product/mk8p4ll/a/beats-usb%E2%80%91c-to-usb%E2%80%91c-woven-cable-15-m-5-ft-power-pink",
+    "name": "Beats USB‑C to USB‑C Woven Cable (1.5 m / 5 ft.) – Power Pink",
+    "category": "Beats",
+    "url": "https://www.apple.com/shop/product/mk8p4ll/a/beats-usb%E2%80%91c-to-usb%E2%80%91c-woven-cable-15-m-5-ft-power-pink",
+    "variants": [
+      {
+        "id": "MK8P4LL/A",
+        "part": "MK8P4LL/A",
+        "label": "Beats USB‑C to USB‑C Woven Cable (1.5 m / 5 ft.) – Power Pink · MK8P4LL/A",
+        "url": "https://www.apple.com/shop/product/mk8p4ll/a/beats-usb%E2%80%91c-to-usb%E2%80%91c-woven-cable-15-m-5-ft-power-pink",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "product/mhx94ll/a/beats-usb%E2%80%91c-to-usb%E2%80%91c-woven-cable-3-m-10-ft-rapid-red",
+    "name": "Beats USB‑C to USB‑C Woven Cable (3 m / 10 ft) – Rapid Red",
+    "category": "Beats",
+    "url": "https://www.apple.com/shop/product/mhx94ll/a/beats-usb%E2%80%91c-to-usb%E2%80%91c-woven-cable-3-m-10-ft-rapid-red",
+    "variants": [
+      {
+        "id": "MHX94LL/A",
+        "part": "MHX94LL/A",
+        "label": "Beats USB‑C to USB‑C Woven Cable (3 m / 10 ft) – Rapid Red · MHX94LL/A",
+        "url": "https://www.apple.com/shop/product/mhx94ll/a/beats-usb%E2%80%91c-to-usb%E2%80%91c-woven-cable-3-m-10-ft-rapid-red",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "product/mk8r4ll/a/beats-usb-a-to-usb-c-woven-cable-15-m-5-ft-power-pink",
+    "name": "Beats USB-A to USB-C Woven Cable (1.5 m / 5 ft.) – Power Pink",
+    "category": "Beats",
+    "url": "https://www.apple.com/shop/product/mk8r4ll/a/beats-usb-a-to-usb-c-woven-cable-15-m-5-ft-power-pink",
+    "variants": [
+      {
+        "id": "MK8R4LL/A",
+        "part": "MK8R4LL/A",
+        "label": "Beats USB-A to USB-C Woven Cable (1.5 m / 5 ft.) – Power Pink · MK8R4LL/A",
+        "url": "https://www.apple.com/shop/product/mk8r4ll/a/beats-usb-a-to-usb-c-woven-cable-15-m-5-ft-power-pink",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "product/meql4ll/a/beats-usb-a-to-usb-c-woven-short-cable-20-cm-8-in-bolt-black",
+    "name": "Beats USB-A to USB-C Woven Short Cable (20 cm / 8 in.) – Bolt Black",
+    "category": "Beats",
+    "url": "https://www.apple.com/shop/product/meql4ll/a/beats-usb-a-to-usb-c-woven-short-cable-20-cm-8-in-bolt-black",
+    "variants": [
+      {
+        "id": "MEQL4LL/A",
+        "part": "MEQL4LL/A",
+        "label": "Beats USB-A to USB-C Woven Short Cable (20 cm / 8 in.) – Bolt Black · MEQL4LL/A",
+        "url": "https://www.apple.com/shop/product/meql4ll/a/beats-usb-a-to-usb-c-woven-short-cable-20-cm-8-in-bolt-black",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "product/meq94ll/a/beats-usb%E2%80%91c-to-usb%E2%80%91c-woven-short-cable-20-cm-8-in-bolt-black",
+    "name": "Beats USB‑C to USB‑C Woven Short Cable (20 cm / 8 in.) – Bolt Black",
+    "category": "Beats",
+    "url": "https://www.apple.com/shop/product/meq94ll/a/beats-usb%E2%80%91c-to-usb%E2%80%91c-woven-short-cable-20-cm-8-in-bolt-black",
+    "variants": [
+      {
+        "id": "MEQ94LL/A",
+        "part": "MEQ94LL/A",
+        "label": "Beats USB‑C to USB‑C Woven Short Cable (20 cm / 8 in.) – Bolt Black · MEQ94LL/A",
+        "url": "https://www.apple.com/shop/product/meq94ll/a/beats-usb%E2%80%91c-to-usb%E2%80%91c-woven-short-cable-20-cm-8-in-bolt-black",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "product/mdgc4ll/a/two-pack-beats-usb-c-to-usb-c-woven-cables-bolt-black",
+    "name": "Two-Pack Beats USB-C to USB-C Woven Cables – Bolt Black",
+    "category": "Accessories",
+    "url": "https://www.apple.com/shop/product/mdgc4ll/a/two-pack-beats-usb-c-to-usb-c-woven-cables-bolt-black",
+    "variants": [
+      {
+        "id": "MDGC4LL/A",
+        "part": "MDGC4LL/A",
+        "label": "Two-Pack Beats USB-C to USB-C Woven Cables – Bolt Black · MDGC4LL/A",
+        "url": "https://www.apple.com/shop/product/mdgc4ll/a/two-pack-beats-usb-c-to-usb-c-woven-cables-bolt-black",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "product/mdgh4ll/a/two-pack-beats-usb-a-to-usb-c-woven-cables-bolt-black",
+    "name": "Two-Pack Beats USB-A to USB-C Woven Cables – Bolt Black",
+    "category": "Accessories",
+    "url": "https://www.apple.com/shop/product/mdgh4ll/a/two-pack-beats-usb-a-to-usb-c-woven-cables-bolt-black",
+    "variants": [
+      {
+        "id": "MDGH4LL/A",
+        "part": "MDGH4LL/A",
+        "label": "Two-Pack Beats USB-A to USB-C Woven Cables – Bolt Black · MDGH4LL/A",
+        "url": "https://www.apple.com/shop/product/mdgh4ll/a/two-pack-beats-usb-a-to-usb-c-woven-cables-bolt-black",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "product/hll52zm/a/belkin-ultra-hd-high-speed-8k-4k-hdmi-cable-2-m",
+    "name": "Belkin Ultra HD High Speed 8K/4K HDMI Cable (2 m)",
+    "category": "Accessories",
+    "url": "https://www.apple.com/shop/product/hll52zm/a/belkin-ultra-hd-high-speed-8k-4k-hdmi-cable-2-m",
+    "variants": [
+      {
+        "id": "HLL52ZM/A",
+        "part": "HLL52ZM/A",
+        "label": "Belkin Ultra HD High Speed 8K/4K HDMI Cable (2 m) · HLL52ZM/A",
+        "url": "https://www.apple.com/shop/product/hll52zm/a/belkin-ultra-hd-high-speed-8k-4k-hdmi-cable-2-m",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "product/hsjx2zm/a/scosche-strikeline-usb-c-to-usb-c-cable",
+    "name": "Scosche StrikeLine USB-C to USB-C Cable (1 m)",
+    "category": "Accessories",
+    "url": "https://www.apple.com/shop/product/hsjx2zm/a/scosche-strikeline-usb-c-to-usb-c-cable",
+    "variants": [
+      {
+        "id": "HSJX2ZM/A",
+        "part": "HSJX2ZM/A",
+        "label": "Scosche StrikeLine USB-C to USB-C Cable (1 m) · HSJX2ZM/A",
+        "url": "https://www.apple.com/shop/product/hsjx2zm/a/scosche-strikeline-usb-c-to-usb-c-cable",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "product/hsjy2zm/a/scosche-strikeline-usb-c-to-usb-c-cable-2-m",
+    "name": "Scosche StrikeLine USB-C to USB-C Cable (2 m)",
+    "category": "Accessories",
+    "url": "https://www.apple.com/shop/product/hsjy2zm/a/scosche-strikeline-usb-c-to-usb-c-cable-2-m",
+    "variants": [
+      {
+        "id": "HSJY2ZM/A",
+        "part": "HSJY2ZM/A",
+        "label": "Scosche StrikeLine USB-C to USB-C Cable (2 m) · HSJY2ZM/A",
+        "url": "https://www.apple.com/shop/product/hsjy2zm/a/scosche-strikeline-usb-c-to-usb-c-cable-2-m",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "product/hrhr2zm/a/nimble-powerknit-flex-1m-2m-3m-usb-c-to-usb-c-cables",
+    "name": "Nimble PowerKnit FLEX 1m / 2m / 3m USB-C to USB-C Cables",
+    "category": "Accessories",
+    "url": "https://www.apple.com/shop/product/hrhr2zm/a/nimble-powerknit-flex-1m-2m-3m-usb-c-to-usb-c-cables",
+    "variants": [
+      {
+        "id": "HRHR2ZM/A",
+        "part": "HRHR2ZM/A",
+        "label": "Nimble PowerKnit FLEX 1m / 2m / 3m USB-C to USB-C Cables · HRHR2ZM/A",
+        "url": "https://www.apple.com/shop/product/hrhr2zm/a/nimble-powerknit-flex-1m-2m-3m-usb-c-to-usb-c-cables",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "product/hrhp2zm/a/nimble-powerknit-3-cable-travel-kit",
+    "name": "Nimble PowerKnit 3 Cable Travel Kit",
+    "category": "Accessories",
+    "url": "https://www.apple.com/shop/product/hrhp2zm/a/nimble-powerknit-3-cable-travel-kit",
+    "variants": [
+      {
+        "id": "HRHP2ZM/A",
+        "part": "HRHP2ZM/A",
+        "label": "Nimble PowerKnit 3 Cable Travel Kit · HRHP2ZM/A",
+        "url": "https://www.apple.com/shop/product/hrhp2zm/a/nimble-powerknit-3-cable-travel-kit",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "product/hs9a2zm/a/caldigit-thunderbolt-5-usb%E2%80%91c-pro-cable-20m",
+    "name": "CalDigit Thunderbolt 5 (USB‑C) Pro Cable (2.0m)",
+    "category": "Accessories",
+    "url": "https://www.apple.com/shop/product/hs9a2zm/a/caldigit-thunderbolt-5-usb%E2%80%91c-pro-cable-20m",
+    "variants": [
+      {
+        "id": "HS9A2ZM/A",
+        "part": "HS9A2ZM/A",
+        "label": "CalDigit Thunderbolt 5 (USB‑C) Pro Cable (2.0m) · HS9A2ZM/A",
+        "url": "https://www.apple.com/shop/product/hs9a2zm/a/caldigit-thunderbolt-5-usb%E2%80%91c-pro-cable-20m",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "product/mx723ll/a/powerbeats-pro-2-high-performance-earbuds-jet-black",
+    "name": "Powerbeats Pro 2 — High-Performance Earbuds — Jet Black",
+    "category": "Beats",
+    "url": "https://www.apple.com/shop/product/mx723ll/a/powerbeats-pro-2-high-performance-earbuds-jet-black",
+    "variants": [
+      {
+        "id": "MX723LL/A",
+        "part": "MX723LL/A",
+        "label": "Powerbeats Pro 2 — High-Performance Earbuds — Jet Black · MX723LL/A",
+        "url": "https://www.apple.com/shop/product/mx723ll/a/powerbeats-pro-2-high-performance-earbuds-jet-black",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "product/me2m4ll/a/powerbeats-fit-wireless-fitness-earbuds-with-secure-fit-spark-orange",
+    "name": "Powerbeats Fit — Wireless Fitness Earbuds with Secure Fit — Spark Orange",
+    "category": "Beats",
+    "url": "https://www.apple.com/shop/product/me2m4ll/a/powerbeats-fit-wireless-fitness-earbuds-with-secure-fit-spark-orange",
+    "variants": [
+      {
+        "id": "ME2M4LL/A",
+        "part": "ME2M4LL/A",
+        "label": "Powerbeats Fit — Wireless Fitness Earbuds with Secure Fit — Spark Orange · ME2M4LL/A",
+        "url": "https://www.apple.com/shop/product/me2m4ll/a/powerbeats-fit-wireless-fitness-earbuds-with-secure-fit-spark-orange",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "product/mqtr3ll/a/beats-studio-pro-wireless-headphones-sandstone",
+    "name": "Beats Studio Pro Wireless Headphones — Sandstone",
+    "category": "Beats",
+    "url": "https://www.apple.com/shop/product/mqtr3ll/a/beats-studio-pro-wireless-headphones-sandstone",
+    "variants": [
+      {
+        "id": "MQTR3LL/A",
+        "part": "MQTR3LL/A",
+        "label": "Beats Studio Pro Wireless Headphones — Sandstone · MQTR3LL/A",
+        "url": "https://www.apple.com/shop/product/mqtr3ll/a/beats-studio-pro-wireless-headphones-sandstone",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "product/muw43ll/a/beats-solo-4-on-ear-wireless-headphones-slate-blue",
+    "name": "Beats Solo 4 — On-Ear Wireless Headphones — Slate Blue",
+    "category": "Beats",
+    "url": "https://www.apple.com/shop/product/muw43ll/a/beats-solo-4-on-ear-wireless-headphones-slate-blue",
+    "variants": [
+      {
+        "id": "MUW43LL/A",
+        "part": "MUW43LL/A",
+        "label": "Beats Solo 4 — On-Ear Wireless Headphones — Slate Blue · MUW43LL/A",
+        "url": "https://www.apple.com/shop/product/muw43ll/a/beats-solo-4-on-ear-wireless-headphones-slate-blue",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "buy-beats/beats-360",
+    "name": "Beats 360",
+    "category": "Beats",
+    "url": "https://www.apple.com/shop/buy-beats/beats-360",
+    "variants": [
+      {
+        "id": "MJE14LL/A",
+        "part": "MJE14LL/A",
+        "label": "Black · MJE14LL/A",
+        "url": "https://www.apple.com/shop/buy-beats/beats-360/black",
+        "note": ""
+      },
+      {
+        "id": "MJE34LL/A",
+        "part": "MJE34LL/A",
+        "label": "Cloud · MJE34LL/A",
+        "url": "https://www.apple.com/shop/buy-beats/beats-360/cloud",
+        "note": ""
+      },
+      {
+        "id": "MJE64LL/A",
+        "part": "MJE64LL/A",
+        "label": "Pink · MJE64LL/A",
+        "url": "https://www.apple.com/shop/buy-beats/beats-360/pink",
+        "note": ""
+      },
+      {
+        "id": "MJE44LL/A",
+        "part": "MJE44LL/A",
+        "label": "Sky · MJE44LL/A",
+        "url": "https://www.apple.com/shop/buy-beats/beats-360/sky",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "product/mx2d3am/a/apple-pencil-pro",
+    "name": "Apple Pencil Pro",
+    "category": "Accessories",
+    "url": "https://www.apple.com/shop/product/mx2d3am/a/apple-pencil-pro",
+    "variants": [
+      {
+        "id": "MX2D3AM/A",
+        "part": "MX2D3AM/A",
+        "label": "Apple Pencil Pro · MX2D3AM/A",
+        "url": "https://www.apple.com/shop/product/mx2d3am/a/apple-pencil-pro",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "product/muwa3am/a/apple-pencil-usb-c",
+    "name": "Apple Pencil (USB-C)",
+    "category": "Accessories",
+    "url": "https://www.apple.com/shop/product/muwa3am/a/apple-pencil-usb-c",
+    "variants": [
+      {
+        "id": "MUWA3AM/A",
+        "part": "MUWA3AM/A",
+        "label": "Apple Pencil (USB-C) · MUWA3AM/A",
+        "url": "https://www.apple.com/shop/product/muwa3am/a/apple-pencil-usb-c",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "product/mwr03ll/a/magic-keyboard-for-ipad-pro-11%E2%80%91inch-m5-us-english-white",
+    "name": "Magic Keyboard for iPad Pro 11‑inch (M5) - US English - White",
+    "category": "Accessories",
+    "url": "https://www.apple.com/shop/product/mwr03ll/a/magic-keyboard-for-ipad-pro-11%E2%80%91inch-m5-us-english-white",
+    "variants": [
+      {
+        "id": "MWR03LL/A",
+        "part": "MWR03LL/A",
+        "label": "Magic Keyboard for iPad Pro 11‑inch (M5) - US English - White · MWR03LL/A",
+        "url": "https://www.apple.com/shop/product/mwr03ll/a/magic-keyboard-for-ipad-pro-11%E2%80%91inch-m5-us-english-white",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "product/mdfv4ll/a/magic-keyboard-for-ipad-air-11%E2%80%91inch-m4-us-english-white",
+    "name": "Magic Keyboard for iPad Air 11‑inch (M4) - US English - White",
+    "category": "Accessories",
+    "url": "https://www.apple.com/shop/product/mdfv4ll/a/magic-keyboard-for-ipad-air-11%E2%80%91inch-m4-us-english-white",
+    "variants": [
+      {
+        "id": "MDFV4LL/A",
+        "part": "MDFV4LL/A",
+        "label": "Magic Keyboard for iPad Air 11‑inch (M4) - US English - White · MDFV4LL/A",
+        "url": "https://www.apple.com/shop/product/mdfv4ll/a/magic-keyboard-for-ipad-air-11%E2%80%91inch-m4-us-english-white",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  },
+  {
+    "id": "product/mqdp3ll/a/magic-keyboard-folio-for-ipad-a16-us-english",
+    "name": "Magic Keyboard Folio for iPad (A16) - US English",
+    "category": "Accessories",
+    "url": "https://www.apple.com/shop/product/mqdp3ll/a/magic-keyboard-folio-for-ipad-a16-us-english",
+    "variants": [
+      {
+        "id": "MQDP3LL/A",
+        "part": "MQDP3LL/A",
+        "label": "Magic Keyboard Folio for iPad (A16) - US English · MQDP3LL/A",
+        "url": "https://www.apple.com/shop/product/mqdp3ll/a/magic-keyboard-folio-for-ipad-a16-us-english",
+        "note": ""
+      }
+    ],
+    "verifiedAt": "2026-10-30"
+  }
+]

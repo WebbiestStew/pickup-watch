@@ -5,21 +5,27 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta
       name="description"
-      content="Check iPhone Duo pickup availability across Texas. Choose your color, storage, and carrier, then search Apple Stores near a ZIP code."
+      content="Check Apple product pickup availability across Texas. Choose a product and exact configuration, then search Apple Stores near a Texas ZIP code."
     />
-    <title>Pickup Watch · Find iPhone Duo across Texas</title>
+    <title>Pickup Watch · Apple pickup availability in Texas</title>
     <meta name="theme-color" content="#101215" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Pickup Watch — Find your iPhone Duo" />
+    <meta
+      property="og:title"
+      content="Pickup Watch — Find your Apple product"
+    />
     <meta
       property="og:description"
-      content="Your iPhone. Your area. Check pickup availability at 17 Apple Stores across Texas."
+      content="Your Apple gear. Your area. Check pickup availability at 17 Apple Stores across Texas."
     />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Pickup Watch — Find your iPhone Duo" />
+    <meta
+      name="twitter:title"
+      content="Pickup Watch — Find your Apple product"
+    />
     <meta
       name="twitter:description"
-      content="Find iPhone Duo pickup stock near you. Free, independent, and built for all 17 Texas Apple Stores."
+      content="Find Apple product pickup stock near you. Free, independent, and built for Texas Apple Stores."
     />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="__STYLE_URL__" />
@@ -39,7 +45,7 @@
             type="button"
             id="share"
             class="share-button"
-            aria-label="Copy link with your selected iPhone and area"
+            aria-label="Copy link with your selected product and area"
           >
             Share ↗
           </button>
@@ -48,7 +54,7 @@
       <section class="intro">
         <div>
           <div class="eyebrow">Texas pickup availability</div>
-          <h1>Find your iPhone.<br /><span>Right here in Texas.</span></h1>
+          <h1>Find your Apple gear.<br /><span>Right here in Texas.</span></h1>
           <div class="subtitle" id="model-label" aria-live="polite"></div>
           <p class="hero-description">
             Check nearby Apple Stores. Free, with automatic two-minute updates.
@@ -86,35 +92,52 @@
       </section>
       <section class="configuration">
         <div class="config-title">
-          <span class="eyebrow">Choose your iPhone</span
+          <span class="eyebrow">Choose your product</span
           ><span class="note">Your preferences stay on this device</span>
         </div>
         <form id="model-form">
-          <label for="model-storage"
-            >Storage<select id="model-storage">
-              <option value="256gb">256GB</option>
-              <option value="512gb" selected>512GB</option>
-              <option value="1tb">1TB</option>
-              <option value="2tb">2TB</option>
+          <label for="product-category"
+            >Category<select
+              id="product-category"
+              aria-label="Product category"
+            ></select
+          ></label>
+          <label for="product-family"
+            >Product<select
+              id="product-family"
+              aria-label="Apple product"
+            ></select
+          ></label>
+          <label for="product-variant"
+            >Configuration<select
+              id="product-variant"
+              aria-label="Product configuration"
+              disabled
+            >
+              <option>Loading configurations…</option>
             </select></label
-          ><label for="model-color"
-            >Color<select id="model-color">
-              <option value="nightsky">Night Sky</option>
-              <option value="starwhite">Star White</option>
-            </select></label
-          ><label for="model-carrier"
-            >Carrier<select id="model-carrier">
-              <option value="verizon">Verizon</option>
-              <option value="att">AT&amp;T</option>
-              <option value="t-mobile">T-Mobile</option>
-              <option value="unlocked">Connect later</option>
-            </select></label
-          ><button id="save-model">Use this iPhone <span>↗</span></button>
+          >
         </form>
-        <p id="selection-feedback">
-          Choose your storage, finish, and carrier. We’ll match the exact
-          hardware at Apple.
+        <p id="selection-feedback" role="status">
+          Choose a product and exact retail configuration.
         </p>
+        <details class="product-import">
+          <summary>Have an Apple Store product link?</summary>
+          <form id="import-form">
+            <label for="apple-url"
+              >US Apple Store link<input
+                type="url"
+                id="apple-url"
+                placeholder="https://www.apple.com/shop/product/…"
+                required /></label
+            ><button id="load-product" type="submit">Load product ↗</button>
+          </form>
+          <p class="note" id="import-feedback" role="status">
+            Add accessories, bands, chargers, or another physical product from
+            Apple’s US store. Digital services, gift cards, engraving, and
+            custom-built configurations may not support pickup.
+          </p>
+        </details>
       </section>
       <section class="configuration search-panel">
         <div class="config-title">
@@ -133,7 +156,7 @@
               placeholder="Texas ZIP code"
               required
               aria-describedby="feedback" /></label
-          ><button id="check-area">Find my iPhone ↗</button
+          ><button id="check-area">Check availability ↗</button
           ><label for="filter"
             >Show<select id="filter">
               <option value="">All statuses</option>
@@ -212,7 +235,7 @@
       </footer>
       <noscript
         ><p class="note">
-          Enable JavaScript to choose your phone and check live store
+          Enable JavaScript to choose your product and check live store
           availability.
         </p></noscript
       >

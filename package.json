@@ -8,7 +8,8 @@
   },
   "scripts": {
     "build": "node scripts/build.mjs",
-    "test": "node scripts/test.mjs",
-    "dev": "npm run build && node scripts/dev.mjs"
+    "test": "node scripts/test.mjs && node scripts/test-products.mjs",
+    "dev": "npm run build && node scripts/dev.mjs",
+    "sync:products": "node scripts/sync-products.mjs"
   }
 }

@@ -7,22 +7,27 @@ const escape = (value) =>
         ch
       ],
   );
-const carrier = (model) =>
-  model.token.endsWith("t-mobile") ? "t-mobile" : model.token.split("-").pop();
-const preferencesKey = "pickup-watch-preferences";
+const preferencesKey = "pickup-watch-products-v4";
 let preferences = {};
 try {
   preferences = JSON.parse(localStorage.getItem(preferencesKey) || "{}");
 } catch {}
 const shared = new URLSearchParams(location.search);
-let model =
-  MODELS.find((m) => m.token === (shared.get("model") || preferences.token)) ||
-  MODELS.find((m) => m.token === "7.6-inch-display-512gb-night-sky-verizon");
+const productCache = new Map();
+let activeProduct = null,
+  model = {
+    part: "",
+    id: "",
+    label: "Choose a product",
+    url: "https://www.apple.com/shop",
+  },
+  loadingProduct = false,
+  selectionVersion = 0;
 let observations = new Map(),
   areaCache = new Map();
 try {
   const saved = JSON.parse(
-    sessionStorage.getItem("pickup-watch-texas-v3") || "{}",
+    sessionStorage.getItem("pickup-watch-products-results-v4") || "{}",
   );
   observations = new Map(
     (saved.observations || []).filter(
@@ -45,40 +50,190 @@ let nextCheck = 0,
 const reducedMotion = window.matchMedia(
   "(prefers-reduced-motion: reduce)",
 ).matches;
-$("model-storage").value = model.storage;
-$("model-color").value = model.color;
-$("model-carrier").value = carrier(model);
 const initialZip = shared.get("zip") || preferences.zip || "";
 if (/^\d{5}$/.test(initialZip)) $("zip").value = initialZip;
-if (shared.has("zip"))
-  $("feedback").textContent =
-    "Area and phone loaded from your link. Hit Find my iPhone to check stock.";
 function productUrl() {
-  return "https://www.apple.com/shop/buy-iphone/iphone-duo/" + model.token;
+  return model.url;
 }
 function persist() {
   try {
     localStorage.setItem(
       preferencesKey,
-      JSON.stringify({ token: model.token, zip: $("zip").value.trim() }),
+      JSON.stringify({
+        product: activeProduct?.id,
+        part: model.part,
+        link: PRODUCTS.find((item) => item.id === activeProduct?.id)
+          ?.configurations
+          ? undefined
+          : activeProduct?.url,
+        zip: $("zip").value.trim(),
+      }),
     );
   } catch {}
 }
 function updateModel() {
-  $("model-label").textContent =
-    model.storage.toUpperCase() +
-    " · " +
-    (model.color === "nightsky" ? "Night Sky" : "Star White") +
-    " · " +
-    {
-      verizon: "Verizon",
-      att: "AT&T",
-      "t-mobile": "T-Mobile",
-      unlocked: "Connect later",
-    }[carrier(model)];
+  $("model-label").textContent = model.label.startsWith(activeProduct.name) ? model.label : activeProduct.name + " · " + model.label;
   $("product").href = productUrl();
+  $("selection-feedback").textContent =
+    model.note ||
+    "Exact retail part number: " +
+      model.part +
+      ". Selection saved on this device.";
+  renderKey = "";
   persist();
   render();
+  if (lastZip && !cooldown) {
+    nextCheck = Date.now() + 1000;
+    cycleStart = Date.now();
+  }
+}
+function setOptions(select, items, value) {
+  select.replaceChildren(
+    ...items.map((item) => {
+      const option = document.createElement("option");
+      option.value = item.id;
+      option.textContent = item.name;
+      return option;
+    }),
+  );
+  if (items.some((item) => item.id === value)) select.value = value;
+}
+function populateProducts(preferred) {
+  const products = PRODUCTS.filter(
+    (product) => product.category === $("product-category").value,
+  );
+  setOptions($("product-family"), products, preferred);
+  return loadProduct($("product-family").value);
+}
+async function loadProduct(id, preferredPart) {
+  const version = ++selectionVersion;
+  loadingProduct = true;
+  $("check-area").disabled = true;
+  $("product-variant").disabled = true;
+  $("selection-feedback").textContent = "Loading exact configurations…";
+  try {
+    let product = productCache.get(id);
+    if (!product) {
+      const response = await fetch(
+        "/api/catalog?product=" + encodeURIComponent(id),
+      );
+      const data = await response.json();
+      if (!response.ok)
+        throw new Error(data.error || "Could not load configurations.");
+      product = data.product;
+      productCache.set(id, product);
+    }
+    if (version !== selectionVersion) return;
+    activeProduct = product;
+    setOptions(
+      $("product-variant"),
+      product.variants.map((variant) => ({
+        id: variant.part,
+        name: variant.label,
+      })),
+      preferredPart,
+    );
+    model =
+      product.variants.find(
+        (variant) => variant.part === $("product-variant").value,
+      ) || product.variants[0];
+    updateModel();
+  } catch (error) {
+    if (version === selectionVersion) {
+      $("selection-feedback").textContent = error.message;
+      model = {
+        part: "",
+        label: "Choose a product",
+        url: "https://www.apple.com/shop",
+      };
+    }
+  } finally {
+    if (version === selectionVersion) {
+      loadingProduct = false;
+      $("product-variant").disabled = !model.part;
+      $("check-area").disabled = !model.part || busy;
+    }
+  }
+}
+async function importProduct(url) {
+  const button = $("load-product");
+  button.disabled = true;
+  $("import-feedback").textContent = "Reading Apple’s product page…";
+  try {
+    const response = await fetch(
+      "/api/product?url=" + encodeURIComponent(url),
+      { signal: AbortSignal.timeout(30000) },
+    );
+    const data = await response.json();
+    if (!response.ok)
+      throw new Error(data.error || "Could not read this product.");
+    const product = data.product;
+    productCache.set(product.id, product);
+    if (!PRODUCTS.some((item) => item.id === product.id))
+      PRODUCTS.push(product);
+    const categories = [...new Set(PRODUCTS.map((item) => item.category))];
+    setOptions(
+      $("product-category"),
+      categories.map((name) => ({ id: name, name })),
+      product.category,
+    );
+    setOptions(
+      $("product-family"),
+      PRODUCTS.filter((item) => item.category === product.category),
+      product.id,
+    );
+    await loadProduct(product.id, shared.get("part"));
+    $("import-feedback").textContent =
+      "Product loaded from Apple. Choose its exact configuration, then check your area.";
+  } catch (error) {
+    $("import-feedback").textContent =
+      error.message || "Apple could not load this link. Try again later.";
+  } finally {
+    button.disabled = false;
+  }
+}
+$("product-category").addEventListener("change", () => populateProducts());
+$("product-family").addEventListener("change", () =>
+  loadProduct($("product-family").value),
+);
+$("product-variant").addEventListener("change", () => {
+  model = activeProduct.variants.find(
+    (item) => item.part === $("product-variant").value,
+  );
+  updateModel();
+});
+$("model-form").addEventListener("submit", (event) => event.preventDefault());
+$("import-form").addEventListener("submit", (event) => {
+  event.preventDefault();
+  importProduct($("apple-url").value.trim());
+});
+const initialProduct =
+  PRODUCTS.find(
+    (item) => item.id === (shared.get("product") || preferences.product),
+  ) ||
+  PRODUCTS.find((item) => item.id === "buy-iphone/iphone-duo") ||
+  PRODUCTS[0];
+setOptions(
+  $("product-category"),
+  [...new Set(PRODUCTS.map((item) => item.category))].map((name) => ({
+    id: name,
+    name,
+  })),
+  initialProduct.category,
+);
+setOptions(
+  $("product-family"),
+  PRODUCTS.filter((item) => item.category === initialProduct.category),
+  initialProduct.id,
+);
+loadProduct(initialProduct.id, shared.get("part") || preferences.part);
+const importedLink =
+  shared.get("link") ||
+  (!PRODUCTS.some((item) => item.id === preferences.product) &&
+    preferences.link);
+if (importedLink) {
+  $("apple-url").value = importedLink;
+  importProduct(importedLink);
 }
 function resultFor(store, now = Date.now()) {
   const observation = observations.get(store.id);
@@ -127,7 +282,7 @@ function render() {
   $("more").hidden = filtered.length <= limit;
   const visible = filtered.slice(0, limit);
   const signature =
-    model.token +
+    model.part +
     "|" +
     visible
       .map(
@@ -143,7 +298,7 @@ function render() {
   $("stores").innerHTML = visible
     .map(({ store, result }) => {
       const observation = observations.get(store.id);
-      const checked = observation
+      const checked = observation?.availability[model.part]
         ? " · checked " +
           new Date(observation.checkedAt).toLocaleTimeString([], {
             hour: "2-digit",
@@ -172,7 +327,7 @@ function render() {
         '" aria-label="Check availability near ' +
         escape(store.name) +
         '">Check this area ↗</button><div class="links"><a href="' +
-        productUrl() +
+        escape(productUrl()) +
         '" target="_blank" rel="noopener">View at Apple ↗</a><a href="' +
         escape(store.url) +
         '" target="_blank" rel="noopener">Store details ↗</a></div></article>'
@@ -187,10 +342,10 @@ function applyResults(data, zip) {
       checkedAt: data.checkedAt,
       expires: data.nextCheckAt,
     });
-  areaCache.set("texas:" + zip.slice(0, 3), data);
+  areaCache.set(model.part + ":" + zip.slice(0, 3), data);
   try {
     sessionStorage.setItem(
-      "pickup-watch-texas-v3",
+      "pickup-watch-products-results-v4",
       JSON.stringify({
         observations: [...observations],
         areas: [...areaCache],
@@ -205,6 +360,7 @@ function applyResults(data, zip) {
   $("store-search").value = "";
   limit = 12;
   $("feedback").textContent =
+    (data.message ? data.message + " " : "") +
     data.stores.length +
     " nearby stores · " +
     (data.cached ? "Cached check" : "Updated") +
@@ -220,13 +376,14 @@ function applyResults(data, zip) {
   render();
 }
 async function check(zip) {
-  if (busy) return;
+  if (busy || loadingProduct || !model.part) return;
+  const requestedPart = model.part;
   if (!/^(73301|73344|73960|7[5-9]\d{3}|885\d{2})$/.test(zip)) {
     $("feedback").textContent = "Enter a five-digit Texas ZIP code.";
     $("zip").focus();
     return;
   }
-  const local = areaCache.get("texas:" + zip.slice(0, 3));
+  const local = areaCache.get(model.part + ":" + zip.slice(0, 3));
   if (local && local.nextCheckAt > Date.now()) {
     applyResults({ ...local, cached: true }, zip);
     tick();
@@ -246,10 +403,14 @@ async function check(zip) {
   tick();
   try {
     const response = await fetch(
-      "/api/availability?zip=" + encodeURIComponent(zip),
+      "/api/availability?zip=" +
+        encodeURIComponent(zip) +
+        "&part=" +
+        encodeURIComponent(requestedPart),
       { cache: "no-store", signal: AbortSignal.timeout(45000) },
     );
     const data = await response.json();
+    if (requestedPart !== model.part) return;
     if (!response.ok || data.error) {
       nextCheck = data.retryAt || Date.now() + 300000;
       cycleStart = Date.now();
@@ -269,7 +430,7 @@ async function check(zip) {
     lastZip = zip;
     busy = false;
     $("check-area").disabled = false;
-    $("check-area").textContent = "Find my iPhone ↗";
+    $("check-area").textContent = "Check availability ↗";
     $("stores").setAttribute("aria-busy", "false");
     persist();
     render();
@@ -292,23 +453,6 @@ $("store-search").addEventListener("input", () => {
     render();
   }, 120);
 });
-function applyModelSelection() {
-  model =
-    MODELS.find(
-      (item) =>
-        item.storage === $("model-storage").value &&
-        item.color === $("model-color").value &&
-        carrier(item) === $("model-carrier").value,
-    ) || model;
-  updateModel();
-  $("selection-feedback").textContent =
-    "Watching " + $("model-label").textContent + ". Saved on this device.";
-}
-$("model-form").addEventListener("change", applyModelSelection);
-$("model-form").addEventListener("submit", (event) => {
-  event.preventDefault();
-  applyModelSelection();
-});
 $("stores").addEventListener("click", (event) => {
   const button = event.target.closest("button[data-zip]");
   if (button) {
@@ -323,7 +467,10 @@ $("more").addEventListener("click", () => {
 let toastTimer;
 $("share").addEventListener("click", async () => {
   const link = new URL(location.origin + location.pathname);
-  link.searchParams.set("model", model.token);
+  link.searchParams.set("product", activeProduct.id);
+  link.searchParams.set("part", model.part);
+  if (!PRODUCTS.find((item) => item.id === activeProduct.id)?.configurations)
+    link.searchParams.set("link", activeProduct.url);
   if (/^\d{5}$/.test($("zip").value.trim()))
     link.searchParams.set("zip", $("zip").value.trim());
   try {
@@ -441,7 +588,7 @@ function tick() {
     check(lastZip);
   }
 }
-updateModel();
+render();
 tick();
 setInterval(tick, 1000);
 setInterval(() => {

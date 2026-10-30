@@ -7,7 +7,23 @@ const data = await (
   await catalog.fetch(new Request("https://example.vercel.app/api/catalog"))
 ).json();
 assert.equal(data.stores.length, 17);
-assert.equal(data.models.length, 32);
+assert(data.products.length >= 30);
+assert(
+  [
+    "Mac",
+    "iPhone",
+    "iPad",
+    "Apple Watch",
+    "AirPods",
+    "Home & TV",
+    "AirTag",
+    "Displays",
+    "Apple Vision Pro",
+    "Accessories",
+  ].every((category) =>
+    data.products.some((product) => product.category === category),
+  ),
+);
 assert(data.stores.every((store) => store.state === "TX"));
 assert.equal(
   (
@@ -43,7 +59,7 @@ globalThis.fetch = async () => {
           {
             storeNumber: data.stores[0].id,
             partsAvailability: {
-              [data.models[0].part]: {
+              ["MK1H4LL/A"]: {
                 pickupDisplay: "available",
                 pickupSearchQuote: "Today",
               },
@@ -126,3 +142,33 @@ assert.equal(
 );
 assert(!client.includes("/api/billing"));
 assert(!page.includes("pricing"));
+
+const configuration = await (
+  await catalog.fetch(
+    new Request(
+      "https://example.vercel.app/api/catalog?product=" +
+        encodeURIComponent(data.products[0].id),
+    ),
+  )
+).json();
+assert(configuration.product.variants.length > 0);
+assert.equal(
+  (
+    await availability.fetch(
+      new Request(
+        "https://example.vercel.app/api/availability?zip=77002&part=MHQN4LL%2FA",
+      ),
+    )
+  ).status,
+  429,
+);
+assert.equal(
+  (
+    await availability.fetch(
+      new Request(
+        "https://example.vercel.app/api/availability?zip=77002&part=https://evil.test",
+      ),
+    )
+  ).status,
+  400,
+);

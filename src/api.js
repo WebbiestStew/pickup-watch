@@ -33,7 +33,7 @@ export async function sharedLookup(region) {
     "EVAL",
     script,
     2,
-    "pickup:area:texas-v3:" + region,
+    "pickup:area:products-v4:" + region,
     "pickup:gate:v2",
     String(now + 30000),
   ]);
@@ -47,7 +47,7 @@ async function sharedSave(region, data, seconds) {
   if (redisSettings())
     await redisCommand([
       "SET",
-      "pickup:area:texas-v3:" + region,
+      "pickup:area:products-v4:" + region,
       JSON.stringify(data),
       "EX",
       seconds,
@@ -115,7 +115,7 @@ const headers = {
 };
 const json = (data, status = 200) =>
   new Response(JSON.stringify(data), { status, headers });
-export function parseAvailability(data) {
+export function parseAvailability(data, parts = [DEFAULT_PART]) {
   if (
     String(data?.head?.status) !== "200" ||
     !Array.isArray(data?.body?.stores)
@@ -129,7 +129,7 @@ export function parseAvailability(data) {
       return {
         ...details,
         availability: Object.fromEntries(
-          PARTS.map((part) => {
+          parts.map((part) => {
             const item = store.partsAvailability?.[part];
             return [
               part,
@@ -150,9 +150,9 @@ export function parseAvailability(data) {
       };
     });
 }
-async function lookup(zip, request, ctx) {
+async function lookup(zip, request, ctx, part) {
   const cacheSeconds = 120;
-  const regionKey = "texas:" + zip.slice(0, 3);
+  const regionKey = "texas:" + part + ":" + zip.slice(0, 3);
   const distributed = await sharedLookup(regionKey);
   if (distributed?.state === "cached")
     return json({ ...distributed.data, cached: true });
@@ -168,7 +168,7 @@ async function lookup(zip, request, ctx) {
   const cache = safeCache();
   // Group nearby ZIPs so changing a postcode cannot trigger a check per visitor.
   const key = new Request(
-    new URL("/__cache/availability-texas-v3/" + regionKey, request.url),
+    new URL("/__cache/availability-products-v4/" + regionKey, request.url),
   );
   const gateKey = new Request(
     new URL("/__cache/apple-cooldown-v1", request.url),
@@ -200,7 +200,7 @@ async function lookup(zip, request, ctx) {
         }),
       );
     const params = new URLSearchParams({ pl: "true", location: zip });
-    PARTS.forEach((part, index) => params.set("parts." + index, part));
+    [part].forEach((part, index) => params.set("parts." + index, part));
     try {
       const response = await fetch(
         "https://www.apple.com/shop/retail/pickup-message?" + params,
@@ -228,7 +228,7 @@ async function lookup(zip, request, ctx) {
           retryAt: nextAllowedAt,
         };
       }
-      const stores = parseAvailability(await response.json());
+      const stores = parseAvailability(await response.json(), [part]);
       if (!stores.length)
         throw new Error("No recognized Texas stores returned");
       const result = {
@@ -236,6 +236,9 @@ async function lookup(zip, request, ctx) {
         checkedAt: Date.now(),
         nextCheckAt: Date.now() + cacheSeconds * 1000,
         intervalSeconds: cacheSeconds,
+        message: stores.length
+          ? ""
+          : "Apple returned no Texas pickup locations for this configuration near your ZIP. It may be online-only or not support pickup.",
         queriedZip: zip,
         cached: false,
       };
@@ -282,10 +285,16 @@ export default {
       return json({ error: "Method not allowed" }, 405);
     if (url.pathname === "/api/availability") {
       const zip = url.searchParams.get("zip") || "";
+      const part = (url.searchParams.get("part") || DEFAULT_PART).toUpperCase();
+      if (!/^[A-Z0-9]{5,12}\/[A-Z0-9]{1,3}$/.test(part))
+        return json(
+          { error: "Choose a valid Apple product configuration." },
+          400,
+        );
       if (!/^(73301|73344|73960|7[5-9]\d{3}|885\d{2})$/.test(zip))
         return json({ error: "Enter a five-digit Texas ZIP code." }, 400);
       try {
-        return await lookup(zip, request, ctx);
+        return await lookup(zip, request, ctx, part);
       } catch (error) {
         console.error("Availability handler failed", String(error));
         return json(
@@ -298,8 +307,6 @@ export default {
         );
       }
     }
-    if (url.pathname === "/api/catalog")
-      return json({ models: MODELS, stores: STORES, verifiedAt: "2026-10-27" });
     if (url.pathname === "/healthz")
       return json({ ok: true, stores: STORES.length });
     if (url.pathname !== "/" && url.pathname !== "/report.html")

@@ -6,6 +6,8 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import inventory from "../lib/inventory.js";
+import catalog from "../api/catalog.js";
+import product from "../api/product.js";
 const root = fileURLToPath(new URL("../public/", import.meta.url));
 const types = {
   ".html": "text/html; charset=utf-8",
@@ -28,7 +30,13 @@ http
       });
       const url = new URL(request.url);
       if (url.pathname.startsWith("/api/") || url.pathname === "/healthz") {
-        const response = await inventory.fetch(request, {}, {});
+        const response = await (
+          url.pathname === "/api/catalog"
+            ? catalog
+            : url.pathname === "/api/product"
+              ? product
+              : inventory
+        ).fetch(request, {}, {});
         res.writeHead(response.status, Object.fromEntries(response.headers));
         res.end(Buffer.from(await response.arrayBuffer()));
         return;
