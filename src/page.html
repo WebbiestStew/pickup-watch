@@ -170,6 +170,37 @@
           Enter a ZIP to check nearby stock, or browse all Texas stores.
         </p>
       </section>
+      <section
+        class="configuration alert-settings"
+        aria-labelledby="alerts-title"
+      >
+        <div class="config-title">
+          <span class="eyebrow" id="alerts-title">Stock alerts</span
+          ><span class="note">For your selected product and ZIP</span>
+        </div>
+        <p class="note">
+          Keep this page open. We’ll alert you when your exact configuration
+          becomes available at a nearby Texas store. Sleep mode and browser
+          limits can delay checks.
+        </p>
+        <div class="alert-actions">
+          <button id="enable-alerts" type="button">
+            Notify me when available</button
+          ><button id="stop-alerts" type="button" hidden>Stop alerts</button
+          ><button id="test-alert" type="button">Test sound</button>
+        </div>
+        <p id="alert-status" class="note" role="status">
+          No alert set. Choose your product and enter a Texas ZIP.
+        </p>
+        <a
+          id="alert-result"
+          class="product-link"
+          target="_blank"
+          rel="noopener"
+          hidden
+          >View product at Apple ↗</a
+        >
+      </section>
       <section class="stats">
         <div class="stat">
           <strong>17</strong><span>Texas stores supported</span>

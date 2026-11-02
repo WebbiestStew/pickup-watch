@@ -16,7 +16,11 @@ const data =
   JSON.stringify(stores) +
   ";\n";
 const css = read("style.css"),
-  client = data + read("client.js");
+  client =
+    data +
+    read("stock-alerts.js").replace("export function", "function") +
+    "\n" +
+    read("client.js");
 const hash = (value) =>
   crypto.createHash("sha256").update(value).digest("hex").slice(0, 12);
 const styleUrl = "/assets/app." + hash(css) + ".css",
@@ -37,7 +41,9 @@ const base =
 const page = read("page.html")
   .replaceAll("__SITE_ORIGIN__", new URL(base).origin)
   .replace("__STYLE_URL__", styleUrl)
-  .replace("__SCRIPT_URL__", scriptUrl);
+  .replace("__SCRIPT_URL__", scriptUrl)
+  .replace(/>\s+</g, "><")
+  .trim();
 fs.writeFileSync(new URL("index.html", publicDir), page);
 fs.writeFileSync(new URL(styleUrl.slice(1), publicDir), css);
 fs.writeFileSync(new URL(scriptUrl.slice(1), publicDir), client);

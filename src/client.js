@@ -7,6 +7,8 @@ const escape = (value) =>
         ch
       ],
   );
+let stockWatch = null,
+  alertAudio = null;
 const preferencesKey = "pickup-watch-products-v4";
 let preferences = {};
 try {
@@ -72,7 +74,13 @@ function persist() {
   } catch {}
 }
 function updateModel() {
-  $("model-label").textContent = model.label.startsWith(activeProduct.name) ? model.label : activeProduct.name + " · " + model.label;
+  if (stockWatch && stockWatch.part !== model.part)
+    stopStockAlert(
+      "Alert stopped because the product changed. Enable alerts again for this selection.",
+    );
+  $("model-label").textContent = model.label.startsWith(activeProduct.name)
+    ? model.label
+    : activeProduct.name + " · " + model.label;
   $("product").href = productUrl();
   $("selection-feedback").textContent =
     model.note ||
@@ -374,9 +382,14 @@ function applyResults(data, zip) {
   $("status").textContent = "● Watching your area";
   persist();
   render();
+  evaluateStockAlert({ ...data, queriedZip: zip });
 }
 async function check(zip) {
   if (busy || loadingProduct || !model.part) return;
+  if (stockWatch && stockWatch.zip !== zip)
+    stopStockAlert(
+      "Alert stopped because the area changed. Enable alerts again for this ZIP.",
+    );
   const requestedPart = model.part;
   if (!/^(73301|73344|73960|7[5-9]\d{3}|885\d{2})$/.test(zip)) {
     $("feedback").textContent = "Enter a five-digit Texas ZIP code.";
@@ -496,7 +509,7 @@ document.addEventListener("keydown", (event) => {
   }
 });
 function tick() {
-  if (document.hidden) return;
+  if (document.hidden && !stockWatch) return;
   const seconds = Math.max(0, Math.ceil((nextCheck - Date.now()) / 1000));
   const display = busy
     ? "Checking"
@@ -599,4 +612,133 @@ document.addEventListener("visibilitychange", () => {
     render();
     tick();
   }
+});
+
+// Notifications are enabled only by an explicit button click, never on page load.
+function updateAlertControls() {
+  $("stop-alerts").hidden = !stockWatch;
+  $("enable-alerts").textContent = stockWatch
+    ? "Watch this selection instead"
+    : "Notify me when available";
+  if (stockWatch)
+    $("alert-status").textContent =
+      "Watching " +
+      stockWatch.name +
+      " near " +
+      stockWatch.zip +
+      ". Keep this page open on this selection.";
+}
+function prepareAlertSound() {
+  try {
+    const Audio = window.AudioContext || window.webkitAudioContext;
+    if (Audio) {
+      alertAudio ||= new Audio();
+      return alertAudio.resume().catch(() => {});
+    }
+  } catch {}
+}
+function playAlertSound() {
+  try {
+    if (!alertAudio || alertAudio.state !== "running") return;
+    for (const [index, frequency] of [660, 880, 1100].entries()) {
+      const tone = alertAudio.createOscillator(),
+        gain = alertAudio.createGain(),
+        start = alertAudio.currentTime + index * 0.18;
+      tone.frequency.value = frequency;
+      gain.gain.setValueAtTime(0, start);
+      gain.gain.linearRampToValueAtTime(0.12, start + 0.02);
+      gain.gain.exponentialRampToValueAtTime(0.001, start + 0.22);
+      tone.connect(gain);
+      gain.connect(alertAudio.destination);
+      tone.start(start);
+      tone.stop(start + 0.24);
+    }
+  } catch {}
+}
+function evaluateStockAlert(data) {
+  if (!stockWatch || stockWatch.part !== model.part) return;
+  const transition = stockAlertTransition(stockWatch, data);
+  stockWatch = transition.watch;
+  if (!transition.stores.length) return;
+  const names = transition.stores.map((store) => store.name).join(", ");
+  const message =
+    stockWatch.name +
+    " is available at " +
+    names +
+    ". Confirm final stock at Apple.";
+  $("alert-status").textContent = message;
+  $("alert-result").href = stockWatch.url;
+  $("alert-result").hidden = false;
+  playAlertSound();
+  if ("Notification" in window && Notification.permission === "granted")
+    try {
+      const notification = new Notification("Pickup Watch: stock found", {
+        body: message,
+        tag: "pickup-" + stockWatch.part,
+        icon: "/favicon.svg",
+      });
+      notification.onclick = () => {
+        window.focus();
+        $("alert-result").focus();
+        notification.close();
+      };
+    } catch {}
+}
+$("enable-alerts").addEventListener("click", async () => {
+  const zip = $("zip").value.trim();
+  if (!model.part || loadingProduct) {
+    $("alert-status").textContent = "Choose a product configuration first.";
+    return;
+  }
+  if (!/^(73301|73344|73960|7[5-9]\d{3}|885\d{2})$/.test(zip)) {
+    $("alert-status").textContent = "Enter a Texas ZIP first.";
+    $("zip").focus();
+    return;
+  }
+  const selectedPart=model.part;
+  prepareAlertSound();
+  let permission = "unsupported";
+  if ("Notification" in window) {
+    try {
+      permission =
+        Notification.permission === "default"
+          ? await Notification.requestPermission()
+          : Notification.permission;
+    } catch {}
+  }
+  if(selectedPart!==model.part||zip!==$("zip").value.trim()){$("alert-status").textContent="Selection changed. Enable alerts again for the product you want.";return;}
+  stockWatch = {
+    part: model.part,
+    zip,
+    name: $("model-label").textContent,
+    url: model.url,
+    available: [],
+    checkedAt: 0,
+  };
+  updateAlertControls();
+  if (permission !== "granted")
+    $("alert-status").textContent +=
+      " System notifications are unavailable or blocked; this page and sound will still alert you.";
+  const saved = areaCache.get(model.part + ":" + zip.slice(0, 3));
+  if (saved) evaluateStockAlert({ ...saved, queriedZip: zip });
+  await check(zip);
+});
+function stopStockAlert(message = "Stock alerts stopped.") {
+  stockWatch = null;
+  updateAlertControls();
+  $("alert-result").hidden = true;
+  $("alert-status").textContent = message;
+}
+$("stop-alerts").addEventListener("click", () => stopStockAlert());
+$("zip").addEventListener("input", () => {
+  if (stockWatch && $("zip").value.trim() !== stockWatch.zip)
+    stopStockAlert(
+      "Alert stopped because the ZIP changed. Enable alerts again for this area.",
+    );
+});
+$("test-alert").addEventListener("click", async () => {
+  await prepareAlertSound();
+  playAlertSound();
+  $("alert-status").textContent =
+    alertAudio?.state === "running" ? "Sound test played. Keep this page open for stock alerts." : "Your browser could not play audio. Check its sound settings; in-page alerts still work.";
 });

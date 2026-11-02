@@ -8,7 +8,7 @@
   },
   "scripts": {
     "build": "node scripts/build.mjs",
-    "test": "node scripts/test.mjs && node scripts/test-products.mjs",
+    "test": "node scripts/test.mjs && node scripts/test-products.mjs && node scripts/test-alerts.mjs",
     "dev": "npm run build && node scripts/dev.mjs",
     "sync:products": "node scripts/sync-products.mjs"
   }

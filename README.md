@@ -19,3 +19,7 @@ Use `npm run sync:products` to refresh the catalog from Apple's URLs in `src/pro
 Push main to the connected GitHub repository for Vercel deployment. Free Upstash Redis provides shared caching using `KV_REST_API_URL` and `KV_REST_API_TOKEN` (or `UPSTASH_REDIS_REST_*`). Keep credentials in ignored env files or Vercel secrets. No billing or accounts.
 
 `/api/catalog` lists product families and stores. `/api/catalog?product=buy-airpods/airpods-5` returns configurations. `/api/product?url=...` loads another Apple product. `/api/availability?zip=77002&part=MKFW4LL%2FA` checks the selected SKU. `/api/health` reports service health.
+
+## Browser stock alerts
+
+Select an exact configuration and Texas ZIP, then click **Notify me when available** and allow browser notifications. A tone and in-page message accompany stock changes. **Test sound** verifies local audio. Alerts run only while this page remains open on that product and ZIP; changing either stops the alert. Sleep mode, closed tabs, mobile/browser restrictions, and Apple cooldowns can delay or stop checks. Sound is enabled by a user click; no email, background push service, or server monitoring is provided.

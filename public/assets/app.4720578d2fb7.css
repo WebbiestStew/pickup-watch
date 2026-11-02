@@ -732,3 +732,26 @@ footer {
     font-size: 36px;
   }
 }
+
+.alert-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 14px 0;
+}
+.alert-actions button {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--panel);
+  color: var(--text);
+  padding: 11px 14px;
+  font-size: 12px;
+}
+#enable-alerts {
+  background: var(--green);
+  color: #17200e;
+  border-color: var(--green);
+}
+#alert-status {
+  overflow-wrap: anywhere;
+}

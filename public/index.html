@@ -1,46 +1,22 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta
+<!doctype html><html lang="en"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" /><meta
       name="description"
       content="Check Apple product pickup availability across Texas. Choose a product and exact configuration, then search Apple Stores near a Texas ZIP code."
-    />
-    <title>Pickup Watch · Apple pickup availability in Texas</title>
-    <meta name="theme-color" content="#101215" />
-    <meta property="og:type" content="website" />
-    <meta
+    /><title>Pickup Watch · Apple pickup availability in Texas</title><meta name="theme-color" content="#101215" /><meta property="og:type" content="website" /><meta
       property="og:title"
       content="Pickup Watch — Find your Apple product"
-    />
-    <meta
+    /><meta
       property="og:description"
       content="Your Apple gear. Your area. Check pickup availability at 17 Apple Stores across Texas."
-    />
-    <meta name="twitter:card" content="summary" />
-    <meta
+    /><meta name="twitter:card" content="summary" /><meta
       name="twitter:title"
       content="Pickup Watch — Find your Apple product"
-    />
-    <meta
+    /><meta
       name="twitter:description"
       content="Find Apple product pickup stock near you. Free, independent, and built for Texas Apple Stores."
-    />
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="/assets/app.731918c6d3d5.css" />
-    <script type="module" src="/assets/app.7a94bf94dc5e.js"></script>
-  </head>
-  <body>
-    <a class="skip-link" href="#area-form">Skip to stock search</a>
-    <main>
-      <header>
-        <a class="wordmark" href="/"
+    /><link rel="icon" href="/favicon.svg" type="image/svg+xml" /><link rel="stylesheet" href="/assets/app.4720578d2fb7.css" /><script type="module" src="/assets/app.6e2995d09f96.js"></script></head><body><a class="skip-link" href="#area-form">Skip to stock search</a><main><header><a class="wordmark" href="/"
           ><span class="mark">◈</span>Pickup watch
           <span class="city">Texas</span></a
-        >
-        <div class="header-actions">
-          <span class="status" id="status">● Ready to check</span
+        ><div class="header-actions"><span class="status" id="status">● Ready to check</span
           ><button
             type="button"
             id="share"
@@ -48,31 +24,12 @@
             aria-label="Copy link with your selected product and area"
           >
             Share ↗
-          </button>
-        </div>
-      </header>
-      <section class="intro">
-        <div>
-          <div class="eyebrow">Texas pickup availability</div>
-          <h1>Find your Apple gear.<br /><span>Right here in Texas.</span></h1>
-          <div class="subtitle" id="model-label" aria-live="polite"></div>
-          <p class="hero-description">
+          </button></div></header><section class="intro"><div><div class="eyebrow">Texas pickup availability</div><h1>Find your Apple gear.<br /><span>Right here in Texas.</span></h1><div class="subtitle" id="model-label" aria-live="polite"></div><p class="hero-description">
             Check nearby Apple Stores. Free, with automatic two-minute updates.
-          </p>
-          <a id="product" class="product-link" target="_blank" rel="noopener"
+          </p><a id="product" class="product-link" target="_blank" rel="noopener"
             >View selected configuration at Apple ↗</a
-          >
-        </div>
-        <div class="timer" id="timer-panel">
-          <div class="timer-label">
-            <span class="live-pip"></span
-            ><span id="timer-label">Your next stock check</span>
-          </div>
-          <div class="dial" id="dial">
-            <svg viewBox="0 0 200 200" aria-hidden="true">
-              <circle class="ring-track" cx="100" cy="100" r="88" />
-              <circle class="ring-ticks" cx="100" cy="100" r="95" />
-              <circle
+          ></div><div class="timer" id="timer-panel"><div class="timer-label"><span class="live-pip"></span
+            ><span id="timer-label">Your next stock check</span></div><div class="dial" id="dial"><svg viewBox="0 0 200 200" aria-hidden="true"><circle class="ring-track" cx="100" cy="100" r="88" /><circle class="ring-ticks" cx="100" cy="100" r="95" /><circle
                 id="ring-progress"
                 class="ring-progress"
                 cx="100"
@@ -80,72 +37,37 @@
                 r="88"
                 pathLength="100"
                 stroke-dasharray="100"
-              />
-            </svg>
-            <div class="dial-center">
-              <div id="countdown" role="timer">Ready</div>
-              <div class="time-caption" id="time-caption">Choose your area</div>
-            </div>
-          </div>
-          <p id="health">Search a ZIP code to check nearby stores.</p>
-        </div>
-      </section>
-      <section class="configuration">
-        <div class="config-title">
-          <span class="eyebrow">Choose your product</span
-          ><span class="note">Your preferences stay on this device</span>
-        </div>
-        <form id="model-form">
-          <label for="product-category"
+              /></svg><div class="dial-center"><div id="countdown" role="timer">Ready</div><div class="time-caption" id="time-caption">Choose your area</div></div></div><p id="health">Search a ZIP code to check nearby stores.</p></div></section><section class="configuration"><div class="config-title"><span class="eyebrow">Choose your product</span
+          ><span class="note">Your preferences stay on this device</span></div><form id="model-form"><label for="product-category"
             >Category<select
               id="product-category"
               aria-label="Product category"
             ></select
-          ></label>
-          <label for="product-family"
+          ></label><label for="product-family"
             >Product<select
               id="product-family"
               aria-label="Apple product"
             ></select
-          ></label>
-          <label for="product-variant"
+          ></label><label for="product-variant"
             >Configuration<select
               id="product-variant"
               aria-label="Product configuration"
               disabled
-            >
-              <option>Loading configurations…</option>
-            </select></label
-          >
-        </form>
-        <p id="selection-feedback" role="status">
+            ><option>Loading configurations…</option></select></label
+          ></form><p id="selection-feedback" role="status">
           Choose a product and exact retail configuration.
-        </p>
-        <details class="product-import">
-          <summary>Have an Apple Store product link?</summary>
-          <form id="import-form">
-            <label for="apple-url"
+        </p><details class="product-import"><summary>Have an Apple Store product link?</summary><form id="import-form"><label for="apple-url"
               >US Apple Store link<input
                 type="url"
                 id="apple-url"
                 placeholder="https://www.apple.com/shop/product/…"
                 required /></label
-            ><button id="load-product" type="submit">Load product ↗</button>
-          </form>
-          <p class="note" id="import-feedback" role="status">
+            ><button id="load-product" type="submit">Load product ↗</button></form><p class="note" id="import-feedback" role="status">
             Add accessories, bands, chargers, or another physical product from
             Apple’s US store. Digital services, gift cards, engraving, and
             custom-built configurations may not support pickup.
-          </p>
-        </details>
-      </section>
-      <section class="configuration search-panel">
-        <div class="config-title">
-          <span class="eyebrow">Find it nearby</span
-          ><span class="note">Stock checks only. No reservations.</span>
-        </div>
-        <form class="searchbar" id="area-form">
-          <label for="zip"
+          </p></details></section><section class="configuration search-panel"><div class="config-title"><span class="eyebrow">Find it nearby</span
+          ><span class="note">Stock checks only. No reservations.</span></div><form class="searchbar" id="area-form"><label for="zip"
             >Texas ZIP code<input
               id="zip"
               type="text"
@@ -158,67 +80,48 @@
               aria-describedby="feedback" /></label
           ><button id="check-area">Check availability ↗</button
           ><label for="filter"
-            >Show<select id="filter">
-              <option value="">All statuses</option>
-              <option value="available">Available</option>
-              <option value="unavailable">Unavailable</option>
-              <option value="unknown">Unconfirmed</option>
-            </select></label
-          >
-        </form>
-        <p class="note" id="feedback" role="status">
+            >Show<select id="filter"><option value="">All statuses</option><option value="available">Available</option><option value="unavailable">Unavailable</option><option value="unknown">Unconfirmed</option></select></label
+          ></form><p class="note" id="feedback" role="status">
           Enter a ZIP to check nearby stock, or browse all Texas stores.
-        </p>
-      </section>
-      <section class="stats">
-        <div class="stat">
-          <strong>17</strong><span>Texas stores supported</span>
-        </div>
-        <div class="stat">
-          <strong class="green" id="available">0</strong
-          ><span>Available in results</span>
-        </div>
-        <div class="stat">
-          <strong id="unavailable">0</strong><span>Unavailable in results</span>
-        </div>
-        <div class="stat">
-          <strong class="amber" id="unknown">17</strong
-          ><span>Unconfirmed / stale</span>
-        </div>
-      </section>
-      <div class="toolbar">
-        <h2 id="store-heading">Explore stores</h2>
-        <div class="store-search-wrap">
-          <input
+        </p></section><section
+        class="configuration alert-settings"
+        aria-labelledby="alerts-title"
+      ><div class="config-title"><span class="eyebrow" id="alerts-title">Stock alerts</span
+          ><span class="note">For your selected product and ZIP</span></div><p class="note">
+          Keep this page open. We’ll alert you when your exact configuration
+          becomes available at a nearby Texas store. Sleep mode and browser
+          limits can delay checks.
+        </p><div class="alert-actions"><button id="enable-alerts" type="button">
+            Notify me when available</button
+          ><button id="stop-alerts" type="button" hidden>Stop alerts</button
+          ><button id="test-alert" type="button">Test sound</button></div><p id="alert-status" class="note" role="status">
+          No alert set. Choose your product and enter a Texas ZIP.
+        </p><a
+          id="alert-result"
+          class="product-link"
+          target="_blank"
+          rel="noopener"
+          hidden
+          >View product at Apple ↗</a
+        ></section><section class="stats"><div class="stat"><strong>17</strong><span>Texas stores supported</span></div><div class="stat"><strong class="green" id="available">0</strong
+          ><span>Available in results</span></div><div class="stat"><strong id="unavailable">0</strong><span>Unavailable in results</span></div><div class="stat"><strong class="amber" id="unknown">17</strong
+          ><span>Unconfirmed / stale</span></div></section><div class="toolbar"><h2 id="store-heading">Explore stores</h2><div class="store-search-wrap"><input
             id="store-search"
             type="search"
             placeholder="Search city or store…"
             aria-label="Search stores by city or name"
-          /><span class="note" id="results-count"></span>
-        </div>
-      </div>
-      <div class="grid" id="stores"></div>
-      <button id="more" class="loadmore">Show more stores ↓</button>
-      <p class="empty" id="empty" hidden>
+          /><span class="note" id="results-count"></span></div></div><div class="grid" id="stores"></div><button id="more" class="loadmore">Show more stores ↓</button><p class="empty" id="empty" hidden>
         No stores match. Try another Texas city or status.
-      </p>
-      <div id="toast" class="toast" role="status" hidden>
+      </p><div id="toast" class="toast" role="status" hidden>
         Link copied. Send it to your people.
-      </div>
-      <footer>
-        <div class="footer-brand">
-          ◈ Pickup watch <span>Independent. Made for the search.</span>
-        </div>
-        <details class="about">
-          <summary>How checks work &amp; privacy</summary>
-          <p class="note">
+      </div><footer><div class="footer-brand">
+          ◈ Pickup watch <span>Independent. Made for the search.</span></div><details class="about"><summary>How checks work &amp; privacy</summary><p class="note">
             Availability comes from Apple’s public pickup service. Results
             refresh about every two minutes for everyone; the page updates its
             display every 30 seconds. Automatic area checks continue while this
             tab is open. Apple errors trigger a cooldown, and older results
             become unconfirmed. Texas directory verified October 27, 2026.
-          </p>
-          <p class="note">
+          </p><p class="note">
             We only check availability. Purchases and reservations happen on
             Apple’s website. Confirm carrier eligibility and final stock there.
             Independent project; not affiliated with Apple. Your model
@@ -226,19 +129,12 @@
             service and Apple to find nearby stores. We never ask for an Apple
             account. The checker is completely free, with no account or payment
             required.
-          </p>
-        </details>
-        <p class="note footer-short">
+          </p></details><p class="note footer-short">
           Independent project. Not affiliated with Apple. Stock changes quickly;
           Apple confirms final availability.
-        </p>
-      </footer>
-      <noscript
+        </p></footer><noscript
         ><p class="note">
           Enable JavaScript to choose your product and check live store
           availability.
         </p></noscript
-      >
-    </main>
-  </body>
-</html>
+      ></main></body></html>
