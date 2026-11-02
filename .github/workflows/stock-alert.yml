@@ -1,0 +1,27 @@
+name: Personal Telegram stock watch
+on:
+  schedule:
+    - cron: "3-58/5 * * * *"
+  workflow_dispatch:
+permissions: {}
+concurrency:
+  group: personal-telegram-stock-watch
+  cancel-in-progress: false
+jobs:
+  check-stock:
+    if: vars.TELEGRAM_MONITOR_ENABLED == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: Check San Antonio stock
+        env:
+          MONITOR_SECRET: ${{ secrets.PICKUP_MONITOR_SECRET }}
+        run: |
+          if [ -z "$MONITOR_SECRET" ]; then
+            echo 'Monitor secret is not configured.'
+            exit 1
+          fi
+          curl --silent --show-error --fail-with-body --max-time 55 \
+            --request POST \
+            --header "Authorization: Bearer $MONITOR_SECRET" \
+            https://pickup-watch.vercel.app/api/telegram-monitor

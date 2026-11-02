@@ -23,3 +23,15 @@ Push main to the connected GitHub repository for Vercel deployment. Free Upstash
 ## Browser stock alerts
 
 Select an exact configuration and Texas ZIP, then click **Notify me when available** and allow browser notifications. A tone and in-page message accompany stock changes. **Test sound** verifies local audio. Alerts run only while this page remains open on that product and ZIP; changing either stops the alert. Sleep mode, closed tabs, mobile/browser restrictions, and Apple cooldowns can delay or stop checks. Sound is enabled by a user click; no email, background push service, or server monitoring is provided.
+
+## Personal Telegram monitor
+
+`server/personal-watch.json` pins the personal watch to iPhone Duo 256GB Night Sky, SKU `MK1F4LL/A`, at San Antonio's North Star and La Cantera stores. The authenticated `/api/telegram-monitor` route uses the shared Apple throttle/cache and durable Redis state, sends a message only for newly confirmed available stores, and retries delivery failures on subsequent runs. Unknown or failed checks never count as a restock. Telegram requests are mocked in tests.
+
+1. Create a Telegram bot with the verified `@BotFather` using `/newbot`. Save `TELEGRAM_BOT_TOKEN` in the ignored `.env.telegram.local` file. Never commit it.
+2. Run `npm run telegram:connect`. Follow the generated Telegram link and tap Start, then rerun it. The random start code ties the bot to your private chat without selecting an unrelated Telegram user.
+3. Set production secrets `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`, and a random 32+ character `MONITOR_SECRET` in the existing Vercel project. Keep Redis connected.
+4. Put that same monitor secret in the GitHub Actions repository secret `PICKUP_MONITOR_SECRET`. Set repository Actions variable `TELEGRAM_MONITOR_ENABLED` to `true` only after testing the connection.
+5. The `Personal Telegram stock watch` workflow requests a check about every five minutes. GitHub scheduling can be delayed and can disable after repository inactivity; it is not a time guarantee. It works with the website and your computer closed. Public repository Actions usage is used; no paid service is selected.
+
+Disable the GitHub variable to pause checks. The only recipient is the private Telegram chat in the server secret. Bot tokens/chat IDs never enter frontend assets or workflow source. No purchase, reservation, or charge is performed.
