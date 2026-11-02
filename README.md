@@ -32,6 +32,10 @@ Select an exact configuration and Texas ZIP, then click **Notify me when availab
 2. Run `npm run telegram:connect`. Follow the generated Telegram link and tap Start, then rerun it. The random start code ties the bot to your private chat without selecting an unrelated Telegram user.
 3. Set production secrets `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`, and a random 32+ character `MONITOR_SECRET` in the existing Vercel project. Keep Redis connected.
 4. Put that same monitor secret in the GitHub Actions repository secret `PICKUP_MONITOR_SECRET`. Set repository Actions variable `TELEGRAM_MONITOR_ENABLED` to `true` only after testing the connection.
-5. The `Personal Telegram stock watch` workflow requests a check about every five minutes. GitHub scheduling can be delayed and can disable after repository inactivity; it is not a time guarantee. It works with the website and your computer closed. Public repository Actions usage is used; no paid service is selected.
+5. GitHub Actions is an optional five-minute fallback. It is currently disabled through `TELEGRAM_MONITOR_ENABLED=false` because cron-job.org now triggers the monitor every minute. Do not enable both schedulers together. No paid service is selected.
 
-Disable the GitHub variable to pause checks. The only recipient is the private Telegram chat in the server secret. Bot tokens/chat IDs never enter frontend assets or workflow source. No purchase, reservation, or charge is performed.
+Pause the cron-job.org job to pause checks; keep the GitHub fallback variable disabled. The only recipient is the private Telegram chat in the server secret. Bot tokens/chat IDs never enter frontend assets or workflow source. No purchase, reservation, or charge is performed.
+
+### Active faster scheduler
+
+cron-job.org job `8778953` (Pickup Watch — San Antonio iPhone Duo) sends an authenticated POST to `/api/telegram-monitor` every minute. The trigger key is stored as an Authorization header in that account; the Telegram bot token remains only in server secrets. Response-body history saving is off. The shared 120-second product cache means fresh Apple requests occur about every two minutes; Apple throttling and connection failures retain their cooldown. The monitor still checks only North Star and La Cantera for the configured 256GB Night Sky SKU and suppresses unchanged-stock messages.
