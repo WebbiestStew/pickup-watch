@@ -19,7 +19,7 @@ const req = (token = process.env.MONITOR_SECRET) =>
 inventory.fetch = async (request) => {
   assert.equal(new URL(request.url).searchParams.get("part"), "MK1F4LL/A");
   return Response.json({
-    queriedZip: "78216",
+    queriedZip: "78256",
     checkedAt: ++time,
     nextCheckAt: Date.now() + 120000,
     stores: [

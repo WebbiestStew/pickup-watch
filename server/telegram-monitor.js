@@ -96,7 +96,7 @@ export async function telegramMonitor(request) {
         available: old?.available || [],
         checkedAt: old?.checkedAt || 0,
       },
-      { ...data, stores },
+      { ...data, queriedZip: config.zip, stores },
     );
     if (transition.stores.length) {
       const checked = new Date(data.checkedAt).toLocaleString("en-US", {
