@@ -26,7 +26,7 @@ Select an exact configuration and Texas ZIP, then click **Notify me when availab
 
 ## Personal Telegram monitor
 
-`server/personal-watch.json` pins the personal watch to iPhone Duo 256GB Night Sky, SKU `MK1F4LL/A`, at San Antonio's NorthPark Center, Knox Street, and Galleria Dallas stores. The authenticated `/api/telegram-monitor` route uses the shared Apple throttle/cache and durable Redis state, sends a message only for newly confirmed available stores, and retries delivery failures on subsequent runs. Unknown or failed checks never count as a restock. Telegram requests are mocked in tests.
+`server/personal-watch.json` pins the personal watch to iPhone Duo 256GB Night Sky, SKU `MK1F4LL/A`, at Dallas's NorthPark Center, Knox Street, and Galleria Dallas stores. The authenticated `/api/telegram-monitor` route uses the shared Apple throttle/cache and durable Redis state, sends a message only for newly confirmed available stores, and retries delivery failures on subsequent runs. Unknown or failed checks never count as a restock. Telegram requests are mocked in tests.
 
 1. Create a Telegram bot with the verified `@BotFather` using `/newbot`. Save `TELEGRAM_BOT_TOKEN` in the ignored `.env.telegram.local` file. Never commit it.
 2. Run `npm run telegram:connect`. Follow the generated Telegram link and tap Start, then rerun it. The random start code ties the bot to your private chat without selecting an unrelated Telegram user.
