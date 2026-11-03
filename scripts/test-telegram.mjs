@@ -18,24 +18,25 @@ const req = (token = process.env.MONITOR_SECRET) =>
   });
 inventory.fetch = async (request) => {
   assert.equal(new URL(request.url).searchParams.get("part"), "MK1F4LL/A");
+  assert.equal(new URL(request.url).searchParams.get("zip"), "75225");
   return Response.json({
-    queriedZip: "78256",
+    queriedZip: "75205",
     checkedAt: ++time,
     nextCheckAt: Date.now() + 120000,
     stores: [
       {
-        id: "R290",
-        name: "North Star",
+        id: "R144",
+        name: "NorthPark Center",
         availability: { "MK1F4LL/A": { status, message: "Available Today" } },
       },
       {
-        id: "R131",
-        name: "La Cantera",
+        id: "R042",
+        name: "Knox Street",
         availability: { "MK1F4LL/A": { status: "unknown" } },
       },
       {
         id: "R225",
-        name: "Not in San Antonio",
+        name: "Not in Dallas",
         availability: { "MK1F4LL/A": { status: "available" } },
       },
     ],
@@ -61,9 +62,9 @@ globalThis.fetch = async (url, options) => {
   assert(String(url).startsWith("https://api.telegram.org/bot"));
   const payload = JSON.parse(options.body);
   assert.equal(payload.chat_id, "12345");
-  assert(payload.text.includes("North Star"));
-  assert(!payload.text.includes("Not in San Antonio"));
-  assert(!payload.text.includes("La Cantera —"));
+  assert(payload.text.includes("NorthPark Center"));
+  assert(!payload.text.includes("Not in Dallas"));
+  assert(!payload.text.includes("Knox Street —"));
   if (deliveryFails) return Response.json({ ok: false }, { status: 500 });
   sent++;
   return Response.json({ ok: true, result: { message_id: sent } });
@@ -93,5 +94,5 @@ const locked = await (await telegramMonitor(req())).json();
 assert.equal(locked.reason, "already-running");
 assert.equal(db.get("pickup:telegram:personal:v1:lock"), "other-run");
 console.log(
-  "Passed Telegram monitor tests: authentication, San Antonio-only alerts, duplicate suppression, restocks, delivery retry, and concurrent-run lock. All Telegram requests mocked.",
+  "Passed Telegram monitor tests: authentication, Dallas-only alerts, duplicate suppression, restocks, delivery retry, and concurrent-run lock. All Telegram requests mocked.",
 );

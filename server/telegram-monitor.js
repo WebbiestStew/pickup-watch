@@ -118,7 +118,7 @@ export async function telegramMonitor(request) {
             .join("\n") +
           "\n\nChecked " +
           checked +
-          " (San Antonio time).\n" +
+          " (Dallas time).\n" +
           config.url +
           "\n\nStock can change; confirm availability and carrier eligibility at Apple.",
       );

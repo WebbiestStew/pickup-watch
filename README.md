@@ -26,7 +26,7 @@ Select an exact configuration and Texas ZIP, then click **Notify me when availab
 
 ## Personal Telegram monitor
 
-`server/personal-watch.json` pins the personal watch to iPhone Duo 256GB Night Sky, SKU `MK1F4LL/A`, at San Antonio's North Star and La Cantera stores. The authenticated `/api/telegram-monitor` route uses the shared Apple throttle/cache and durable Redis state, sends a message only for newly confirmed available stores, and retries delivery failures on subsequent runs. Unknown or failed checks never count as a restock. Telegram requests are mocked in tests.
+`server/personal-watch.json` pins the personal watch to iPhone Duo 256GB Night Sky, SKU `MK1F4LL/A`, at San Antonio's NorthPark Center, Knox Street, and Galleria Dallas stores. The authenticated `/api/telegram-monitor` route uses the shared Apple throttle/cache and durable Redis state, sends a message only for newly confirmed available stores, and retries delivery failures on subsequent runs. Unknown or failed checks never count as a restock. Telegram requests are mocked in tests.
 
 1. Create a Telegram bot with the verified `@BotFather` using `/newbot`. Save `TELEGRAM_BOT_TOKEN` in the ignored `.env.telegram.local` file. Never commit it.
 2. Run `npm run telegram:connect`. Follow the generated Telegram link and tap Start, then rerun it. The random start code ties the bot to your private chat without selecting an unrelated Telegram user.
@@ -38,4 +38,6 @@ Pause the cron-job.org job to pause checks; keep the GitHub fallback variable di
 
 ### Active faster scheduler
 
-cron-job.org job `8778953` (Pickup Watch — San Antonio iPhone Duo) sends an authenticated POST to `/api/telegram-monitor` every minute. The trigger key is stored as an Authorization header in that account; the Telegram bot token remains only in server secrets. Response-body history saving is off. The shared 120-second product cache means fresh Apple requests occur about every two minutes; Apple throttling and connection failures retain their cooldown. The monitor still checks only North Star and La Cantera for the configured 256GB Night Sky SKU and suppresses unchanged-stock messages.
+cron-job.org job `8778953` (Pickup Watch — San Antonio iPhone Duo) sends an authenticated POST to `/api/telegram-monitor` every minute. The trigger key is stored as an Authorization header in that account; the Telegram bot token remains only in server secrets. Response-body history saving is off. The shared 120-second product cache means fresh Apple requests occur about every two minutes; Apple throttling and connection failures retain their cooldown. The monitor checks only NorthPark Center, Knox Street, and Galleria Dallas for the configured 256GB Night Sky SKU and suppresses unchanged-stock messages.
+
+The personal watch now targets Dallas ZIP 75225 and store IDs R144, R042, and R746. The scheduler job title may retain its original San Antonio label; the deployed server configuration determines the actual target.
